@@ -1,0 +1,1170 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		834B6EC11F40CC0B00FDF852 /* SnakeEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834B6EB81F40CC0B00FDF852 /* SnakeEngine.framework */; };
+		834B6ECA1F40CC0B00FDF852 /* SnakeEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 834B6EBA1F40CC0B00FDF852 /* SnakeEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		834B6ECD1F40CC0B00FDF852 /* SnakeEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834B6EB81F40CC0B00FDF852 /* SnakeEngine.framework */; };
+		834B6ECE1F40CC0B00FDF852 /* SnakeEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 834B6EB81F40CC0B00FDF852 /* SnakeEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		834B6EDC1F40CC5000FDF852 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834B6EDA1F40CC5000FDF852 /* Interface.storyboard */; };
+		834B6EDE1F40CC5000FDF852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834B6EDD1F40CC5000FDF852 /* Assets.xcassets */; };
+		834B6EE51F40CC5000FDF852 /* SnakeWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 834B6EE41F40CC5000FDF852 /* SnakeWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		834B6EEA1F40CC5000FDF852 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6EE91F40CC5000FDF852 /* InterfaceController.swift */; };
+		834B6EEC1F40CC5000FDF852 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 834B6EEB1F40CC5000FDF852 /* GameScene.sks */; };
+		834B6EEE1F40CC5100FDF852 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6EED1F40CC5000FDF852 /* GameScene.swift */; };
+		834B6EF01F40CC5100FDF852 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6EEF1F40CC5100FDF852 /* ExtensionDelegate.swift */; };
+		834B6EF21F40CC5100FDF852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834B6EF11F40CC5100FDF852 /* Assets.xcassets */; };
+		834B6EF61F40CC5100FDF852 /* SnakeWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 834B6ED81F40CC5000FDF852 /* SnakeWatch.app */; };
+		834B6F001F40CC9400FDF852 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6EFF1F40CC9400FDF852 /* Snake.swift */; };
+		834B6F021F40CF6A00FDF852 /* WorldConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F011F40CF6A00FDF852 /* WorldConstants.swift */; };
+		834B6F041F40D35400FDF852 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F031F40D35400FDF852 /* Food.swift */; };
+		834B6F061F40D35E00FDF852 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F051F40D35E00FDF852 /* World.swift */; };
+		834B6F091F40D62E00FDF852 /* Controllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F081F40D62E00FDF852 /* Controllable.swift */; };
+		834B6F0B1F40E22000FDF852 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F0A1F40E22000FDF852 /* Direction.swift */; };
+		834B6F0D1F40E24900FDF852 /* SnakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F0C1F40E24900FDF852 /* SnakeTests.swift */; };
+		834B6F0F1F40EF7A00FDF852 /* Physical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F0E1F40EF7A00FDF852 /* Physical.swift */; };
+		834B6F111F40F24100FDF852 /* Movable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F101F40F24100FDF852 /* Movable.swift */; };
+		834B6F141F40F57E00FDF852 /* CGPointExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F131F40F57E00FDF852 /* CGPointExtensions.swift */; };
+		834B6F171F40F90600FDF852 /* CGPointExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F161F40F90600FDF852 /* CGPointExtensionsTests.swift */; };
+		83767BE91F40BA3B00122DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83767BE81F40BA3B00122DB6 /* AppDelegate.swift */; };
+		83767BEB1F40BA3B00122DB6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83767BEA1F40BA3B00122DB6 /* GameScene.sks */; };
+		83767BED1F40BA3B00122DB6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83767BEC1F40BA3B00122DB6 /* Actions.sks */; };
+		83767BEF1F40BA3B00122DB6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83767BEE1F40BA3B00122DB6 /* GameScene.swift */; };
+		83767BF11F40BA3B00122DB6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83767BF01F40BA3B00122DB6 /* GameViewController.swift */; };
+		83767BF41F40BA3B00122DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83767BF21F40BA3B00122DB6 /* Main.storyboard */; };
+		83767BF61F40BA3B00122DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83767BF51F40BA3B00122DB6 /* Assets.xcassets */; };
+		83767BF91F40BA3B00122DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83767BF71F40BA3B00122DB6 /* LaunchScreen.storyboard */; };
+		83767C0F1F40BA3B00122DB6 /* SnakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83767C0E1F40BA3B00122DB6 /* SnakeUITests.swift */; };
+		83AD00FE1F4101EE00467C82 /* Nameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD00FD1F4101EE00467C82 /* Nameable.swift */; };
+		83AD01001F4103DD00467C82 /* FoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD00FF1F4103DD00467C82 /* FoodTests.swift */; };
+		83AD01031F4105B400467C82 /* WorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD01021F4105B400467C82 /* WorldTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		834B6EC21F40CC0B00FDF852 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 834B6EB71F40CC0B00FDF852;
+			remoteInfo = SnakeEngine;
+		};
+		834B6EC41F40CC0B00FDF852 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83767BE41F40BA3B00122DB6;
+			remoteInfo = Snake;
+		};
+		834B6ECB1F40CC0B00FDF852 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 834B6EB71F40CC0B00FDF852;
+			remoteInfo = SnakeEngine;
+		};
+		834B6EE61F40CC5000FDF852 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 834B6EE31F40CC5000FDF852;
+			remoteInfo = "SnakeWatch Extension";
+		};
+		834B6EF41F40CC5100FDF852 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 834B6ED71F40CC5000FDF852;
+			remoteInfo = SnakeWatch;
+		};
+		83767C001F40BA3B00122DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83767BE41F40BA3B00122DB6;
+			remoteInfo = Snake;
+		};
+		83767C0B1F40BA3B00122DB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83767BE41F40BA3B00122DB6;
+			remoteInfo = Snake;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		834B6ED41F40CC0B00FDF852 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				834B6ECE1F40CC0B00FDF852 /* SnakeEngine.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834B6EFA1F40CC5100FDF852 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				834B6EE51F40CC5000FDF852 /* SnakeWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834B6EFE1F40CC5100FDF852 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				834B6EF61F40CC5100FDF852 /* SnakeWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		834B6EB81F40CC0B00FDF852 /* SnakeEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnakeEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		834B6EBA1F40CC0B00FDF852 /* SnakeEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnakeEngine.h; sourceTree = "<group>"; };
+		834B6EBB1F40CC0B00FDF852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834B6EC01F40CC0B00FDF852 /* SnakeEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		834B6EC91F40CC0B00FDF852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834B6ED81F40CC5000FDF852 /* SnakeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnakeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		834B6EDB1F40CC5000FDF852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		834B6EDD1F40CC5000FDF852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		834B6EDF1F40CC5000FDF852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834B6EE41F40CC5000FDF852 /* SnakeWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SnakeWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		834B6EE91F40CC5000FDF852 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		834B6EEB1F40CC5000FDF852 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		834B6EED1F40CC5000FDF852 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		834B6EEF1F40CC5100FDF852 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		834B6EF11F40CC5100FDF852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		834B6EF31F40CC5100FDF852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834B6EFF1F40CC9400FDF852 /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		834B6F011F40CF6A00FDF852 /* WorldConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldConstants.swift; sourceTree = "<group>"; };
+		834B6F031F40D35400FDF852 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		834B6F051F40D35E00FDF852 /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		834B6F081F40D62E00FDF852 /* Controllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllable.swift; sourceTree = "<group>"; };
+		834B6F0A1F40E22000FDF852 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		834B6F0C1F40E24900FDF852 /* SnakeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeTests.swift; sourceTree = "<group>"; };
+		834B6F0E1F40EF7A00FDF852 /* Physical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Physical.swift; sourceTree = "<group>"; };
+		834B6F101F40F24100FDF852 /* Movable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movable.swift; sourceTree = "<group>"; };
+		834B6F131F40F57E00FDF852 /* CGPointExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointExtensions.swift; sourceTree = "<group>"; };
+		834B6F161F40F90600FDF852 /* CGPointExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointExtensionsTests.swift; sourceTree = "<group>"; };
+		83767BE51F40BA3B00122DB6 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83767BE81F40BA3B00122DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83767BEA1F40BA3B00122DB6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		83767BEC1F40BA3B00122DB6 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		83767BEE1F40BA3B00122DB6 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		83767BF01F40BA3B00122DB6 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		83767BF31F40BA3B00122DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83767BF51F40BA3B00122DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83767BF81F40BA3B00122DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83767BFA1F40BA3B00122DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83767BFF1F40BA3B00122DB6 /* SnakeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83767C051F40BA3B00122DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83767C0A1F40BA3B00122DB6 /* SnakeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83767C0E1F40BA3B00122DB6 /* SnakeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeUITests.swift; sourceTree = "<group>"; };
+		83767C101F40BA3B00122DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83AD00FD1F4101EE00467C82 /* Nameable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nameable.swift; sourceTree = "<group>"; };
+		83AD00FF1F4103DD00467C82 /* FoodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTests.swift; sourceTree = "<group>"; };
+		83AD01021F4105B400467C82 /* WorldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		834B6EB41F40CC0B00FDF852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834B6EBD1F40CC0B00FDF852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834B6EC11F40CC0B00FDF852 /* SnakeEngine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834B6EE11F40CC5000FDF852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83767BE21F40BA3B00122DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834B6ECD1F40CC0B00FDF852 /* SnakeEngine.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83767BFC1F40BA3B00122DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83767C071F40BA3B00122DB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		834B6EB91F40CC0B00FDF852 /* SnakeEngine */ = {
+			isa = PBXGroup;
+			children = (
+				83AD01011F4103F500467C82 /* Elements */,
+				834B6F121F40F56300FDF852 /* Utils */,
+				834B6F081F40D62E00FDF852 /* Controllable.swift */,
+				834B6F0A1F40E22000FDF852 /* Direction.swift */,
+				834B6EBB1F40CC0B00FDF852 /* Info.plist */,
+				834B6F101F40F24100FDF852 /* Movable.swift */,
+				83AD00FD1F4101EE00467C82 /* Nameable.swift */,
+				834B6F0E1F40EF7A00FDF852 /* Physical.swift */,
+				834B6EBA1F40CC0B00FDF852 /* SnakeEngine.h */,
+				834B6F011F40CF6A00FDF852 /* WorldConstants.swift */,
+			);
+			path = SnakeEngine;
+			sourceTree = "<group>";
+		};
+		834B6EC61F40CC0B00FDF852 /* SnakeEngineTests */ = {
+			isa = PBXGroup;
+			children = (
+				834B6F151F40F8F700FDF852 /* Utils */,
+				83AD00FF1F4103DD00467C82 /* FoodTests.swift */,
+				834B6EC91F40CC0B00FDF852 /* Info.plist */,
+				834B6F0C1F40E24900FDF852 /* SnakeTests.swift */,
+				83AD01021F4105B400467C82 /* WorldTests.swift */,
+			);
+			path = SnakeEngineTests;
+			sourceTree = "<group>";
+		};
+		834B6ED91F40CC5000FDF852 /* SnakeWatch */ = {
+			isa = PBXGroup;
+			children = (
+				834B6EDD1F40CC5000FDF852 /* Assets.xcassets */,
+				834B6EDF1F40CC5000FDF852 /* Info.plist */,
+				834B6EDA1F40CC5000FDF852 /* Interface.storyboard */,
+			);
+			path = SnakeWatch;
+			sourceTree = "<group>";
+		};
+		834B6EE81F40CC5000FDF852 /* SnakeWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				834B6EF11F40CC5100FDF852 /* Assets.xcassets */,
+				834B6EEF1F40CC5100FDF852 /* ExtensionDelegate.swift */,
+				834B6EEB1F40CC5000FDF852 /* GameScene.sks */,
+				834B6EED1F40CC5000FDF852 /* GameScene.swift */,
+				834B6EF31F40CC5100FDF852 /* Info.plist */,
+				834B6EE91F40CC5000FDF852 /* InterfaceController.swift */,
+			);
+			path = "SnakeWatch Extension";
+			sourceTree = "<group>";
+		};
+		834B6F121F40F56300FDF852 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				834B6F131F40F57E00FDF852 /* CGPointExtensions.swift */,
+			);
+			name = Utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		834B6F151F40F8F700FDF852 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				834B6F161F40F90600FDF852 /* CGPointExtensionsTests.swift */,
+			);
+			name = Utils;
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		83767BDC1F40BA3B00122DB6 = {
+			isa = PBXGroup;
+			children = (
+				83767BE61F40BA3B00122DB6 /* Products */,
+				83767BE71F40BA3B00122DB6 /* Snake */,
+				834B6EB91F40CC0B00FDF852 /* SnakeEngine */,
+				834B6EC61F40CC0B00FDF852 /* SnakeEngineTests */,
+				83767C021F40BA3B00122DB6 /* SnakeTests */,
+				83767C0D1F40BA3B00122DB6 /* SnakeUITests */,
+				834B6ED91F40CC5000FDF852 /* SnakeWatch */,
+				834B6EE81F40CC5000FDF852 /* SnakeWatch Extension */,
+			);
+			sourceTree = "<group>";
+		};
+		83767BE61F40BA3B00122DB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83767BE51F40BA3B00122DB6 /* Snake.app */,
+				83767BFF1F40BA3B00122DB6 /* SnakeTests.xctest */,
+				83767C0A1F40BA3B00122DB6 /* SnakeUITests.xctest */,
+				834B6EB81F40CC0B00FDF852 /* SnakeEngine.framework */,
+				834B6EC01F40CC0B00FDF852 /* SnakeEngineTests.xctest */,
+				834B6ED81F40CC5000FDF852 /* SnakeWatch.app */,
+				834B6EE41F40CC5000FDF852 /* SnakeWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83767BE71F40BA3B00122DB6 /* Snake */ = {
+			isa = PBXGroup;
+			children = (
+				83767BEC1F40BA3B00122DB6 /* Actions.sks */,
+				83767BE81F40BA3B00122DB6 /* AppDelegate.swift */,
+				83767BF51F40BA3B00122DB6 /* Assets.xcassets */,
+				83767BEA1F40BA3B00122DB6 /* GameScene.sks */,
+				83767BEE1F40BA3B00122DB6 /* GameScene.swift */,
+				83767BF01F40BA3B00122DB6 /* GameViewController.swift */,
+				83767BFA1F40BA3B00122DB6 /* Info.plist */,
+				83767BF71F40BA3B00122DB6 /* LaunchScreen.storyboard */,
+				83767BF21F40BA3B00122DB6 /* Main.storyboard */,
+			);
+			path = Snake;
+			sourceTree = "<group>";
+		};
+		83767C021F40BA3B00122DB6 /* SnakeTests */ = {
+			isa = PBXGroup;
+			children = (
+				83767C051F40BA3B00122DB6 /* Info.plist */,
+			);
+			path = SnakeTests;
+			sourceTree = "<group>";
+		};
+		83767C0D1F40BA3B00122DB6 /* SnakeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83767C101F40BA3B00122DB6 /* Info.plist */,
+				83767C0E1F40BA3B00122DB6 /* SnakeUITests.swift */,
+			);
+			path = SnakeUITests;
+			sourceTree = "<group>";
+		};
+		83AD01011F4103F500467C82 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				834B6F031F40D35400FDF852 /* Food.swift */,
+				834B6EFF1F40CC9400FDF852 /* Snake.swift */,
+				834B6F051F40D35E00FDF852 /* World.swift */,
+			);
+			name = Elements;
+			path = Elements;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		834B6EB51F40CC0B00FDF852 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834B6ECA1F40CC0B00FDF852 /* SnakeEngine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		834B6EB71F40CC0B00FDF852 /* SnakeEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834B6ED31F40CC0B00FDF852 /* Build configuration list for PBXNativeTarget "SnakeEngine" */;
+			buildPhases = (
+				834B6EB31F40CC0B00FDF852 /* Sources */,
+				834B6EB41F40CC0B00FDF852 /* Frameworks */,
+				834B6EB51F40CC0B00FDF852 /* Headers */,
+				834B6EB61F40CC0B00FDF852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnakeEngine;
+			productName = SnakeEngine;
+			productReference = 834B6EB81F40CC0B00FDF852 /* SnakeEngine.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		834B6EBF1F40CC0B00FDF852 /* SnakeEngineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834B6ED51F40CC0B00FDF852 /* Build configuration list for PBXNativeTarget "SnakeEngineTests" */;
+			buildPhases = (
+				834B6EBC1F40CC0B00FDF852 /* Sources */,
+				834B6EBD1F40CC0B00FDF852 /* Frameworks */,
+				834B6EBE1F40CC0B00FDF852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				834B6EC31F40CC0B00FDF852 /* PBXTargetDependency */,
+				834B6EC51F40CC0B00FDF852 /* PBXTargetDependency */,
+			);
+			name = SnakeEngineTests;
+			productName = SnakeEngineTests;
+			productReference = 834B6EC01F40CC0B00FDF852 /* SnakeEngineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		834B6ED71F40CC5000FDF852 /* SnakeWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834B6EFB1F40CC5100FDF852 /* Build configuration list for PBXNativeTarget "SnakeWatch" */;
+			buildPhases = (
+				834B6ED61F40CC5000FDF852 /* Resources */,
+				834B6EFA1F40CC5100FDF852 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				834B6EE71F40CC5000FDF852 /* PBXTargetDependency */,
+			);
+			name = SnakeWatch;
+			productName = SnakeWatch;
+			productReference = 834B6ED81F40CC5000FDF852 /* SnakeWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		834B6EE31F40CC5000FDF852 /* SnakeWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834B6EF71F40CC5100FDF852 /* Build configuration list for PBXNativeTarget "SnakeWatch Extension" */;
+			buildPhases = (
+				834B6EE01F40CC5000FDF852 /* Sources */,
+				834B6EE11F40CC5000FDF852 /* Frameworks */,
+				834B6EE21F40CC5000FDF852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SnakeWatch Extension";
+			productName = "SnakeWatch Extension";
+			productReference = 834B6EE41F40CC5000FDF852 /* SnakeWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		83767BE41F40BA3B00122DB6 /* Snake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83767C131F40BA3B00122DB6 /* Build configuration list for PBXNativeTarget "Snake" */;
+			buildPhases = (
+				83767BE11F40BA3B00122DB6 /* Sources */,
+				83767BE21F40BA3B00122DB6 /* Frameworks */,
+				83767BE31F40BA3B00122DB6 /* Resources */,
+				834B6ED41F40CC0B00FDF852 /* Embed Frameworks */,
+				834B6EFE1F40CC5100FDF852 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				834B6ECC1F40CC0B00FDF852 /* PBXTargetDependency */,
+				834B6EF51F40CC5100FDF852 /* PBXTargetDependency */,
+			);
+			name = Snake;
+			productName = Snake;
+			productReference = 83767BE51F40BA3B00122DB6 /* Snake.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83767BFE1F40BA3B00122DB6 /* SnakeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83767C161F40BA3B00122DB6 /* Build configuration list for PBXNativeTarget "SnakeTests" */;
+			buildPhases = (
+				83767BFB1F40BA3B00122DB6 /* Sources */,
+				83767BFC1F40BA3B00122DB6 /* Frameworks */,
+				83767BFD1F40BA3B00122DB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83767C011F40BA3B00122DB6 /* PBXTargetDependency */,
+			);
+			name = SnakeTests;
+			productName = SnakeTests;
+			productReference = 83767BFF1F40BA3B00122DB6 /* SnakeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83767C091F40BA3B00122DB6 /* SnakeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83767C191F40BA3B00122DB6 /* Build configuration list for PBXNativeTarget "SnakeUITests" */;
+			buildPhases = (
+				83767C061F40BA3B00122DB6 /* Sources */,
+				83767C071F40BA3B00122DB6 /* Frameworks */,
+				83767C081F40BA3B00122DB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83767C0C1F40BA3B00122DB6 /* PBXTargetDependency */,
+			);
+			name = SnakeUITests;
+			productName = SnakeUITests;
+			productReference = 83767C0A1F40BA3B00122DB6 /* SnakeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83767BDD1F40BA3B00122DB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Chris Jimenez";
+				TargetAttributes = {
+					834B6EB71F40CC0B00FDF852 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					834B6EBF1F40CC0B00FDF852 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 83767BE41F40BA3B00122DB6;
+					};
+					834B6ED71F40CC5000FDF852 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					834B6EE31F40CC5000FDF852 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					83767BE41F40BA3B00122DB6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					83767BFE1F40BA3B00122DB6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 83767BE41F40BA3B00122DB6;
+					};
+					83767C091F40BA3B00122DB6 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 83767BE41F40BA3B00122DB6;
+					};
+				};
+			};
+			buildConfigurationList = 83767BE01F40BA3B00122DB6 /* Build configuration list for PBXProject "Snake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83767BDC1F40BA3B00122DB6;
+			productRefGroup = 83767BE61F40BA3B00122DB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83767BE41F40BA3B00122DB6 /* Snake */,
+				83767BFE1F40BA3B00122DB6 /* SnakeTests */,
+				83767C091F40BA3B00122DB6 /* SnakeUITests */,
+				834B6EB71F40CC0B00FDF852 /* SnakeEngine */,
+				834B6EBF1F40CC0B00FDF852 /* SnakeEngineTests */,
+				834B6ED71F40CC5000FDF852 /* SnakeWatch */,
+				834B6EE31F40CC5000FDF852 /* SnakeWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		834B6EB61F40CC0B00FDF852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834B6EBE1F40CC0B00FDF852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834B6ED61F40CC5000FDF852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834B6EDE1F40CC5000FDF852 /* Assets.xcassets in Resources */,
+				834B6EDC1F40CC5000FDF852 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834B6EE21F40CC5000FDF852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834B6EF21F40CC5100FDF852 /* Assets.xcassets in Resources */,
+				834B6EEC1F40CC5000FDF852 /* GameScene.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83767BE31F40BA3B00122DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83767BF41F40BA3B00122DB6 /* Main.storyboard in Resources */,
+				83767BEB1F40BA3B00122DB6 /* GameScene.sks in Resources */,
+				83767BF61F40BA3B00122DB6 /* Assets.xcassets in Resources */,
+				83767BF91F40BA3B00122DB6 /* LaunchScreen.storyboard in Resources */,
+				83767BED1F40BA3B00122DB6 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83767BFD1F40BA3B00122DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83767C081F40BA3B00122DB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		834B6EB31F40CC0B00FDF852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834B6F021F40CF6A00FDF852 /* WorldConstants.swift in Sources */,
+				834B6F001F40CC9400FDF852 /* Snake.swift in Sources */,
+				834B6F061F40D35E00FDF852 /* World.swift in Sources */,
+				834B6F041F40D35400FDF852 /* Food.swift in Sources */,
+				834B6F0F1F40EF7A00FDF852 /* Physical.swift in Sources */,
+				834B6F091F40D62E00FDF852 /* Controllable.swift in Sources */,
+				83AD00FE1F4101EE00467C82 /* Nameable.swift in Sources */,
+				834B6F111F40F24100FDF852 /* Movable.swift in Sources */,
+				834B6F141F40F57E00FDF852 /* CGPointExtensions.swift in Sources */,
+				834B6F0B1F40E22000FDF852 /* Direction.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834B6EBC1F40CC0B00FDF852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834B6F171F40F90600FDF852 /* CGPointExtensionsTests.swift in Sources */,
+				834B6F0D1F40E24900FDF852 /* SnakeTests.swift in Sources */,
+				83AD01031F4105B400467C82 /* WorldTests.swift in Sources */,
+				83AD01001F4103DD00467C82 /* FoodTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834B6EE01F40CC5000FDF852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834B6EEE1F40CC5100FDF852 /* GameScene.swift in Sources */,
+				834B6EEA1F40CC5000FDF852 /* InterfaceController.swift in Sources */,
+				834B6EF01F40CC5100FDF852 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83767BE11F40BA3B00122DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83767BEF1F40BA3B00122DB6 /* GameScene.swift in Sources */,
+				83767BF11F40BA3B00122DB6 /* GameViewController.swift in Sources */,
+				83767BE91F40BA3B00122DB6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83767BFB1F40BA3B00122DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83767C061F40BA3B00122DB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83767C0F1F40BA3B00122DB6 /* SnakeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		834B6EC31F40CC0B00FDF852 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 834B6EB71F40CC0B00FDF852 /* SnakeEngine */;
+			targetProxy = 834B6EC21F40CC0B00FDF852 /* PBXContainerItemProxy */;
+		};
+		834B6EC51F40CC0B00FDF852 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83767BE41F40BA3B00122DB6 /* Snake */;
+			targetProxy = 834B6EC41F40CC0B00FDF852 /* PBXContainerItemProxy */;
+		};
+		834B6ECC1F40CC0B00FDF852 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 834B6EB71F40CC0B00FDF852 /* SnakeEngine */;
+			targetProxy = 834B6ECB1F40CC0B00FDF852 /* PBXContainerItemProxy */;
+		};
+		834B6EE71F40CC5000FDF852 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 834B6EE31F40CC5000FDF852 /* SnakeWatch Extension */;
+			targetProxy = 834B6EE61F40CC5000FDF852 /* PBXContainerItemProxy */;
+		};
+		834B6EF51F40CC5100FDF852 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 834B6ED71F40CC5000FDF852 /* SnakeWatch */;
+			targetProxy = 834B6EF41F40CC5100FDF852 /* PBXContainerItemProxy */;
+		};
+		83767C011F40BA3B00122DB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83767BE41F40BA3B00122DB6 /* Snake */;
+			targetProxy = 83767C001F40BA3B00122DB6 /* PBXContainerItemProxy */;
+		};
+		83767C0C1F40BA3B00122DB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83767BE41F40BA3B00122DB6 /* Snake */;
+			targetProxy = 83767C0B1F40BA3B00122DB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		834B6EDA1F40CC5000FDF852 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				834B6EDB1F40CC5000FDF852 /* Base */,
+			);
+			name = Interface.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		83767BF21F40BA3B00122DB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83767BF31F40BA3B00122DB6 /* Base */,
+			);
+			name = Main.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+		83767BF71F40BA3B00122DB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83767BF81F40BA3B00122DB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = .;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		834B6ECF1F40CC0B00FDF852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SnakeEngine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.SnakeEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		834B6ED01F40CC0B00FDF852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SnakeEngine/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.SnakeEngine;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		834B6ED11F40CC0B00FDF852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SnakeEngineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.SnakeEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snake.app/Snake";
+			};
+			name = Debug;
+		};
+		834B6ED21F40CC0B00FDF852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SnakeEngineTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.SnakeEngineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snake.app/Snake";
+			};
+			name = Release;
+		};
+		834B6EF81F40CC5100FDF852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "SnakeWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		834B6EF91F40CC5100FDF852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "SnakeWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		834B6EFC1F40CC5100FDF852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = SnakeWatch_Extension;
+				INFOPLIST_FILE = SnakeWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		834B6EFD1F40CC5100FDF852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = SnakeWatch_Extension;
+				INFOPLIST_FILE = SnakeWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		83767C111F40BA3B00122DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83767C121F40BA3B00122DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83767C141F40BA3B00122DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Snake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		83767C151F40BA3B00122DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Snake/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		83767C171F40BA3B00122DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SnakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.SnakeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snake.app/Snake";
+			};
+			name = Debug;
+		};
+		83767C181F40BA3B00122DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SnakeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.SnakeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snake.app/Snake";
+			};
+			name = Release;
+		};
+		83767C1A1F40BA3B00122DB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SnakeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.SnakeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Snake;
+			};
+			name = Debug;
+		};
+		83767C1B1F40BA3B00122DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SnakeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.SnakeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Snake;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		834B6ED31F40CC0B00FDF852 /* Build configuration list for PBXNativeTarget "SnakeEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834B6ECF1F40CC0B00FDF852 /* Debug */,
+				834B6ED01F40CC0B00FDF852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834B6ED51F40CC0B00FDF852 /* Build configuration list for PBXNativeTarget "SnakeEngineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834B6ED11F40CC0B00FDF852 /* Debug */,
+				834B6ED21F40CC0B00FDF852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834B6EF71F40CC5100FDF852 /* Build configuration list for PBXNativeTarget "SnakeWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834B6EF81F40CC5100FDF852 /* Debug */,
+				834B6EF91F40CC5100FDF852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		834B6EFB1F40CC5100FDF852 /* Build configuration list for PBXNativeTarget "SnakeWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834B6EFC1F40CC5100FDF852 /* Debug */,
+				834B6EFD1F40CC5100FDF852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83767BE01F40BA3B00122DB6 /* Build configuration list for PBXProject "Snake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83767C111F40BA3B00122DB6 /* Debug */,
+				83767C121F40BA3B00122DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83767C131F40BA3B00122DB6 /* Build configuration list for PBXNativeTarget "Snake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83767C141F40BA3B00122DB6 /* Debug */,
+				83767C151F40BA3B00122DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83767C161F40BA3B00122DB6 /* Build configuration list for PBXNativeTarget "SnakeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83767C171F40BA3B00122DB6 /* Debug */,
+				83767C181F40BA3B00122DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83767C191F40BA3B00122DB6 /* Build configuration list for PBXNativeTarget "SnakeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83767C1A1F40BA3B00122DB6 /* Debug */,
+				83767C1B1F40BA3B00122DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83767BDD1F40BA3B00122DB6 /* Project object */;
+}
