@@ -27,8 +27,8 @@ class CGPointExtensionsTests: XCTestCase {
         
         let point = CGPoint.randomPoint(rangeHeight: height, rangeWidth: width)
         
-        XCTAssertLessThan(point.x, height)
-        XCTAssertLessThan(point.y, width)
+        XCTAssertLessThan(point.y, height)
+        XCTAssertLessThan(point.x, width)
     }
     
 }
