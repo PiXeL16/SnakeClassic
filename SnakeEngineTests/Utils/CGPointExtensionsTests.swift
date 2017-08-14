@@ -31,4 +31,16 @@ class CGPointExtensionsTests: XCTestCase {
         XCTAssertLessThan(point.x, width)
     }
     
+    
+    func testRandomIntBetweenRange() {
+        
+        let lowerRange: CGFloat = -500
+        let upperRange: CGFloat = 800
+        let randomValue = CGPoint.randomIntBetweenRange(lowerValue: lowerRange, upperValue: upperRange)
+        
+        XCTAssertLessThan(randomValue, Int(upperRange))
+        XCTAssertGreaterThan(randomValue, Int(lowerRange))
+        
+    }
+    
 }

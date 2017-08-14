@@ -46,6 +46,12 @@ public class World {
         
     }
     
+    public func handleContact(contact: SKPhysicsContact) {
+        
+        createFood()
+        
+    }
+    
     private func createSnake() {
         
         self.snake = Snake()
@@ -69,7 +75,6 @@ public class World {
 
 
 extension World: Controllable {
-    
     
     public func right() {
         snake.right()

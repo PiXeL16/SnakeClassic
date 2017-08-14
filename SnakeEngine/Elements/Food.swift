@@ -29,7 +29,8 @@ extension Food: Physical {
     internal func initPhysicsBodyCharacteristics() {
         
         self.node.physicsBody = SKPhysicsBody(rectangleOf: self.node.size)
-        self.node.physicsBody?.isDynamic = true
+        self.node.physicsBody?.isDynamic = false
+        self.node.physicsBody?.contactTestBitMask = 1
         self.node.physicsBody?.affectedByGravity = false
     }
     

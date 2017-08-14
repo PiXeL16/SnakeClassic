@@ -17,6 +17,9 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         
+        
+        self.physicsWorld.contactDelegate = self
+        
         self.world = World(scene: self)
         
         self.setupControls()
@@ -31,8 +34,20 @@ class GameScene: SKScene {
         // Called before each frame is rendered
     }
     
+}
+
+extension GameScene: SKPhysicsContactDelegate {
     
-    private func setupControls() {
+    func didBegin(_ contact: SKPhysicsContact) {
+        
+        world.handleContact(contact: contact)
+    }
+}
+
+extension GameScene {
+    
+    
+    internal func setupControls() {
         
         let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(swipeLeft(sender:)))
         swipeLeft.direction = .left
@@ -66,5 +81,5 @@ class GameScene: SKScene {
     func swipeDown(sender: UISwipeGestureRecognizer){
         self.world.down()
     }
-
+    
 }

@@ -32,6 +32,7 @@ extension Snake: Physical {
         
         self.node.physicsBody = SKPhysicsBody(rectangleOf: self.node.size)
         self.node.physicsBody?.isDynamic = true
+        self.node.physicsBody?.contactTestBitMask = 1
         self.node.physicsBody?.affectedByGravity = false
     }
 }
