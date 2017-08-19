@@ -77,6 +77,10 @@ public class SnakeWorld: NSObject, World {
          self.scene?.addChild(food!.node)
     }
     
+    public func growSnake() {
+        self.snake.grow()
+    }
+    
 }
 
 

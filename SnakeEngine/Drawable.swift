@@ -1,5 +1,5 @@
 //
-//  ContactCategory.swift
+//  Drawable.swift
 //  Snake
 //
 //  Created by Chris Jimenez on 8/19/17.
@@ -7,11 +7,11 @@
 //
 
 import Foundation
+import SpriteKit
 
+public protocol Drawable {
 
-internal enum ContactCategory: UInt32 {
-    
-    case Snake = 1
-    case Food = 2
-    
+    var node: SKSpriteNode { get set }
+    var color: UIColor { get set }
+
 }

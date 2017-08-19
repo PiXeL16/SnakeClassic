@@ -20,6 +20,7 @@ public class WorldMock: World {
     public var updateCalled = false
     public var createSnakeCalled = false
     public var createdFoodCalled = false
+    public var growSnakeCalled = false
     public var rightCalled = false
     public var leftCalled = false
     public var upCalled = false
@@ -50,6 +51,10 @@ public class WorldMock: World {
     
     public func createFood() {
         createdFoodCalled = true
+    }
+    
+    public func growSnake() {
+        growSnakeCalled = true
     }
 
 }

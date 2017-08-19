@@ -21,5 +21,6 @@ public protocol World: class, Controllable {
     
     func update()
     func createSnake()
+    func growSnake()
     func createFood()
 }

@@ -9,7 +9,7 @@
 import SpriteKit
 import GameplayKit
 
-public class Food {
+public class Food: Drawable {
     
     public var node: SKSpriteNode
     public var color = UIColor.red
@@ -22,7 +22,6 @@ public class Food {
         self.initPhysicsBodyCharacteristics()
     }
 }
-
 
 extension Food: Physical {
     
@@ -40,7 +39,7 @@ extension Food: Physical {
     }
     
     static var contactCategory: UInt32 {
-        return ContactCategory.Food.rawValue
+        return CollitionCategory.Food.rawValue
     }
 }
 
