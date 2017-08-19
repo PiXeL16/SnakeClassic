@@ -11,13 +11,15 @@ import SpriteKit
 import GameplayKit
 
 
-public class World {
+public class SnakeWorld: NSObject, World {
     
-    weak var scene: SKScene?
-    var snake: Snake!
-    var food: Food!
+    public weak var scene: SKScene?
+    public var snake: Snake!
+    public var food: Food!
     
-    var height: CGFloat {
+    public var collitionDetection: Collider!
+    
+    public var height: CGFloat {
         
         guard let height = self.scene?.view?.bounds.height else {
             return 0
@@ -25,7 +27,7 @@ public class World {
         return height
     }
     
-    var width: CGFloat {
+    public var width: CGFloat {
         
         guard let width = self.scene?.view?.bounds.width else {
             return 0
@@ -34,7 +36,16 @@ public class World {
     }
     
     public init(scene: SKScene) {
+        
+        super.init()
+        
         self.scene = scene
+        
+        self.scene?.physicsWorld.gravity = CGVector(dx: 0, dy: 0)
+        
+        self.scene?.physicsWorld.contactDelegate = self
+        
+        self.collitionDetection = CollitionDetection(world: self)
         
         createSnake()
         
@@ -46,13 +57,8 @@ public class World {
         
     }
     
-    public func handleContact(contact: SKPhysicsContact) {
-        
-        createFood()
-        
-    }
     
-    private func createSnake() {
+    public func createSnake() {
         
         self.snake = Snake()
         self.scene?.addChild(snake.node)
@@ -74,7 +80,7 @@ public class World {
 }
 
 
-extension World: Controllable {
+extension SnakeWorld: Controllable {
     
     public func right() {
         snake.right()
@@ -90,5 +96,14 @@ extension World: Controllable {
     
     public func down() {
         snake.down()
+    }
+}
+
+
+extension SnakeWorld: SKPhysicsContactDelegate {
+    
+    public func didBegin(_ contact: SKPhysicsContact) {
+        
+        self.collitionDetection.handleCollition(contactBodyA: contact.bodyA, contactBodyB: contact.bodyB)
     }
 }

@@ -18,9 +18,7 @@ class GameScene: SKScene {
     override func didMove(to view: SKView) {
         
         
-        self.physicsWorld.contactDelegate = self
-        
-        self.world = World(scene: self)
+        self.world = SnakeWorld(scene: self)
         
         self.setupControls()
         
@@ -34,14 +32,6 @@ class GameScene: SKScene {
         // Called before each frame is rendered
     }
     
-}
-
-extension GameScene: SKPhysicsContactDelegate {
-    
-    func didBegin(_ contact: SKPhysicsContact) {
-        
-        world.handleContact(contact: contact)
-    }
 }
 
 extension GameScene {

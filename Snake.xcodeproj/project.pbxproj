@@ -23,7 +23,7 @@
 		834B6F001F40CC9400FDF852 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6EFF1F40CC9400FDF852 /* Snake.swift */; };
 		834B6F021F40CF6A00FDF852 /* WorldConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F011F40CF6A00FDF852 /* WorldConstants.swift */; };
 		834B6F041F40D35400FDF852 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F031F40D35400FDF852 /* Food.swift */; };
-		834B6F061F40D35E00FDF852 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F051F40D35E00FDF852 /* World.swift */; };
+		834B6F061F40D35E00FDF852 /* SnakeWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F051F40D35E00FDF852 /* SnakeWorld.swift */; };
 		834B6F091F40D62E00FDF852 /* Controllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F081F40D62E00FDF852 /* Controllable.swift */; };
 		834B6F0B1F40E22000FDF852 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F0A1F40E22000FDF852 /* Direction.swift */; };
 		834B6F0D1F40E24900FDF852 /* SnakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F0C1F40E24900FDF852 /* SnakeTests.swift */; };
@@ -42,7 +42,15 @@
 		83767C0F1F40BA3B00122DB6 /* SnakeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83767C0E1F40BA3B00122DB6 /* SnakeUITests.swift */; };
 		83AD00FE1F4101EE00467C82 /* Nameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD00FD1F4101EE00467C82 /* Nameable.swift */; };
 		83AD01001F4103DD00467C82 /* FoodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD00FF1F4103DD00467C82 /* FoodTests.swift */; };
-		83AD01031F4105B400467C82 /* WorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD01021F4105B400467C82 /* WorldTests.swift */; };
+		83AD01031F4105B400467C82 /* SnakeWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD01021F4105B400467C82 /* SnakeWorldTests.swift */; };
+		83B51AE71F48385200C91532 /* ContactCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AE61F48385200C91532 /* ContactCategory.swift */; };
+		83B51AE91F483CD600C91532 /* CollitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AE81F483CD600C91532 /* CollitionHandler.swift */; };
+		83B51AED1F48407600C91532 /* CollitionHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AEC1F48407600C91532 /* CollitionHandlerTests.swift */; };
+		83B51AF01F484B3500C91532 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AEF1F484B3500C91532 /* World.swift */; };
+		83B51AF31F484E0600C91532 /* Collider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AF21F484E0600C91532 /* Collider.swift */; };
+		83B51AF51F484F4E00C91532 /* CollitionDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AF41F484F4E00C91532 /* CollitionDetection.swift */; };
+		83B51AFA1F48526400C91532 /* WorldMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AF91F48526400C91532 /* WorldMock.swift */; };
+		83B51AFC1F48543900C91532 /* CollitionDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AFB1F48543900C91532 /* CollitionDetectionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,7 +161,7 @@
 		834B6EFF1F40CC9400FDF852 /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
 		834B6F011F40CF6A00FDF852 /* WorldConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldConstants.swift; sourceTree = "<group>"; };
 		834B6F031F40D35400FDF852 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
-		834B6F051F40D35E00FDF852 /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		834B6F051F40D35E00FDF852 /* SnakeWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeWorld.swift; sourceTree = "<group>"; };
 		834B6F081F40D62E00FDF852 /* Controllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllable.swift; sourceTree = "<group>"; };
 		834B6F0A1F40E22000FDF852 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		834B6F0C1F40E24900FDF852 /* SnakeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeTests.swift; sourceTree = "<group>"; };
@@ -178,7 +186,15 @@
 		83767C101F40BA3B00122DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83AD00FD1F4101EE00467C82 /* Nameable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nameable.swift; sourceTree = "<group>"; };
 		83AD00FF1F4103DD00467C82 /* FoodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTests.swift; sourceTree = "<group>"; };
-		83AD01021F4105B400467C82 /* WorldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldTests.swift; sourceTree = "<group>"; };
+		83AD01021F4105B400467C82 /* SnakeWorldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeWorldTests.swift; sourceTree = "<group>"; };
+		83B51AE61F48385200C91532 /* ContactCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCategory.swift; sourceTree = "<group>"; };
+		83B51AE81F483CD600C91532 /* CollitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollitionHandler.swift; path = CollitionHandler.swift; sourceTree = "<group>"; };
+		83B51AEC1F48407600C91532 /* CollitionHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollitionHandlerTests.swift; sourceTree = "<group>"; };
+		83B51AEF1F484B3500C91532 /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		83B51AF21F484E0600C91532 /* Collider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Collider.swift; sourceTree = "<group>"; };
+		83B51AF41F484F4E00C91532 /* CollitionDetection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollitionDetection.swift; sourceTree = "<group>"; };
+		83B51AF91F48526400C91532 /* WorldMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldMock.swift; sourceTree = "<group>"; };
+		83B51AFB1F48543900C91532 /* CollitionDetectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollitionDetectionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,8 +248,11 @@
 		834B6EB91F40CC0B00FDF852 /* SnakeEngine */ = {
 			isa = PBXGroup;
 			children = (
+				83B51AF11F484D9500C91532 /* Collider */,
 				83AD01011F4103F500467C82 /* Elements */,
+				83B51AEA1F48405900C91532 /* Handler */,
 				834B6F121F40F56300FDF852 /* Utils */,
+				83B51AE61F48385200C91532 /* ContactCategory.swift */,
 				834B6F081F40D62E00FDF852 /* Controllable.swift */,
 				834B6F0A1F40E22000FDF852 /* Direction.swift */,
 				834B6EBB1F40CC0B00FDF852 /* Info.plist */,
@@ -249,11 +268,10 @@
 		834B6EC61F40CC0B00FDF852 /* SnakeEngineTests */ = {
 			isa = PBXGroup;
 			children = (
+				83B51AF61F484F6500C91532 /* Collider */,
+				83B51AF71F48523C00C91532 /* Elements */,
 				834B6F151F40F8F700FDF852 /* Utils */,
-				83AD00FF1F4103DD00467C82 /* FoodTests.swift */,
 				834B6EC91F40CC0B00FDF852 /* Info.plist */,
-				834B6F0C1F40E24900FDF852 /* SnakeTests.swift */,
-				83AD01021F4105B400467C82 /* WorldTests.swift */,
 			);
 			path = SnakeEngineTests;
 			sourceTree = "<group>";
@@ -286,7 +304,6 @@
 			children = (
 				834B6F131F40F57E00FDF852 /* CGPointExtensions.swift */,
 			);
-			name = Utils;
 			path = Utils;
 			sourceTree = "<group>";
 		};
@@ -295,7 +312,6 @@
 			children = (
 				834B6F161F40F90600FDF852 /* CGPointExtensionsTests.swift */,
 			);
-			name = Utils;
 			path = Utils;
 			sourceTree = "<group>";
 		};
@@ -363,12 +379,71 @@
 		83AD01011F4103F500467C82 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
+				83B51AEE1F484A5200C91532 /* World */,
 				834B6F031F40D35400FDF852 /* Food.swift */,
 				834B6EFF1F40CC9400FDF852 /* Snake.swift */,
-				834B6F051F40D35E00FDF852 /* World.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		83B51AEA1F48405900C91532 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Handler;
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		83B51AEE1F484A5200C91532 /* World */ = {
+			isa = PBXGroup;
+			children = (
+				834B6F051F40D35E00FDF852 /* SnakeWorld.swift */,
+				83B51AEF1F484B3500C91532 /* World.swift */,
+			);
+			name = World;
+			path = World;
+			sourceTree = "<group>";
+		};
+		83B51AF11F484D9500C91532 /* Collider */ = {
+			isa = PBXGroup;
+			children = (
+				83B51AF21F484E0600C91532 /* Collider.swift */,
+				83B51AF41F484F4E00C91532 /* CollitionDetection.swift */,
+				83B51AE81F483CD600C91532 /* CollitionHandler.swift */,
+			);
+			name = Collider;
+			path = Collider;
+			sourceTree = "<group>";
+		};
+		83B51AF61F484F6500C91532 /* Collider */ = {
+			isa = PBXGroup;
+			children = (
+				83B51AFB1F48543900C91532 /* CollitionDetectionTests.swift */,
+				83B51AEC1F48407600C91532 /* CollitionHandlerTests.swift */,
+			);
+			name = Collider;
+			path = Collider;
+			sourceTree = "<group>";
+		};
+		83B51AF71F48523C00C91532 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				83B51AF81F48524400C91532 /* World */,
+				83AD00FF1F4103DD00467C82 /* FoodTests.swift */,
+				834B6F0C1F40E24900FDF852 /* SnakeTests.swift */,
 			);
 			name = Elements;
 			path = Elements;
+			sourceTree = "<group>";
+		};
+		83B51AF81F48524400C91532 /* World */ = {
+			isa = PBXGroup;
+			children = (
+				83AD01021F4105B400467C82 /* SnakeWorldTests.swift */,
+				83B51AF91F48526400C91532 /* WorldMock.swift */,
+			);
+			name = World;
+			path = World;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -649,12 +724,17 @@
 			files = (
 				834B6F021F40CF6A00FDF852 /* WorldConstants.swift in Sources */,
 				834B6F001F40CC9400FDF852 /* Snake.swift in Sources */,
-				834B6F061F40D35E00FDF852 /* World.swift in Sources */,
+				834B6F061F40D35E00FDF852 /* SnakeWorld.swift in Sources */,
 				834B6F041F40D35400FDF852 /* Food.swift in Sources */,
 				834B6F0F1F40EF7A00FDF852 /* Physical.swift in Sources */,
+				83B51AE71F48385200C91532 /* ContactCategory.swift in Sources */,
 				834B6F091F40D62E00FDF852 /* Controllable.swift in Sources */,
+				83B51AF51F484F4E00C91532 /* CollitionDetection.swift in Sources */,
 				83AD00FE1F4101EE00467C82 /* Nameable.swift in Sources */,
 				834B6F111F40F24100FDF852 /* Movable.swift in Sources */,
+				83B51AF31F484E0600C91532 /* Collider.swift in Sources */,
+				83B51AE91F483CD600C91532 /* CollitionHandler.swift in Sources */,
+				83B51AF01F484B3500C91532 /* World.swift in Sources */,
 				834B6F141F40F57E00FDF852 /* CGPointExtensions.swift in Sources */,
 				834B6F0B1F40E22000FDF852 /* Direction.swift in Sources */,
 			);
@@ -664,9 +744,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B51AFA1F48526400C91532 /* WorldMock.swift in Sources */,
+				83B51AED1F48407600C91532 /* CollitionHandlerTests.swift in Sources */,
+				83B51AFC1F48543900C91532 /* CollitionDetectionTests.swift in Sources */,
 				834B6F171F40F90600FDF852 /* CGPointExtensionsTests.swift in Sources */,
 				834B6F0D1F40E24900FDF852 /* SnakeTests.swift in Sources */,
-				83AD01031F4105B400467C82 /* WorldTests.swift in Sources */,
+				83AD01031F4105B400467C82 /* SnakeWorldTests.swift in Sources */,
 				83AD01001F4103DD00467C82 /* FoodTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

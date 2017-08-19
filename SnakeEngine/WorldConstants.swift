@@ -12,7 +12,7 @@ import Foundation
 public struct WorldConstants {
     
     
-    public static let velocity: Double = 150
+    public static let velocity: CGFloat = 130
     public static let objectSize: CGSize = CGSize(width: 30, height: 30)
     
     

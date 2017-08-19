@@ -13,6 +13,8 @@ internal protocol Physical {
     
     var physicsBody: SKPhysicsBody? { get }
     
+    static var contactCategory: UInt32 { get }
+    
     func initPhysicsBodyCharacteristics()
     
 }

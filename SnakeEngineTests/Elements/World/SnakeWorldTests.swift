@@ -10,9 +10,9 @@ import SpriteKit
 import XCTest
 @testable import SnakeEngine
 
-class WorldTests: XCTestCase {
+class SnakeWorldTests: XCTestCase {
     
-    var world: World!
+    var world: SnakeWorld!
     let size: CGFloat = 500
     var scene: SKScene!
     var view: SKView!
@@ -22,7 +22,7 @@ class WorldTests: XCTestCase {
         
         createScene()
         
-        self.world = World(scene: scene)
+        self.world = SnakeWorld(scene: scene)
     }
     
     private func createScene()  {
@@ -44,8 +44,10 @@ class WorldTests: XCTestCase {
         
         XCTAssertNotNil(world.snake)
         XCTAssertNotNil(world.food)
+        XCTAssertNotNil(world.collitionDetection)
         XCTAssertNotEqual(world.width, 0)
         XCTAssertNotEqual(world.height, 0)
+        XCTAssertEqual(world.scene?.physicsWorld.gravity, CGVector(dx: 0, dy: 0))
     }
     
     func testRight() {
@@ -74,6 +76,14 @@ class WorldTests: XCTestCase {
         XCTAssertNotNil(world.food)
         XCTAssertLessThan(world.food.node.position.x, size)
         XCTAssertLessThan(world.food.node.position.y, size)
+    }
+    
+    func testOnlyOneFoodInTheWorld() {
+        
+        world.createFood()
+        
+        XCTAssertNotNil(world.scene?.childNode(withName: Food(position: CGPoint.randomPoint(rangeHeight: 5, rangeWidth: 5)).name))
+        
     }
    
     

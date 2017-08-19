@@ -28,42 +28,44 @@ class SnakeTests: XCTestCase {
         
         XCTAssertEqual(snake.direction, .None)
         XCTAssertNotNil(snake.node)
-        XCTAssertNotNil(snake.physicsBody)
-        XCTAssertEqual(snake.velocity, CGVector(dx: 0, dy: 0))
+        XCTAssertEqual(snake.vector, CGVector(dx: 0, dy: 0))
+        XCTAssertNotNil(snake.name)
         XCTAssertEqual(snake.node.name, snake.name)
+        XCTAssertNotNil(snake.physicsBody)
+        XCTAssertNotNil(Food.contactCategory)
         
     }
     
     func testSnakeTurnLeft() {
-        let velocity = self.snake.velocity
+        let vector = self.snake.vector
         self.snake.left()
         
         XCTAssertEqual(snake.direction, .Left)
-        XCTAssertNotEqual(velocity, snake.velocity)
+        XCTAssertNotEqual(vector, snake.vector)
     }
     
     func testSnakeTurnRight() {
-        let velocity = self.snake.velocity
+        let vector = self.snake.vector
         self.snake.right()
         
         XCTAssertEqual(snake.direction, .Right)
-        XCTAssertNotEqual(velocity, snake.velocity)
+        XCTAssertNotEqual(vector, snake.vector)
     }
     
     func testSnakeTurnUp() {
-        let velocity = self.snake.velocity
+        let vector = self.snake.vector
         self.snake.up()
         
         XCTAssertEqual(snake.direction, .Up)
-        XCTAssertNotEqual(velocity, snake.velocity)
+        XCTAssertNotEqual(vector, snake.vector)
     }
     
     func testSnakeTurnDown() {
-        let velocity = self.snake.velocity
+        let vector = self.snake.vector
         self.snake.down()
         
         XCTAssertEqual(snake.direction, .Down)
-        XCTAssertNotEqual(velocity, snake.velocity)
+        XCTAssertNotEqual(vector, snake.vector)
     }
     
 }
