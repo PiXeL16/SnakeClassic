@@ -15,16 +15,32 @@ public class TailSection: Drawable {
     public var color = UIColor.white
     public var direction: Direction
     public var vector: CGVector
+    public weak var reference: Drawable?
     
-    public init(position: CGPoint, vector: CGVector) {
+    public init(reference: Drawable) {
         self.node = SKSpriteNode(color: color, size: WorldConstants.objectSize)
         self.direction = .None
-        self.vector = vector
+        self.vector = CGVector(dx: 0, dy: 0)
         self.node.name = name
-        self.node.position = position
-        
+        self.reference = reference
         self.initPhysicsBodyCharacteristics()
+        
+        self.follow()
     }
+    
+    func follow() {
+        
+        if let reference = self.reference {
+            
+            let rangeToSprite = SKRange(lowerLimit: 40, upperLimit: 20)
+        
+            let distanceConstraint = SKConstraint.distance(rangeToSprite, to: reference.node)
+            
+            self.node.constraints = [distanceConstraint]
+            
+        }
+    }
+    
 }
 
 extension TailSection: Movable {

@@ -9,7 +9,7 @@
 import Foundation
 import SpriteKit
 
-public protocol Drawable {
+public protocol Drawable: class {
 
     var node: SKSpriteNode { get set }
     var color: UIColor { get set }

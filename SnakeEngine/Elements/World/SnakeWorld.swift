@@ -55,8 +55,6 @@ public class SnakeWorld: NSObject, World {
     
     public func update() {
         
-        self.snake.move()
-        
     }
     
     
@@ -65,6 +63,16 @@ public class SnakeWorld: NSObject, World {
         self.snake = Snake()
         self.scene?.addChild(snake.node)
         
+    }
+    
+    public func restartGame() {
+        
+        self.scene?.removeAllChildren()
+        
+        createSnake()
+        
+        createFood()
+
     }
     
     public func createFood() {

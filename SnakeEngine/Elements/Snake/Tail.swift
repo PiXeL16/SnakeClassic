@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import SpriteKit
 public class Tail {
     
     var sections: [TailSection]
@@ -20,12 +20,22 @@ public class Tail {
         sections = [TailSection]()
     }
     
-    func addSection(position: CGPoint, vector: CGVector) -> TailSection {
+    func addSection(withReference drawable: Drawable) -> TailSection {
         
-        let section = TailSection(position: position, vector: vector)
+        let section = TailSection(reference: drawable)
         sections.append(section)
         
         return section
+    }
+    
+    func addNextSection() -> TailSection {
+        
+        //TODO: Add error handling
+        let section = self.sections.last!
+     
+        let newTailSection = self.addSection(withReference: section)
+        
+        return newTailSection
     }
     
 }

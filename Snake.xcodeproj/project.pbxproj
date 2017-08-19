@@ -57,6 +57,7 @@
 		83B51B051F4860EA00C91532 /* SnakeFoodCollition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51B041F4860EA00C91532 /* SnakeFoodCollition.swift */; };
 		83B51B081F4866F100C91532 /* TailSectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51B071F4866F100C91532 /* TailSectionTests.swift */; };
 		83B51B0A1F487D6100C91532 /* TailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51B091F487D6100C91532 /* TailTests.swift */; };
+		83B51B0C1F48981200C91532 /* SnakeTailCollition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51B0B1F48981200C91532 /* SnakeTailCollition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -193,7 +194,7 @@
 		83AD00FD1F4101EE00467C82 /* Nameable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nameable.swift; sourceTree = "<group>"; };
 		83AD00FF1F4103DD00467C82 /* FoodTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTests.swift; sourceTree = "<group>"; };
 		83AD01021F4105B400467C82 /* SnakeWorldTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeWorldTests.swift; sourceTree = "<group>"; };
-		83B51AE61F48385200C91532 /* CollitionCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollitionCategory.swift; path = CollitionCategory.swift; sourceTree = "<group>"; };
+		83B51AE61F48385200C91532 /* CollitionCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollitionCategory.swift; sourceTree = "<group>"; };
 		83B51AE81F483CD600C91532 /* CollitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollitionHandler.swift; sourceTree = "<group>"; };
 		83B51AEC1F48407600C91532 /* CollitionHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollitionHandlerTests.swift; sourceTree = "<group>"; };
 		83B51AEF1F484B3500C91532 /* World.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
@@ -207,6 +208,7 @@
 		83B51B041F4860EA00C91532 /* SnakeFoodCollition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeFoodCollition.swift; sourceTree = "<group>"; };
 		83B51B071F4866F100C91532 /* TailSectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TailSectionTests.swift; sourceTree = "<group>"; };
 		83B51B091F487D6100C91532 /* TailTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TailTests.swift; sourceTree = "<group>"; };
+		83B51B0B1F48981200C91532 /* SnakeTailCollition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeTailCollition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,8 +416,8 @@
 				83B51AF41F484F4E00C91532 /* CollitionDetection.swift */,
 				83B51AE81F483CD600C91532 /* CollitionHandler.swift */,
 				83B51B041F4860EA00C91532 /* SnakeFoodCollition.swift */,
+				83B51B0B1F48981200C91532 /* SnakeTailCollition.swift */,
 			);
-			name = Collition;
 			path = Collition;
 			sourceTree = "<group>";
 		};
@@ -425,7 +427,6 @@
 				83B51AFB1F48543900C91532 /* CollitionDetectionTests.swift */,
 				83B51AEC1F48407600C91532 /* CollitionHandlerTests.swift */,
 			);
-			name = Collition;
 			path = Collition;
 			sourceTree = "<group>";
 		};
@@ -455,7 +456,6 @@
 				83B51AFE1F485D6600C91532 /* Tail.swift */,
 				83B51B001F485DA100C91532 /* TailSection.swift */,
 			);
-			name = Snake;
 			path = Snake;
 			sourceTree = "<group>";
 		};
@@ -466,7 +466,6 @@
 				83B51B071F4866F100C91532 /* TailSectionTests.swift */,
 				83B51B091F487D6100C91532 /* TailTests.swift */,
 			);
-			name = Snake;
 			path = Snake;
 			sourceTree = "<group>";
 		};
@@ -750,6 +749,7 @@
 				834B6F001F40CC9400FDF852 /* Snake.swift in Sources */,
 				834B6F061F40D35E00FDF852 /* SnakeWorld.swift in Sources */,
 				83B51B051F4860EA00C91532 /* SnakeFoodCollition.swift in Sources */,
+				83B51B0C1F48981200C91532 /* SnakeTailCollition.swift in Sources */,
 				834B6F041F40D35400FDF852 /* Food.swift in Sources */,
 				834B6F0F1F40EF7A00FDF852 /* Physical.swift in Sources */,
 				83B51AE71F48385200C91532 /* CollitionCategory.swift in Sources */,
