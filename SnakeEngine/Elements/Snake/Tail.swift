@@ -12,6 +12,10 @@ public class Tail {
     
     var sections: [TailSection]
     
+    var lenght: Int {
+        return sections.count
+    }
+    
     init() {
         sections = [TailSection]()
     }

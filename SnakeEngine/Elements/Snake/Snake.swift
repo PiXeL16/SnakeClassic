@@ -15,7 +15,13 @@ public class Snake: Drawable {
     public var direction: Direction
     public var vector: CGVector
     
+    public var xspeed: CGFloat = 0
+    public var yspeed: CGFloat = 0
+    
+    public let tail: Tail
+    
     public init() {
+        self.tail = Tail()
         self.node = SKSpriteNode(color: color, size: WorldConstants.objectSize)
         self.direction = .None
         self.vector = CGVector(dx: 0, dy: 0)
@@ -24,25 +30,29 @@ public class Snake: Drawable {
         self.initPhysicsBodyCharacteristics()
     }
     
-    public func grow() {
+    public func grow() -> SKSpriteNode {
         
-        
+        let node = tail.addSection(position: self.node.position, vector: self.vector).node
+        return node
     }
 }
 
 extension Snake: Movable {
     
-    public func move(vector: CGVector, completion: (() -> Void)?) {
+    public func move() {
         
-        self.vector = vector
-        self.node.removeAllActions()
-        
-        let action = SKAction.move(by: self.vector, duration: 1)
-        
-        self.node.run(SKAction.repeatForever(action), completion: {
-            completion?()
-        })
+        self.node.position.x = self.node.position.x + xspeed
+        self.node.position.y = self.node.position.y + yspeed
     }
+    
+//    private func moveTail() {
+//        
+//        if !tail.sections.isEmpty {
+//            
+//            for section in tail.sections
+//            
+//        }
+//    }
 }
 
 extension Snake: Physical {
@@ -77,24 +87,35 @@ extension Snake: Controllable {
     public func left() {
         self.direction = .Left
         
-        self.move(vector: CGVector(dx: -WorldConstants.velocity, dy: 0), completion: nil)
+        xspeed = -1
+        yspeed = 0
+        
+        //self.move(vector: CGVector(dx: -WorldConstants.velocity, dy: 0), completion: nil)
     }
     
     public func right() {
         self.direction = .Right
         
-        self.move(vector: CGVector(dx: WorldConstants.velocity, dy: 0), completion: nil)
+        xspeed = 1
+        yspeed = 0
+        
+        //self.move(vector: CGVector(dx: WorldConstants.velocity, dy: 0), completion: nil)
     }
     
     public func up() {
         self.direction = .Up
         
-        self.move(vector: CGVector(dx: 0, dy: WorldConstants.velocity), completion: nil)
+        xspeed = 0
+        yspeed = 1
+        
+        //self.move(vector: CGVector(dx: 0, dy: WorldConstants.velocity), completion: nil)
     }
     
     public func down() {
         self.direction = .Down
         
-        self.move(vector: CGVector(dx: 0, dy: -WorldConstants.velocity), completion: nil)
+        xspeed = 0
+        yspeed = -1
+        //self.move(vector: CGVector(dx: 0, dy: -WorldConstants.velocity), completion: nil)
     }
 }

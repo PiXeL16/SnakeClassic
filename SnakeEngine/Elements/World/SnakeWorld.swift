@@ -55,6 +55,8 @@ public class SnakeWorld: NSObject, World {
     
     public func update() {
         
+        self.snake.move()
+        
     }
     
     
@@ -78,7 +80,8 @@ public class SnakeWorld: NSObject, World {
     }
     
     public func growSnake() {
-        self.snake.grow()
+        let node = self.snake.grow()
+        self.scene?.addChild(node)
     }
     
 }

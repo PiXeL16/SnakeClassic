@@ -32,6 +32,7 @@ class SnakeTests: XCTestCase {
         XCTAssertNotNil(snake.name)
         XCTAssertEqual(snake.node.name, snake.name)
         XCTAssertNotNil(snake.physicsBody)
+        XCTAssertNotNil(snake.tail)
         
     }
     
@@ -65,6 +66,12 @@ class SnakeTests: XCTestCase {
         
         XCTAssertEqual(snake.direction, .Down)
         XCTAssertNotEqual(vector, snake.vector)
+    }
+    
+    func testSnakeGrow() {
+        let node = self.snake.grow()
+        XCTAssertEqual(self.snake.tail.lenght, 1)
+        XCTAssertNotNil(node)
     }
     
 }
