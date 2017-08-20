@@ -15,28 +15,14 @@ internal class Head: SnakePart {
     public var direction: Direction
     public var vector: CGVector
     
-    public let tail: Tail
     
     public init() {
-        self.tail = Tail()
         self.node = SKSpriteNode(color: color, size: WorldConstants.objectSize)
         self.direction = .None
         self.vector = CGVector(dx: 0, dy: 0)
         self.node.name = name
         
         self.initPhysicsBodyCharacteristics()
-    }
-    
-    public func grow() -> SKSpriteNode {
-        
-        var node: SKSpriteNode
-        
-        if tail.sections.isEmpty {
-            node = tail.addSection(withReference: self).node
-        } else {
-            node = tail.addNextSection().node
-        }
-        return node
     }
 }
 
@@ -78,34 +64,35 @@ extension Head: Physical {
 extension Head: Nameable {
     
     var name: String {
-        return "Snakeeeeeeeeeeeee!"
+        return "SnakeHead"
     }
 }
+
 
 extension Head: Controllable {
     
     public func left() {
-        self.direction = .Left
-    
-        self.move(vector: CGVector(dx: -WorldConstants.velocity, dy: 0), completion: nil)
+        
+        
+        //self.move(vector: CGVector(dx: -WorldConstants.velocity, dy: 0), completion: nil)
     }
     
     public func right() {
-        self.direction = .Right
         
-        self.move(vector: CGVector(dx: WorldConstants.velocity, dy: 0), completion: nil)
+        
+        //self.move(vector: CGVector(dx: WorldConstants.velocity, dy: 0), completion: nil)
     }
     
     public func up() {
-        self.direction = .Up
         
         
-        self.move(vector: CGVector(dx: 0, dy: WorldConstants.velocity), completion: nil)
+        
+        //self.move(vector: CGVector(dx: 0, dy: WorldConstants.velocity), completion: nil)
     }
     
     public func down() {
-        self.direction = .Down
         
-        self.move(vector: CGVector(dx: 0, dy: -WorldConstants.velocity), completion: nil)
+        
+        //self.move(vector: CGVector(dx: 0, dy: -WorldConstants.velocity), completion: nil)
     }
 }

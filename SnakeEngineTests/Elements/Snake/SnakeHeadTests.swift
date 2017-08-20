@@ -26,15 +26,14 @@ class SnakeHeadTests: XCTestCase {
     
     func testSnakeInitializeWithCorrectValues() {
         
-        XCTAssertEqual(snakeHead.direction, .None)
         XCTAssertNotNil(snakeHead.node)
         XCTAssertEqual(snakeHead.vector, CGVector(dx: 0, dy: 0))
         XCTAssertNotNil(snakeHead.name)
         XCTAssertEqual(snakeHead.node.name, snakeHead.name)
         XCTAssertNotNil(snakeHead.physicsBody)
-        XCTAssertNotNil(snakeHead.tail)
         
     }
+    
     
     func testSnakeTurnLeft() {
         let vector = self.snakeHead.vector
@@ -67,11 +66,4 @@ class SnakeHeadTests: XCTestCase {
         XCTAssertEqual(snakeHead.direction, .Down)
         XCTAssertNotEqual(vector, snakeHead.vector)
     }
-    
-    func testSnakeGrow() {
-        let node = self.snakeHead.grow()
-        XCTAssertEqual(self.snakeHead.tail.lenght, 1)
-        XCTAssertNotNil(node)
-    }
-    
 }

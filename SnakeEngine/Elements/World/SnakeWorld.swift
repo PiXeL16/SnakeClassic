@@ -10,11 +10,10 @@ import Foundation
 import SpriteKit
 import GameplayKit
 
-
 public class SnakeWorld: NSObject, World {
     
     public weak var scene: SKScene?
-    internal var snake: Head!
+    internal var snake: Snake!
     internal var food: Food!
     
     internal var collitionDetection: Collider!
@@ -71,8 +70,8 @@ public class SnakeWorld: NSObject, World {
     
     internal func createSnake() {
         
-        self.snake = Head()
-        self.scene?.addChild(snake.node)
+        self.snake = SnakeImplementation()
+        self.scene?.addChild(snake.head.node)
         
     }
     

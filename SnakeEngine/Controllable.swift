@@ -6,9 +6,7 @@
 //  Copyright © 2017 Chris Jimenez. All rights reserved.
 //
 
-
-
-public protocol Controllable {
+internal protocol Controllable {
     
     func right()
     func left()

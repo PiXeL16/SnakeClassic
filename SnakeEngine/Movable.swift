@@ -10,8 +10,6 @@ import Foundation
 
 public protocol Movable {
     
-    var direction: Direction { get set }
-    
     var vector: CGVector { get set }
     
     func move(vector: CGVector, completion: (() -> Void)?)

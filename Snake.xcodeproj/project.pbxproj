@@ -57,6 +57,9 @@
 		83B51B051F4860EA00C91532 /* SnakeFoodCollition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51B041F4860EA00C91532 /* SnakeFoodCollition.swift */; };
 		83B51B0C1F48981200C91532 /* SnakeTailCollition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51B0B1F48981200C91532 /* SnakeTailCollition.swift */; };
 		83B6AD041F4A2A4B007F457B /* SnakePart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AD031F4A2A4B007F457B /* SnakePart.swift */; };
+		83B6AD061F4A2D36007F457B /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AD051F4A2D36007F457B /* Snake.swift */; };
+		83B6AD081F4A2EE1007F457B /* SnakeImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AD071F4A2EE1007F457B /* SnakeImplementation.swift */; };
+		83B6AD0A1F4A31E3007F457B /* SnakeImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AD091F4A31E3007F457B /* SnakeImplementationTests.swift */; };
 		83B6FE051F4A1DF6000FD119 /* WorldElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6FE041F4A1DF6000FD119 /* WorldElement.swift */; };
 /* End PBXBuildFile section */
 
@@ -208,6 +211,9 @@
 		83B51B041F4860EA00C91532 /* SnakeFoodCollition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeFoodCollition.swift; sourceTree = "<group>"; };
 		83B51B0B1F48981200C91532 /* SnakeTailCollition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeTailCollition.swift; sourceTree = "<group>"; };
 		83B6AD031F4A2A4B007F457B /* SnakePart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakePart.swift; sourceTree = "<group>"; };
+		83B6AD051F4A2D36007F457B /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		83B6AD071F4A2EE1007F457B /* SnakeImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeImplementation.swift; sourceTree = "<group>"; };
+		83B6AD091F4A31E3007F457B /* SnakeImplementationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeImplementationTests.swift; sourceTree = "<group>"; };
 		83B6FE041F4A1DF6000FD119 /* WorldElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorldElement.swift; path = Snake/WorldElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -457,6 +463,8 @@
 				83B51AFE1F485D6600C91532 /* Tail.swift */,
 				83B51B001F485DA100C91532 /* TailSection.swift */,
 				83B6AD031F4A2A4B007F457B /* SnakePart.swift */,
+				83B6AD051F4A2D36007F457B /* Snake.swift */,
+				83B6AD071F4A2EE1007F457B /* SnakeImplementation.swift */,
 			);
 			path = Snake;
 			sourceTree = "<group>";
@@ -465,6 +473,7 @@
 			isa = PBXGroup;
 			children = (
 				834B6F0C1F40E24900FDF852 /* SnakeHeadTests.swift */,
+				83B6AD091F4A31E3007F457B /* SnakeImplementationTests.swift */,
 			);
 			path = Snake;
 			sourceTree = "<group>";
@@ -754,9 +763,11 @@
 				834B6F0F1F40EF7A00FDF852 /* Physical.swift in Sources */,
 				83B51AE71F48385200C91532 /* CollitionCategory.swift in Sources */,
 				834B6F091F40D62E00FDF852 /* Controllable.swift in Sources */,
+				83B6AD081F4A2EE1007F457B /* SnakeImplementation.swift in Sources */,
 				83B51AF51F484F4E00C91532 /* CollitionDetection.swift in Sources */,
 				83AD00FE1F4101EE00467C82 /* Nameable.swift in Sources */,
 				834B6F111F40F24100FDF852 /* Movable.swift in Sources */,
+				83B6AD061F4A2D36007F457B /* Snake.swift in Sources */,
 				83B51AF31F484E0600C91532 /* Collider.swift in Sources */,
 				83B51B011F485DA100C91532 /* TailSection.swift in Sources */,
 				83B51AE91F483CD600C91532 /* CollitionHandler.swift in Sources */,
@@ -778,6 +789,7 @@
 				83B51AED1F48407600C91532 /* CollitionHandlerTests.swift in Sources */,
 				83B51AFC1F48543900C91532 /* CollitionDetectionTests.swift in Sources */,
 				834B6F171F40F90600FDF852 /* CGPointExtensionsTests.swift in Sources */,
+				83B6AD0A1F4A31E3007F457B /* SnakeImplementationTests.swift in Sources */,
 				834B6F0D1F40E24900FDF852 /* SnakeHeadTests.swift in Sources */,
 				83AD01031F4105B400467C82 /* SnakeWorldTests.swift in Sources */,
 				83AD01001F4103DD00467C82 /* FoodTests.swift in Sources */,

@@ -13,7 +13,7 @@ import SpriteKit
 public class WorldMock: World {
    
     public weak var scene: SKScene? = SKScene()
-    public var snake: Head! = Head()
+    public var snake: Snake! = SnakeImplementation()
     public var food: Food! = Food(position: CGPoint())
     public var collitionDetection: Collider!
     

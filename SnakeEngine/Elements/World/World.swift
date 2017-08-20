@@ -13,7 +13,7 @@ internal protocol World: class, Controllable {
     
     weak var scene: SKScene? { get }
     
-    var snake: Head! { get set }
+    var snake: Snake! { get set }
     var food: Food! { get set }
     var height: CGFloat { get }
     var width: CGFloat  { get }
