@@ -11,11 +11,11 @@ import SpriteKit
 
 class CollitionDetectionTests: XCTestCase {
     
-    
     var collitionDetection: Collider!
     var world: WorldMock!
     var snakeBody: SKPhysicsBody!
     var foodBody: SKPhysicsBody!
+    var tailBody: SKPhysicsBody!
     
     override func setUp() {
         super.setUp()
@@ -23,8 +23,10 @@ class CollitionDetectionTests: XCTestCase {
         world = WorldMock()
         collitionDetection = CollitionDetection(world: world)
         
-        snakeBody = Snake().physicsBody
+        snakeBody = Head().physicsBody
         foodBody = Food(position: CGPoint(x: 0, y: 0)).physicsBody
+        tailBody = TailSection().physicsBody
+        
     }
     
     override func tearDown() {
@@ -38,6 +40,13 @@ class CollitionDetectionTests: XCTestCase {
         XCTAssertTrue(world.createdFoodCalled)
         XCTAssertTrue(world.growSnakeCalled)
         
+    }
+    
+    func testGameRestartAfterSnakeHitsTail() {
+        
+        collitionDetection.handleCollition(contactBodyA: snakeBody, contactBodyB: tailBody)
+        
+        XCTAssertTrue(world.gameRestartedCalled)
     }
     
 }

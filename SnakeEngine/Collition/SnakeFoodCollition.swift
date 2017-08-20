@@ -35,8 +35,8 @@ internal class SnakeFoodCollition: Collider {
         
         var collition = false
         
-        if(contactBodyA.categoryBitMask == Snake.contactCategory &&
-            contactBodyB.categoryBitMask == Food.contactCategory) {
+        if(contactBodyA.categoryBitMask == CollitionCategory.SnakeHead.rawValue &&
+            contactBodyB.categoryBitMask == CollitionCategory.Food.rawValue) {
             collition = true
         }
         

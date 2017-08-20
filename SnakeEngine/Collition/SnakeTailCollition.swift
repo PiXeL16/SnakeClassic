@@ -34,8 +34,8 @@ internal class SnakeTailCollition: Collider {
         
         var collition = false
         
-        if(contactBodyA.categoryBitMask == Snake.contactCategory &&
-            contactBodyB.categoryBitMask == TailSection.contactCategory) {
+        if(contactBodyA.categoryBitMask == CollitionCategory.SnakeHead.rawValue &&
+            contactBodyB.categoryBitMask == CollitionCategory.SnakeTail.rawValue) {
             collition = true
         }
         

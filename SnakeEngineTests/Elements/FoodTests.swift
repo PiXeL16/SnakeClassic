@@ -33,6 +33,7 @@ class FoodTests: XCTestCase {
         XCTAssertEqual(food.node.name, food.name)
         XCTAssertLessThan(food.node.position.x, range)
         XCTAssertLessThan(food.node.position.y, range)
-        XCTAssertNotNil(Food.contactCategory)
+        XCTAssertNotNil(food.contactCategory)
+        XCTAssertNotNil(food.collidesWithCategory)
     }
 }

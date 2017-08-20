@@ -12,14 +12,14 @@ import SpriteKit
 class CollitionHandlerTests: XCTestCase {
     
     
-    var snakeBody: SKPhysicsBody!
-    var foodBody: SKPhysicsBody!
+    var snakeHead: Head!
+    var food: Food!
     
     override func setUp() {
         super.setUp()
         
-        snakeBody = Snake().physicsBody
-        foodBody = Food(position: CGPoint(x: 0, y: 0)).physicsBody
+        snakeHead = Head()
+        food = Food(position: CGPoint(x: 0, y: 0))
     }
     
     override func tearDown() {
@@ -28,15 +28,15 @@ class CollitionHandlerTests: XCTestCase {
     
     func testSortBodies() {
         
-        var collitionHandler = CollitionHandler(contactBodyA: snakeBody, contactBodyB: foodBody)
+        var collitionHandler = CollitionHandler(contactBodyA: snakeHead.physicsBody!, contactBodyB: food.physicsBody!)
     
-        XCTAssertEqual(collitionHandler.orderedBodies.0.categoryBitMask, Snake.contactCategory)
-        XCTAssertEqual(collitionHandler.orderedBodies.1.categoryBitMask, Food.contactCategory)
+        XCTAssertEqual(collitionHandler.orderedBodies.0.categoryBitMask, snakeHead.contactCategory)
+        XCTAssertEqual(collitionHandler.orderedBodies.1.categoryBitMask, food.contactCategory)
         
-        collitionHandler = CollitionHandler(contactBodyA: foodBody, contactBodyB: snakeBody)
+        collitionHandler = CollitionHandler(contactBodyA: snakeHead.physicsBody!, contactBodyB: food.physicsBody!)
         
-        XCTAssertEqual(collitionHandler.orderedBodies.0.categoryBitMask, Snake.contactCategory)
-        XCTAssertEqual(collitionHandler.orderedBodies.1.categoryBitMask, Food.contactCategory)
+        XCTAssertEqual(collitionHandler.orderedBodies.0.categoryBitMask, snakeHead.contactCategory)
+        XCTAssertEqual(collitionHandler.orderedBodies.1.categoryBitMask, food.contactCategory)
     }
     
 }

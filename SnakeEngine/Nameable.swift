@@ -7,7 +7,7 @@
 //
 
 
-public protocol Nameable {
+internal protocol Nameable {
     
     var name: String { get }
     

@@ -14,10 +14,10 @@ import GameplayKit
 public class SnakeWorld: NSObject, World {
     
     public weak var scene: SKScene?
-    public var snake: Snake!
-    public var food: Food!
+    internal var snake: Head!
+    internal var food: Food!
     
-    public var collitionDetection: Collider!
+    internal var collitionDetection: Collider!
     
     public var height: CGFloat {
         
@@ -58,13 +58,6 @@ public class SnakeWorld: NSObject, World {
     }
     
     
-    public func createSnake() {
-        
-        self.snake = Snake()
-        self.scene?.addChild(snake.node)
-        
-    }
-    
     public func restartGame() {
         
         self.scene?.removeAllChildren()
@@ -72,10 +65,20 @@ public class SnakeWorld: NSObject, World {
         createSnake()
         
         createFood()
-
+        
     }
     
-    public func createFood() {
+    
+    internal func createSnake() {
+        
+        self.snake = Head()
+        self.scene?.addChild(snake.node)
+        
+    }
+    
+
+    
+    internal func createFood() {
         
          let randomPoint = CGPoint.randomPoint(rangeHeight: height - WorldConstants.objectSize.height,
                                                rangeWidth: width - WorldConstants.objectSize.width)

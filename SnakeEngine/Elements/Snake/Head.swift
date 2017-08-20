@@ -8,7 +8,7 @@
 
 import SpriteKit
 
-public class Snake: Drawable {
+internal class Head: SnakePart {
     
     public var node: SKSpriteNode
     public var color = UIColor.white
@@ -40,7 +40,7 @@ public class Snake: Drawable {
     }
 }
 
-extension Snake: Movable {
+extension Head: Movable {
     
     public func move(vector: CGVector, completion: (() -> Void)?) {
         
@@ -64,39 +64,29 @@ extension Snake: Movable {
 //    }
 }
 
-extension Snake: Physical {
+extension Head: Physical {
     
-    internal func initPhysicsBodyCharacteristics() {
-        
-        self.node.physicsBody = SKPhysicsBody(rectangleOf: self.node.size)
-        self.node.physicsBody?.isDynamic = true
-        self.node.physicsBody?.categoryBitMask = Snake.contactCategory
-        self.node.physicsBody?.contactTestBitMask = Food.contactCategory
-        self.node.physicsBody?.collisionBitMask = 0
+    var contactCategory: UInt32 {
+        return CollitionCategory.SnakeHead.rawValue
     }
     
-    var physicsBody: SKPhysicsBody? {
-        return self.node.physicsBody
-    }
-    
-    static var contactCategory: UInt32 {
-        return CollitionCategory.Snake.rawValue
+    var collidesWithCategory: UInt32 {
+        return CollitionCategory.SnakeTail.rawValue
     }
 }
 
-extension Snake: Nameable {
+extension Head: Nameable {
     
-    public var name: String {
+    var name: String {
         return "Snakeeeeeeeeeeeee!"
     }
 }
 
-extension Snake: Controllable {
+extension Head: Controllable {
     
     public func left() {
         self.direction = .Left
     
-        
         self.move(vector: CGVector(dx: -WorldConstants.velocity, dy: 0), completion: nil)
     }
     

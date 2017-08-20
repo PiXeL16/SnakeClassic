@@ -9,12 +9,12 @@
 import SpriteKit
 import GameplayKit
 
-public class Food: Drawable {
+internal class Food: WorldElement {
     
-    public var node: SKSpriteNode
-    public var color = UIColor.red
+    var node: SKSpriteNode
+    var color = UIColor.red
     
-    public init(position: CGPoint) {
+    init(position: CGPoint) {
         self.node = SKSpriteNode(color: color, size: WorldConstants.objectSize)
         self.node.position = position
         self.node.name = name
@@ -25,27 +25,18 @@ public class Food: Drawable {
 
 extension Food: Physical {
     
-    internal func initPhysicsBodyCharacteristics() {
-        
-        self.node.physicsBody = SKPhysicsBody(rectangleOf: self.node.size)
-        self.node.physicsBody?.isDynamic = true
-        self.node.physicsBody?.categoryBitMask = Food.contactCategory
-        self.node.physicsBody?.contactTestBitMask = Snake.contactCategory
-        self.node.physicsBody?.collisionBitMask = 0
-    }
-    
-    var physicsBody: SKPhysicsBody? {
-        return self.node.physicsBody
-    }
-    
-    static var contactCategory: UInt32 {
+    var contactCategory: UInt32 {
         return CollitionCategory.Food.rawValue
+    }
+    
+    var collidesWithCategory: UInt32 {
+        return CollitionCategory.SnakeHead.rawValue
     }
 }
 
 extension Food: Nameable {
     
-    public var name: String {
+    var name: String {
         return "SnakeFood"
     }
 }

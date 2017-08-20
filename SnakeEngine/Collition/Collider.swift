@@ -9,7 +9,7 @@
 import Foundation
 import SpriteKit
 
-public protocol Collider {
+internal protocol Collider {
     
     weak var world: World? { get }
     

@@ -11,7 +11,7 @@ import Foundation
 
 internal enum CollitionCategory: UInt32 {
     
-    case Snake = 1
+    case SnakeHead = 1
     case Food = 2
     case SnakeTail = 4
     

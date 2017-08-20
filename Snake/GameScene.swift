@@ -13,7 +13,7 @@ import UIKit
 
 class GameScene: SKScene {
     
-    var world: World!
+    var world: SnakeWorld!
     
     override func didMove(to view: SKView) {
         

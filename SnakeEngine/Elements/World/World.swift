@@ -9,11 +9,11 @@
 import Foundation
 import SpriteKit
 
-public protocol World: class, Controllable {
+internal protocol World: class, Controllable {
     
     weak var scene: SKScene? { get }
     
-    var snake: Snake! { get set }
+    var snake: Head! { get set }
     var food: Food! { get set }
     var height: CGFloat { get }
     var width: CGFloat  { get }

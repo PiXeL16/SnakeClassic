@@ -22,7 +22,7 @@ public class Tail {
     
     func addSection(withReference drawable: Drawable) -> TailSection {
         
-        let section = TailSection(reference: drawable)
+        let section = TailSection()
         sections.append(section)
         
         return section

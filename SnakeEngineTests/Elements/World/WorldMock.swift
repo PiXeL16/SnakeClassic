@@ -11,9 +11,9 @@ import SpriteKit
 @testable import SnakeEngine
 
 public class WorldMock: World {
-    
+   
     public weak var scene: SKScene? = SKScene()
-    public var snake: Snake! = Snake()
+    public var snake: Head! = Head()
     public var food: Food! = Food(position: CGPoint())
     public var collitionDetection: Collider!
     
@@ -25,6 +25,7 @@ public class WorldMock: World {
     public var leftCalled = false
     public var upCalled = false
     public var downCalled = false
+    public var gameRestartedCalled = false
     
     
     public var height: CGFloat {
@@ -55,6 +56,10 @@ public class WorldMock: World {
     
     public func growSnake() {
         growSnakeCalled = true
+    }
+    
+    public func restartGame() {
+        gameRestartedCalled = true
     }
 
 }

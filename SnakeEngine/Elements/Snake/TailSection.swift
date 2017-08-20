@@ -9,38 +9,20 @@
 import Foundation
 import SpriteKit
 
-public class TailSection: Drawable {
+public class TailSection: WorldElement {
     
     public var node: SKSpriteNode
     public var color = UIColor.white
     public var direction: Direction
     public var vector: CGVector
-    public weak var reference: Drawable?
     
-    public init(reference: Drawable) {
+    public init() {
         self.node = SKSpriteNode(color: color, size: WorldConstants.objectSize)
         self.direction = .None
         self.vector = CGVector(dx: 0, dy: 0)
         self.node.name = name
-        self.reference = reference
         self.initPhysicsBodyCharacteristics()
-        
-        self.follow()
     }
-    
-    func follow() {
-        
-        if let reference = self.reference {
-            
-            let rangeToSprite = SKRange(lowerLimit: 40, upperLimit: 20)
-        
-            let distanceConstraint = SKConstraint.distance(rangeToSprite, to: reference.node)
-            
-            self.node.constraints = [distanceConstraint]
-            
-        }
-    }
-    
 }
 
 extension TailSection: Movable {
@@ -60,22 +42,18 @@ extension TailSection: Movable {
 
 extension TailSection: Physical {
     
-    internal func initPhysicsBodyCharacteristics() {
-        
-        self.node.physicsBody = SKPhysicsBody(rectangleOf: self.node.size)
-        self.node.physicsBody?.isDynamic = true
-        self.node.physicsBody?.categoryBitMask = TailSection.contactCategory
-        self.node.physicsBody?.contactTestBitMask = Snake.contactCategory
-        self.node.physicsBody?.collisionBitMask = 0
-    }
-    
-    var physicsBody: SKPhysicsBody? {
+    public var physicsBody: SKPhysicsBody? {
         return self.node.physicsBody
     }
     
-    static var contactCategory: UInt32 {
+    public var contactCategory: UInt32 {
         return CollitionCategory.SnakeTail.rawValue
     }
+    
+    public var collidesWithCategory: UInt32 {
+        return CollitionCategory.SnakeHead.rawValue
+    }
+
 }
 
 extension TailSection: Nameable {
