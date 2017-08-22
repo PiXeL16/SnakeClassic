@@ -15,16 +15,16 @@ internal protocol WorldElement: Drawable, Physical {
 
 extension WorldElement {
     
-    public func initPhysicsBodyCharacteristics() {
+    func initPhysicsBodyCharacteristics() {
         
-        self.node.physicsBody = SKPhysicsBody(rectangleOf: self.node.size)
+        self.node.physicsBody = SKPhysicsBody(rectangleOf: self.size)
         self.node.physicsBody?.isDynamic = true
         self.node.physicsBody?.categoryBitMask = self.contactCategory
         self.node.physicsBody?.contactTestBitMask = self.collidesWithCategory
         self.node.physicsBody?.collisionBitMask = 0
     }
     
-    public var physicsBody: SKPhysicsBody? {
+    var physicsBody: SKPhysicsBody? {
         return self.node.physicsBody
     }
     

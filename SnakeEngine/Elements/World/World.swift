@@ -15,8 +15,9 @@ internal protocol World: class, Controllable {
     
     var snake: Snake! { get set }
     var food: Food! { get set }
-    var height: CGFloat { get }
-    var width: CGFloat  { get }
+    var border: Border! { get set }
+    var score: Score! { get set }
+    var frame: CGRect { get }
     var collitionDetection: Collider! { get set }
     
     func update(currentTime: TimeInterval)
@@ -24,6 +25,9 @@ internal protocol World: class, Controllable {
     func growSnake()
     func createFood()
     func snakeEatFood()
+    func createBorder()
+    func createScore()
+    func advanceScore()
     
     func restartGame()
 }

@@ -21,7 +21,8 @@ internal class CollitionDetection: Collider {
         if let world = self.world {
         
             self.collitionDetectors = [SnakeFoodCollition(world: world),
-                                       SnakeTailCollition(world: world) ]
+                                       SnakeTailCollition(world: world),
+                                       SnakeBorderCollition(world: world)]
         }
     }
 

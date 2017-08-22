@@ -17,6 +17,9 @@ class WorldMock: World {
     var food: Food! = Food(position: CGPoint())
     var collitionDetection: Collider!
     
+    var border: Border! = Border(frame: CGRect())
+    var score: Score! = Score(position: CGPoint())
+    
     var updateCalled = false
     var createSnakeCalled = false
     var createdFoodCalled = false
@@ -27,14 +30,13 @@ class WorldMock: World {
     var downCalled = false
     var gameRestartedCalled = false
     var snakeEatFoodCalled = false
+    var createBorderCalled = false
+    var createScoreCalled = false
+    var advanceScoreCalled = false
     
     
-    public var height: CGFloat {
-        return 150
-    }
-    
-    public var width: CGFloat {
-        return 150
+    public var frame: CGRect {
+        return CGRect()
     }
     
     public init() {
@@ -55,6 +57,10 @@ class WorldMock: World {
         createdFoodCalled = true
     }
     
+    public func createBorder() {
+        createBorderCalled = true
+    }
+    
     public func growSnake() {
         growSnakeCalled = true
     }
@@ -65,6 +71,14 @@ class WorldMock: World {
     
     public func snakeEatFood() {
         snakeEatFoodCalled = true
+    }
+    
+    public func createScore() {
+        createScoreCalled = true
+    }
+    
+    public func advanceScore() {
+        advanceScoreCalled = true
     }
 
 }

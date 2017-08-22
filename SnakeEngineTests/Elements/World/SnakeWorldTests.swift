@@ -44,9 +44,9 @@ class SnakeWorldTests: XCTestCase {
         
         XCTAssertNotNil(world.snake)
         XCTAssertNotNil(world.food)
+        XCTAssertNotNil(world.border)
         XCTAssertNotNil(world.collitionDetection)
-        XCTAssertNotEqual(world.width, 0)
-        XCTAssertNotEqual(world.height, 0)
+        XCTAssertNotEqual(world.frame, CGRect())
         XCTAssertEqual(world.scene?.physicsWorld.gravity, CGVector(dx: 0, dy: 0))
     }
     
@@ -118,7 +118,7 @@ class SnakeWorldTests: XCTestCase {
         
         world.restartGame()
         
-        XCTAssertLessThan(world.scene!.children.count, 3)
+        XCTAssertLessThan(world.scene!.children.count, 4)
         XCTAssertEqual(world.snake.body.count, 1)
     }
     

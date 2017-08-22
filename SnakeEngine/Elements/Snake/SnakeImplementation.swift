@@ -25,7 +25,7 @@ internal class SnakeImplementation: Snake {
     }
     
     
-    func grow() -> SKSpriteNode {
+    func grow() -> SKNode {
         
         let tail = Tail(referenceSnakePart: body.last!)
         self.body.append(tail)

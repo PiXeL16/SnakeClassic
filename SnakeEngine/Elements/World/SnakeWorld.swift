@@ -15,23 +15,17 @@ public class SnakeWorld: NSObject, World {
     public weak var scene: SKScene?
     internal var snake: Snake!
     internal var food: Food!
+    internal var border: Border!
+    internal var score: Score!
     internal var collitionDetection: Collider!
     internal var timeOfLastMove = 0.0
     
-    public var height: CGFloat {
+    public var frame: CGRect {
         
-        guard let height = self.scene?.view?.bounds.height else {
-            return 0
+        guard let frame = self.scene?.frame else {
+            return CGRect()
         }
-        return height
-    }
-    
-    public var width: CGFloat {
-        
-        guard let width = self.scene?.view?.bounds.width else {
-            return 0
-        }
-        return width
+        return frame
     }
     
     public init(scene: SKScene) {
@@ -46,13 +40,14 @@ public class SnakeWorld: NSObject, World {
         
         self.collitionDetection = CollitionDetection(world: self)
         
-        restartGame()
+        self.restartGame()
+    
     }
     
     
     public func update(currentTime: TimeInterval) {
         
-        if (currentTime - self.timeOfLastMove < WorldConstants.timeFrameDelayer){
+        if (currentTime - self.timeOfLastMove < WorldConstants.timeFrameDelayer) {
             return
         }
 
@@ -67,6 +62,10 @@ public class SnakeWorld: NSObject, World {
     public func restartGame() {
         
         self.scene?.removeAllChildren()
+        
+        createScore()
+        
+        createBorder()
         
         createSnake()
         
@@ -85,13 +84,30 @@ public class SnakeWorld: NSObject, World {
     internal func snakeEatFood() {
         self.createFood()
         self.growSnake()
+        self.advanceScore()
     }
     
+    internal func createBorder() {
+        
+        self.border = Border(frame: self.frame)
+        self.scene?.physicsBody = border.physicsBody
+        self.scene?.addChild(border.node)
+    
+    }
+    
+    internal func createScore() {
+        
+        self.score = Score(position: CGPoint(x: frame.midX, y: frame.maxY - WorldConstants.distance * 2))
+        self.scene?.addChild(score.node)
+    }
+    
+    internal func advanceScore() {
+        self.score.advanceScore()
+    }
     
     internal func createFood() {
         
-         let randomPoint = CGPoint.randomPoint(rangeHeight: height - WorldConstants.objectSize.height,
-                                               rangeWidth: width - WorldConstants.objectSize.width)
+         let randomPoint = frame.randomPointInRectWithMargin(margin: 50)
         
          self.food = Food(position: randomPoint)
         

@@ -10,27 +10,30 @@ import SpriteKit
 
 internal class Head: SnakePart {
     
-    var node: SKSpriteNode
-    var color = UIColor.white
+    var node: SKNode
+    var color = UIColor.black
     var vector: CGVector
     var direction: Direction
+    var size: CGSize
     weak var referenceSnakePart: SnakePart?
     
     init() {
-        self.node = SKSpriteNode(color: color, size: WorldConstants.objectSize)
+        self.size = WorldConstants.objectSize
+        self.node = SKSpriteNode(color: color, size: size)
         self.vector = CGVector(dx: 0, dy: 0)
         self.direction = Direction.None
         self.node.name = name
         self.initPhysicsBodyCharacteristics()
     }
+    
 }
 
 extension Head: Drawable {
     
     func update() {
         
-        self.node.position.x = self.node.position.x + vector.dx * (WorldConstants.objectSize.width + WorldConstants.margin )
-        self.node.position.y = self.node.position.y + vector.dy * (WorldConstants.objectSize.height + WorldConstants.margin)
+        self.node.position.x = self.node.position.x + vector.dx * WorldConstants.distance
+        self.node.position.y = self.node.position.y + vector.dy * WorldConstants.distance
         
     }
 }

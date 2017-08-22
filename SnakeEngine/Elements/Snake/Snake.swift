@@ -15,7 +15,7 @@ internal protocol Snake: Controllable {
     var body: [SnakePart] { get set}
     var direction: Direction { get set }
     
-    func grow() -> SKSpriteNode
+    func grow() -> SKNode
     func update()
     
 }

@@ -16,6 +16,7 @@ class CollitionDetectionTests: XCTestCase {
     var snakeBody: SKPhysicsBody!
     var foodBody: SKPhysicsBody!
     var tailBody: SKPhysicsBody!
+    var borderBody: SKPhysicsBody!
     
     override func setUp() {
         super.setUp()
@@ -27,6 +28,8 @@ class CollitionDetectionTests: XCTestCase {
         foodBody = Food(position: CGPoint(x: 0, y: 0)).physicsBody
         
         tailBody = Tail(referenceSnakePart: Head()).physicsBody
+        
+        borderBody = Border(frame: CGRect()).physicsBody
         
     }
     
@@ -48,5 +51,13 @@ class CollitionDetectionTests: XCTestCase {
         
         XCTAssertTrue(world.gameRestartedCalled)
     }
+    
+    func testGameRestartAfterSnakeHitsBorder() {
+        
+        collitionDetection.handleCollition(contactBodyA: snakeBody, contactBodyB: borderBody)
+        
+        XCTAssertTrue(world.gameRestartedCalled)
+    }
+    
     
 }

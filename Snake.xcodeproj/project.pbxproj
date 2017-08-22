@@ -34,6 +34,12 @@
 		834DF8EA1F4C724F0075A5B9 /* SnakeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8E91F4C724F0075A5B9 /* SnakeMock.swift */; };
 		834DF8EE1F4C77D40075A5B9 /* SnakeTailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8ED1F4C77D40075A5B9 /* SnakeTailTests.swift */; };
 		834DF8F01F4C84610075A5B9 /* DirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8EF1F4C84610075A5B9 /* DirectionTests.swift */; };
+		834DF8F21F4C93250075A5B9 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F11F4C93250075A5B9 /* Border.swift */; };
+		834DF8F41F4C9BA10075A5B9 /* SnakeBorderCollition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F31F4C9BA10075A5B9 /* SnakeBorderCollition.swift */; };
+		834DF8F61F4C9EB50075A5B9 /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F51F4C9EB50075A5B9 /* CGRectExtensions.swift */; };
+		834DF8F81F4CA81E0075A5B9 /* BorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F71F4CA81E0075A5B9 /* BorderTests.swift */; };
+		834DF8FA1F4CA94F0075A5B9 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F91F4CA94F0075A5B9 /* Score.swift */; };
+		834DF8FC1F4CB5830075A5B9 /* ScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8FB1F4CB5830075A5B9 /* ScoreTests.swift */; };
 		83767BE91F40BA3B00122DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83767BE81F40BA3B00122DB6 /* AppDelegate.swift */; };
 		83767BEB1F40BA3B00122DB6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83767BEA1F40BA3B00122DB6 /* GameScene.sks */; };
 		83767BED1F40BA3B00122DB6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83767BEC1F40BA3B00122DB6 /* Actions.sks */; };
@@ -184,6 +190,12 @@
 		834DF8E91F4C724F0075A5B9 /* SnakeMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeMock.swift; sourceTree = "<group>"; };
 		834DF8ED1F4C77D40075A5B9 /* SnakeTailTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeTailTests.swift; sourceTree = "<group>"; };
 		834DF8EF1F4C84610075A5B9 /* DirectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionTests.swift; sourceTree = "<group>"; };
+		834DF8F11F4C93250075A5B9 /* Border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Border.swift; sourceTree = "<group>"; };
+		834DF8F31F4C9BA10075A5B9 /* SnakeBorderCollition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeBorderCollition.swift; sourceTree = "<group>"; };
+		834DF8F51F4C9EB50075A5B9 /* CGRectExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensions.swift; sourceTree = "<group>"; };
+		834DF8F71F4CA81E0075A5B9 /* BorderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderTests.swift; sourceTree = "<group>"; };
+		834DF8F91F4CA94F0075A5B9 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		834DF8FB1F4CB5830075A5B9 /* ScoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTests.swift; sourceTree = "<group>"; };
 		83767BE51F40BA3B00122DB6 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83767BE81F40BA3B00122DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83767BEA1F40BA3B00122DB6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -326,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				834B6F131F40F57E00FDF852 /* CGPointExtensions.swift */,
+				834DF8F51F4C9EB50075A5B9 /* CGRectExtensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -422,6 +435,8 @@
 				83B51AEE1F484A5200C91532 /* World */,
 				834B6F031F40D35400FDF852 /* Food.swift */,
 				83B6FE041F4A1DF6000FD119 /* WorldElement.swift */,
+				834DF8F11F4C93250075A5B9 /* Border.swift */,
+				834DF8F91F4CA94F0075A5B9 /* Score.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -444,6 +459,7 @@
 				83B51AE81F483CD600C91532 /* CollitionHandler.swift */,
 				83B51B041F4860EA00C91532 /* SnakeFoodCollition.swift */,
 				83B51B0B1F48981200C91532 /* SnakeTailCollition.swift */,
+				834DF8F31F4C9BA10075A5B9 /* SnakeBorderCollition.swift */,
 			);
 			path = Collition;
 			sourceTree = "<group>";
@@ -464,6 +480,8 @@
 				83B51AF81F48524400C91532 /* World */,
 				83AD00FF1F4103DD00467C82 /* FoodTests.swift */,
 				834DF8EF1F4C84610075A5B9 /* DirectionTests.swift */,
+				834DF8F71F4CA81E0075A5B9 /* BorderTests.swift */,
+				834DF8FB1F4CB5830075A5B9 /* ScoreTests.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -783,16 +801,20 @@
 				83B51B0C1F48981200C91532 /* SnakeTailCollition.swift in Sources */,
 				834B6F041F40D35400FDF852 /* Food.swift in Sources */,
 				834B6F0F1F40EF7A00FDF852 /* Physical.swift in Sources */,
+				834DF8FA1F4CA94F0075A5B9 /* Score.swift in Sources */,
 				83B51AE71F48385200C91532 /* CollitionCategory.swift in Sources */,
 				834B6F091F40D62E00FDF852 /* Controllable.swift in Sources */,
+				834DF8F41F4C9BA10075A5B9 /* SnakeBorderCollition.swift in Sources */,
 				83B6AD081F4A2EE1007F457B /* SnakeImplementation.swift in Sources */,
 				83B51AF51F484F4E00C91532 /* CollitionDetection.swift in Sources */,
 				83AD00FE1F4101EE00467C82 /* Nameable.swift in Sources */,
 				834B6F111F40F24100FDF852 /* Movable.swift in Sources */,
+				834DF8F21F4C93250075A5B9 /* Border.swift in Sources */,
 				83B6AD061F4A2D36007F457B /* Snake.swift in Sources */,
 				83B51AF31F484E0600C91532 /* Collider.swift in Sources */,
 				83B51B011F485DA100C91532 /* Tail.swift in Sources */,
 				83B51AE91F483CD600C91532 /* CollitionHandler.swift in Sources */,
+				834DF8F61F4C9EB50075A5B9 /* CGRectExtensions.swift in Sources */,
 				83B6FE051F4A1DF6000FD119 /* WorldElement.swift in Sources */,
 				83B51AF01F484B3500C91532 /* World.swift in Sources */,
 				83B6AD041F4A2A4B007F457B /* SnakePart.swift in Sources */,
@@ -807,6 +829,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				834DF8EA1F4C724F0075A5B9 /* SnakeMock.swift in Sources */,
+				834DF8F81F4CA81E0075A5B9 /* BorderTests.swift in Sources */,
 				83B51AFA1F48526400C91532 /* WorldMock.swift in Sources */,
 				83B51AED1F48407600C91532 /* CollitionHandlerTests.swift in Sources */,
 				83B51AFC1F48543900C91532 /* CollitionDetectionTests.swift in Sources */,
@@ -814,6 +837,7 @@
 				83B6AD0A1F4A31E3007F457B /* SnakeImplementationTests.swift in Sources */,
 				834DF8EE1F4C77D40075A5B9 /* SnakeTailTests.swift in Sources */,
 				834B6F0D1F40E24900FDF852 /* SnakeHeadTests.swift in Sources */,
+				834DF8FC1F4CB5830075A5B9 /* ScoreTests.swift in Sources */,
 				83AD01031F4105B400467C82 /* SnakeWorldTests.swift in Sources */,
 				83AD01001F4103DD00467C82 /* FoodTests.swift in Sources */,
 				834DF8F01F4C84610075A5B9 /* DirectionTests.swift in Sources */,

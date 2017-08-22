@@ -31,7 +31,7 @@ class SnakeMock: Snake {
         self.body.append(head)
     }
     
-    func grow() -> SKSpriteNode {
+    func grow() -> SKNode {
         
        growCalled = true
         

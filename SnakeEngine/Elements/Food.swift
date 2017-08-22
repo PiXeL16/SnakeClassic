@@ -11,11 +11,13 @@ import GameplayKit
 
 internal class Food: WorldElement {
     
-    var node: SKSpriteNode
+    var node: SKNode
     var color = UIColor.red
+    var size: CGSize
     
     init(position: CGPoint) {
-        self.node = SKSpriteNode(color: color, size: WorldConstants.objectSize)
+        self.size = WorldConstants.objectSize
+        self.node = SKSpriteNode(color: color, size: self.size)
         self.node.position = position
         self.node.name = name
         
@@ -26,8 +28,6 @@ internal class Food: WorldElement {
 extension Food: Drawable {
     func update(){}
 }
-
-
 
 extension Food: Physical {
     

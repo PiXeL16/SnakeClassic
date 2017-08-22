@@ -11,17 +11,19 @@ import SpriteKit
 
 internal class Tail: SnakePart {
     
-    var node: SKSpriteNode
-    var color = UIColor.white
+    var node: SKNode
+    var color = UIColor.black
     var vector: CGVector
     var direction: Direction
+    var size: CGSize
     weak var referenceSnakePart: SnakePart?
     
     public init(referenceSnakePart: SnakePart) {
         self.referenceSnakePart = referenceSnakePart
-        self.node = SKSpriteNode(color: color, size: WorldConstants.objectSize)
+        self.size = WorldConstants.objectSize
+        self.node = SKSpriteNode(color: color, size: size)
         self.direction = referenceSnakePart.direction
-        self.node.position = referenceSnakePart.node.position.pointFromCurrentWithDistance(distance: 35, angle: CGFloat(self.direction.inverseAngle))
+        self.node.position = referenceSnakePart.node.position.pointFromCurrentWithDistance(distance: WorldConstants.distance, angle: CGFloat(self.direction.inverseAngle))
         self.vector = referenceSnakePart.vector
         self.node.name = name
         self.initPhysicsBodyCharacteristics()
