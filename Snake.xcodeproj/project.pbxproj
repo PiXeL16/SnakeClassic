@@ -352,9 +352,9 @@
 		834B6EB91F40CC0B00FDF852 /* SnakeEngine */ = {
 			isa = PBXGroup;
 			children = (
-				834DF92A1F4CE1F50075A5B9 /* Settings */,
 				83B51AF11F484D9500C91532 /* Collition */,
 				83AD01011F4103F500467C82 /* Elements */,
+				834DF92A1F4CE1F50075A5B9 /* Settings */,
 				834B6F121F40F56300FDF852 /* Utils */,
 				834B6F081F40D62E00FDF852 /* Controllable.swift */,
 				834B6F0A1F40E22000FDF852 /* Direction.swift */,
@@ -438,8 +438,8 @@
 		834DF9031F4CBBA60075A5B9 /* SnakeEngineWatch */ = {
 			isa = PBXGroup;
 			children = (
-				834DF9041F4CBBA60075A5B9 /* SnakeEngineWatch.h */,
 				834DF9051F4CBBA60075A5B9 /* Info.plist */,
+				834DF9041F4CBBA60075A5B9 /* SnakeEngineWatch.h */,
 			);
 			path = SnakeEngineWatch;
 			sourceTree = "<group>";
@@ -447,22 +447,23 @@
 		834DF92A1F4CE1F50075A5B9 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				834DF92B1F4CE2000075A5B9 /* WorldSettings.swift */,
-				834DF92D1F4CE2E80075A5B9 /* WatchSettings.swift */,
 				834DF92F1F4CE2F00075A5B9 /* PhoneSettings.swift */,
 				834DF9341F4CE83F0075A5B9 /* SettingsFactory.swift */,
+				834DF92D1F4CE2E80075A5B9 /* WatchSettings.swift */,
+				834DF92B1F4CE2000075A5B9 /* WorldSettings.swift */,
 			);
 			name = Settings;
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		83767BDC1F40BA3B00122DB6 = {
 			isa = PBXGroup;
 			children = (
-				834DF9031F4CBBA60075A5B9 /* SnakeEngineWatch */,
 				83767BE61F40BA3B00122DB6 /* Products */,
 				83767BE71F40BA3B00122DB6 /* Snake */,
 				834B6EB91F40CC0B00FDF852 /* SnakeEngine */,
 				834B6EC61F40CC0B00FDF852 /* SnakeEngineTests */,
+				834DF9031F4CBBA60075A5B9 /* SnakeEngineWatch */,
 				83767C021F40BA3B00122DB6 /* SnakeTests */,
 				83767C0D1F40BA3B00122DB6 /* SnakeUITests */,
 				834B6ED91F40CC5000FDF852 /* SnakeWatch */,
@@ -523,10 +524,10 @@
 			children = (
 				83B51AFD1F485D2E00C91532 /* Snake */,
 				83B51AEE1F484A5200C91532 /* World */,
-				834B6F031F40D35400FDF852 /* Food.swift */,
-				83B6FE041F4A1DF6000FD119 /* WorldElement.swift */,
 				834DF8F11F4C93250075A5B9 /* Border.swift */,
+				834B6F031F40D35400FDF852 /* Food.swift */,
 				834DF8F91F4CA94F0075A5B9 /* Score.swift */,
+				83B6FE041F4A1DF6000FD119 /* WorldElement.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -547,9 +548,9 @@
 				83B51AE61F48385200C91532 /* CollitionCategory.swift */,
 				83B51AF41F484F4E00C91532 /* CollitionDetection.swift */,
 				83B51AE81F483CD600C91532 /* CollitionHandler.swift */,
+				834DF8F31F4C9BA10075A5B9 /* SnakeBorderCollition.swift */,
 				83B51B041F4860EA00C91532 /* SnakeFoodCollition.swift */,
 				83B51B0B1F48981200C91532 /* SnakeTailCollition.swift */,
-				834DF8F31F4C9BA10075A5B9 /* SnakeBorderCollition.swift */,
 			);
 			path = Collition;
 			sourceTree = "<group>";
@@ -568,9 +569,9 @@
 			children = (
 				83B51B061F4866E500C91532 /* Snake */,
 				83B51AF81F48524400C91532 /* World */,
-				83AD00FF1F4103DD00467C82 /* FoodTests.swift */,
-				834DF8EF1F4C84610075A5B9 /* DirectionTests.swift */,
 				834DF8F71F4CA81E0075A5B9 /* BorderTests.swift */,
+				834DF8EF1F4C84610075A5B9 /* DirectionTests.swift */,
+				83AD00FF1F4103DD00467C82 /* FoodTests.swift */,
 				834DF8FB1F4CB5830075A5B9 /* ScoreTests.swift */,
 			);
 			path = Elements;
