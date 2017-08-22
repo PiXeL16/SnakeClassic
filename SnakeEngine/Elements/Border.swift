@@ -7,7 +7,6 @@
 //
 
 import SpriteKit
-import GameplayKit
 
 internal class Border: WorldElement {
     
@@ -15,12 +14,14 @@ internal class Border: WorldElement {
     var shapeNode: SKShapeNode!
     let frame: CGRect
     
+    let settings = SettingsFactory.buildSettings()
+    
     init(frame: CGRect) {
         
         self.frame = frame
         self.shapeNode = SKShapeNode(rect: frame)
         self.shapeNode.strokeColor = self.color
-        self.shapeNode.lineWidth = WorldConstants.objectSize.width
+        self.shapeNode.lineWidth = settings.elementSize.width
         initPhysicsBodyCharacteristics()
     }
     

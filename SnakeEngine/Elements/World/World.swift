@@ -12,7 +12,6 @@ import SpriteKit
 internal protocol World: class, Controllable {
     
     weak var scene: SKScene? { get }
-    
     var snake: Snake! { get set }
     var food: Food! { get set }
     var border: Border! { get set }

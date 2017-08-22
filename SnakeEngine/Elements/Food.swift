@@ -7,7 +7,6 @@
 //
 
 import SpriteKit
-import GameplayKit
 
 internal class Food: WorldElement {
     
@@ -15,8 +14,10 @@ internal class Food: WorldElement {
     var color = UIColor.red
     var size: CGSize
     
+    let settings = SettingsFactory.buildSettings()
+    
     init(position: CGPoint) {
-        self.size = WorldConstants.objectSize
+        self.size = settings.elementSize
         self.node = SKSpriteNode(color: color, size: self.size)
         self.node.position = position
         self.node.name = name

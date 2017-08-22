@@ -18,12 +18,15 @@ internal class Tail: SnakePart {
     var size: CGSize
     weak var referenceSnakePart: SnakePart?
     
+    let settings = SettingsFactory.buildSettings()
+    
     public init(referenceSnakePart: SnakePart) {
         self.referenceSnakePart = referenceSnakePart
-        self.size = WorldConstants.objectSize
+        self.size = settings.elementSize
         self.node = SKSpriteNode(color: color, size: size)
         self.direction = referenceSnakePart.direction
-        self.node.position = referenceSnakePart.node.position.pointFromCurrentWithDistance(distance: WorldConstants.distance, angle: CGFloat(self.direction.inverseAngle))
+        self.node.position = referenceSnakePart.node.position.pointFromCurrentWithDistance(distance: settings.distance,
+                                                                                           angle: CGFloat(self.direction.inverseAngle))
         self.vector = referenceSnakePart.vector
         self.node.name = name
         self.initPhysicsBodyCharacteristics()

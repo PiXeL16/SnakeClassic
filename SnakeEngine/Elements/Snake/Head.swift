@@ -17,8 +17,10 @@ internal class Head: SnakePart {
     var size: CGSize
     weak var referenceSnakePart: SnakePart?
     
+    let settings = SettingsFactory.buildSettings()
+    
     init() {
-        self.size = WorldConstants.objectSize
+        self.size = settings.elementSize
         self.node = SKSpriteNode(color: color, size: size)
         self.vector = CGVector(dx: 0, dy: 0)
         self.direction = Direction.None
@@ -32,8 +34,8 @@ extension Head: Drawable {
     
     func update() {
         
-        self.node.position.x = self.node.position.x + vector.dx * WorldConstants.distance
-        self.node.position.y = self.node.position.y + vector.dy * WorldConstants.distance
+        self.node.position.x = self.node.position.x + vector.dx * settings.distance
+        self.node.position.y = self.node.position.y + vector.dy * settings.distance
         
     }
 }
@@ -69,21 +71,21 @@ extension Head: Controllable {
     
     func left() {
         self.direction = .Left
-        self.move(vector: CGVector(dx: -WorldConstants.velocity, dy: 0))
+        self.move(vector: CGVector(dx: -settings.velocity, dy: 0))
     }
     
     func right() {
         self.direction = .Right
-        self.move(vector: CGVector(dx: WorldConstants.velocity, dy: 0))
+        self.move(vector: CGVector(dx: settings.velocity, dy: 0))
     }
     
     func up() {
         self.direction = .Up
-        self.move(vector: CGVector(dx: 0, dy: WorldConstants.velocity))
+        self.move(vector: CGVector(dx: 0, dy: settings.velocity))
     }
     
     func down() {
         self.direction = .Down
-        self.move(vector: CGVector(dx: 0, dy: -WorldConstants.velocity))
+        self.move(vector: CGVector(dx: 0, dy: -settings.velocity))
     }
 }

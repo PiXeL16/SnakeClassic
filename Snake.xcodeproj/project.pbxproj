@@ -21,7 +21,6 @@
 		834B6EF21F40CC5100FDF852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834B6EF11F40CC5100FDF852 /* Assets.xcassets */; };
 		834B6EF61F40CC5100FDF852 /* SnakeWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 834B6ED81F40CC5000FDF852 /* SnakeWatch.app */; };
 		834B6F001F40CC9400FDF852 /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6EFF1F40CC9400FDF852 /* Head.swift */; };
-		834B6F021F40CF6A00FDF852 /* WorldConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F011F40CF6A00FDF852 /* WorldConstants.swift */; };
 		834B6F041F40D35400FDF852 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F031F40D35400FDF852 /* Food.swift */; };
 		834B6F061F40D35E00FDF852 /* SnakeWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F051F40D35E00FDF852 /* SnakeWorld.swift */; };
 		834B6F091F40D62E00FDF852 /* Controllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F081F40D62E00FDF852 /* Controllable.swift */; };
@@ -40,6 +39,43 @@
 		834DF8F81F4CA81E0075A5B9 /* BorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F71F4CA81E0075A5B9 /* BorderTests.swift */; };
 		834DF8FA1F4CA94F0075A5B9 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F91F4CA94F0075A5B9 /* Score.swift */; };
 		834DF8FC1F4CB5830075A5B9 /* ScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8FB1F4CB5830075A5B9 /* ScoreTests.swift */; };
+		834DF9061F4CBBA60075A5B9 /* SnakeEngineWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 834DF9041F4CBBA60075A5B9 /* SnakeEngineWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		834DF9091F4CBBA60075A5B9 /* SnakeEngineWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834DF9021F4CBBA60075A5B9 /* SnakeEngineWatch.framework */; };
+		834DF90A1F4CBBA60075A5B9 /* SnakeEngineWatch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 834DF9021F4CBBA60075A5B9 /* SnakeEngineWatch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		834DF90F1F4CBBD90075A5B9 /* Collider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AF21F484E0600C91532 /* Collider.swift */; };
+		834DF9101F4CBBD90075A5B9 /* CollitionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AE61F48385200C91532 /* CollitionCategory.swift */; };
+		834DF9111F4CBBD90075A5B9 /* CollitionDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AF41F484F4E00C91532 /* CollitionDetection.swift */; };
+		834DF9121F4CBBD90075A5B9 /* CollitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AE81F483CD600C91532 /* CollitionHandler.swift */; };
+		834DF9131F4CBBD90075A5B9 /* SnakeFoodCollition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51B041F4860EA00C91532 /* SnakeFoodCollition.swift */; };
+		834DF9141F4CBBD90075A5B9 /* SnakeTailCollition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51B0B1F48981200C91532 /* SnakeTailCollition.swift */; };
+		834DF9151F4CBBD90075A5B9 /* SnakeBorderCollition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F31F4C9BA10075A5B9 /* SnakeBorderCollition.swift */; };
+		834DF9161F4CBBD90075A5B9 /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6EFF1F40CC9400FDF852 /* Head.swift */; };
+		834DF9171F4CBBD90075A5B9 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AD051F4A2D36007F457B /* Snake.swift */; };
+		834DF9181F4CBBD90075A5B9 /* SnakeImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AD071F4A2EE1007F457B /* SnakeImplementation.swift */; };
+		834DF9191F4CBBD90075A5B9 /* SnakePart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AD031F4A2A4B007F457B /* SnakePart.swift */; };
+		834DF91A1F4CBBD90075A5B9 /* Tail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51B001F485DA100C91532 /* Tail.swift */; };
+		834DF91B1F4CBBD90075A5B9 /* SnakeWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F051F40D35E00FDF852 /* SnakeWorld.swift */; };
+		834DF91C1F4CBBD90075A5B9 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AEF1F484B3500C91532 /* World.swift */; };
+		834DF91D1F4CBBD90075A5B9 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F031F40D35400FDF852 /* Food.swift */; };
+		834DF91E1F4CBBD90075A5B9 /* WorldElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6FE041F4A1DF6000FD119 /* WorldElement.swift */; };
+		834DF91F1F4CBBD90075A5B9 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F11F4C93250075A5B9 /* Border.swift */; };
+		834DF9201F4CBBD90075A5B9 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F91F4CA94F0075A5B9 /* Score.swift */; };
+		834DF9211F4CBBD90075A5B9 /* CGPointExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F131F40F57E00FDF852 /* CGPointExtensions.swift */; };
+		834DF9221F4CBBD90075A5B9 /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F51F4C9EB50075A5B9 /* CGRectExtensions.swift */; };
+		834DF9231F4CBBD90075A5B9 /* Controllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F081F40D62E00FDF852 /* Controllable.swift */; };
+		834DF9241F4CBBD90075A5B9 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F0A1F40E22000FDF852 /* Direction.swift */; };
+		834DF9251F4CBBD90075A5B9 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51B021F485F5400C91532 /* Drawable.swift */; };
+		834DF9261F4CBBD90075A5B9 /* Movable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F101F40F24100FDF852 /* Movable.swift */; };
+		834DF9271F4CBBD90075A5B9 /* Nameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD00FD1F4101EE00467C82 /* Nameable.swift */; };
+		834DF9281F4CBBD90075A5B9 /* Physical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F0E1F40EF7A00FDF852 /* Physical.swift */; };
+		834DF92C1F4CE2000075A5B9 /* WorldSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF92B1F4CE2000075A5B9 /* WorldSettings.swift */; };
+		834DF9301F4CE2F00075A5B9 /* PhoneSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF92F1F4CE2F00075A5B9 /* PhoneSettings.swift */; };
+		834DF9311F4CE39B0075A5B9 /* WorldSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF92B1F4CE2000075A5B9 /* WorldSettings.swift */; };
+		834DF9321F4CE39B0075A5B9 /* WatchSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF92D1F4CE2E80075A5B9 /* WatchSettings.swift */; };
+		834DF9351F4CE83F0075A5B9 /* SettingsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF9341F4CE83F0075A5B9 /* SettingsFactory.swift */; };
+		834DF9361F4CE92B0075A5B9 /* WatchSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF92D1F4CE2E80075A5B9 /* WatchSettings.swift */; };
+		834DF9371F4CE9320075A5B9 /* PhoneSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF92F1F4CE2F00075A5B9 /* PhoneSettings.swift */; };
+		834DF9381F4CE9E40075A5B9 /* SettingsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF9341F4CE83F0075A5B9 /* SettingsFactory.swift */; };
 		83767BE91F40BA3B00122DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83767BE81F40BA3B00122DB6 /* AppDelegate.swift */; };
 		83767BEB1F40BA3B00122DB6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83767BEA1F40BA3B00122DB6 /* GameScene.sks */; };
 		83767BED1F40BA3B00122DB6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83767BEC1F40BA3B00122DB6 /* Actions.sks */; };
@@ -107,6 +143,13 @@
 			remoteGlobalIDString = 834B6ED71F40CC5000FDF852;
 			remoteInfo = SnakeWatch;
 		};
+		834DF9071F4CBBA60075A5B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 834DF9011F4CBBA60075A5B9;
+			remoteInfo = SnakeEngineWatch;
+		};
 		83767C001F40BA3B00122DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
@@ -157,6 +200,17 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		834DF90E1F4CBBA60075A5B9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				834DF90A1F4CBBA60075A5B9 /* SnakeEngineWatch.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -177,7 +231,6 @@
 		834B6EF11F40CC5100FDF852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834B6EF31F40CC5100FDF852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		834B6EFF1F40CC9400FDF852 /* Head.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Head.swift; sourceTree = "<group>"; };
-		834B6F011F40CF6A00FDF852 /* WorldConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldConstants.swift; sourceTree = "<group>"; };
 		834B6F031F40D35400FDF852 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		834B6F051F40D35E00FDF852 /* SnakeWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeWorld.swift; sourceTree = "<group>"; };
 		834B6F081F40D62E00FDF852 /* Controllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controllable.swift; sourceTree = "<group>"; };
@@ -196,6 +249,13 @@
 		834DF8F71F4CA81E0075A5B9 /* BorderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderTests.swift; sourceTree = "<group>"; };
 		834DF8F91F4CA94F0075A5B9 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		834DF8FB1F4CB5830075A5B9 /* ScoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTests.swift; sourceTree = "<group>"; };
+		834DF9021F4CBBA60075A5B9 /* SnakeEngineWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnakeEngineWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		834DF9041F4CBBA60075A5B9 /* SnakeEngineWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnakeEngineWatch.h; sourceTree = "<group>"; };
+		834DF9051F4CBBA60075A5B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		834DF92B1F4CE2000075A5B9 /* WorldSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldSettings.swift; sourceTree = "<group>"; };
+		834DF92D1F4CE2E80075A5B9 /* WatchSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSettings.swift; sourceTree = "<group>"; };
+		834DF92F1F4CE2F00075A5B9 /* PhoneSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneSettings.swift; sourceTree = "<group>"; };
+		834DF9341F4CE83F0075A5B9 /* SettingsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsFactory.swift; sourceTree = "<group>"; };
 		83767BE51F40BA3B00122DB6 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83767BE81F40BA3B00122DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83767BEA1F40BA3B00122DB6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -253,6 +313,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				834DF9091F4CBBA60075A5B9 /* SnakeEngineWatch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834DF8FE1F4CBBA60075A5B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +352,7 @@
 		834B6EB91F40CC0B00FDF852 /* SnakeEngine */ = {
 			isa = PBXGroup;
 			children = (
+				834DF92A1F4CE1F50075A5B9 /* Settings */,
 				83B51AF11F484D9500C91532 /* Collition */,
 				83AD01011F4103F500467C82 /* Elements */,
 				834B6F121F40F56300FDF852 /* Utils */,
@@ -295,7 +364,6 @@
 				83AD00FD1F4101EE00467C82 /* Nameable.swift */,
 				834B6F0E1F40EF7A00FDF852 /* Physical.swift */,
 				834B6EBA1F40CC0B00FDF852 /* SnakeEngine.h */,
-				834B6F011F40CF6A00FDF852 /* WorldConstants.swift */,
 			);
 			path = SnakeEngine;
 			sourceTree = "<group>";
@@ -367,9 +435,30 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		834DF9031F4CBBA60075A5B9 /* SnakeEngineWatch */ = {
+			isa = PBXGroup;
+			children = (
+				834DF9041F4CBBA60075A5B9 /* SnakeEngineWatch.h */,
+				834DF9051F4CBBA60075A5B9 /* Info.plist */,
+			);
+			path = SnakeEngineWatch;
+			sourceTree = "<group>";
+		};
+		834DF92A1F4CE1F50075A5B9 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				834DF92B1F4CE2000075A5B9 /* WorldSettings.swift */,
+				834DF92D1F4CE2E80075A5B9 /* WatchSettings.swift */,
+				834DF92F1F4CE2F00075A5B9 /* PhoneSettings.swift */,
+				834DF9341F4CE83F0075A5B9 /* SettingsFactory.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		83767BDC1F40BA3B00122DB6 = {
 			isa = PBXGroup;
 			children = (
+				834DF9031F4CBBA60075A5B9 /* SnakeEngineWatch */,
 				83767BE61F40BA3B00122DB6 /* Products */,
 				83767BE71F40BA3B00122DB6 /* Snake */,
 				834B6EB91F40CC0B00FDF852 /* SnakeEngine */,
@@ -391,6 +480,7 @@
 				834B6EC01F40CC0B00FDF852 /* SnakeEngineTests.xctest */,
 				834B6ED81F40CC5000FDF852 /* SnakeWatch.app */,
 				834B6EE41F40CC5000FDF852 /* SnakeWatch Extension.appex */,
+				834DF9021F4CBBA60075A5B9 /* SnakeEngineWatch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -529,6 +619,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		834DF8FF1F4CBBA60075A5B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834DF9061F4CBBA60075A5B9 /* SnakeEngineWatch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -593,15 +691,35 @@
 				834B6EE01F40CC5000FDF852 /* Sources */,
 				834B6EE11F40CC5000FDF852 /* Frameworks */,
 				834B6EE21F40CC5000FDF852 /* Resources */,
+				834DF90E1F4CBBA60075A5B9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				834DF9081F4CBBA60075A5B9 /* PBXTargetDependency */,
 			);
 			name = "SnakeWatch Extension";
 			productName = "SnakeWatch Extension";
 			productReference = 834B6EE41F40CC5000FDF852 /* SnakeWatch Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		834DF9011F4CBBA60075A5B9 /* SnakeEngineWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 834DF90B1F4CBBA60075A5B9 /* Build configuration list for PBXNativeTarget "SnakeEngineWatch" */;
+			buildPhases = (
+				834DF8FD1F4CBBA60075A5B9 /* Sources */,
+				834DF8FE1F4CBBA60075A5B9 /* Frameworks */,
+				834DF8FF1F4CBBA60075A5B9 /* Headers */,
+				834DF9001F4CBBA60075A5B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnakeEngineWatch;
+			productName = SnakeEngineWatch;
+			productReference = 834DF9021F4CBBA60075A5B9 /* SnakeEngineWatch.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		83767BE41F40BA3B00122DB6 /* Snake */ = {
 			isa = PBXNativeTarget;
@@ -672,6 +790,7 @@
 				TargetAttributes = {
 					834B6EB71F40CC0B00FDF852 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7JMURSKQQ8;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -682,14 +801,21 @@
 					};
 					834B6ED71F40CC5000FDF852 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7JMURSKQQ8;
 						ProvisioningStyle = Automatic;
 					};
 					834B6EE31F40CC5000FDF852 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7JMURSKQQ8;
+						ProvisioningStyle = Automatic;
+					};
+					834DF9011F4CBBA60075A5B9 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
 					83767BE41F40BA3B00122DB6 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7JMURSKQQ8;
 						ProvisioningStyle = Automatic;
 					};
 					83767BFE1F40BA3B00122DB6 = {
@@ -724,6 +850,7 @@
 				834B6EBF1F40CC0B00FDF852 /* SnakeEngineTests */,
 				834B6ED71F40CC5000FDF852 /* SnakeWatch */,
 				834B6EE31F40CC5000FDF852 /* SnakeWatch Extension */,
+				834DF9011F4CBBA60075A5B9 /* SnakeEngineWatch */,
 			);
 		};
 /* End PBXProject section */
@@ -761,6 +888,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		834DF9001F4CBBA60075A5B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		83767BE31F40BA3B00122DB6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -794,11 +928,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				834B6F021F40CF6A00FDF852 /* WorldConstants.swift in Sources */,
+				834DF9361F4CE92B0075A5B9 /* WatchSettings.swift in Sources */,
+				834DF9351F4CE83F0075A5B9 /* SettingsFactory.swift in Sources */,
 				834B6F001F40CC9400FDF852 /* Head.swift in Sources */,
 				834B6F061F40D35E00FDF852 /* SnakeWorld.swift in Sources */,
 				83B51B051F4860EA00C91532 /* SnakeFoodCollition.swift in Sources */,
 				83B51B0C1F48981200C91532 /* SnakeTailCollition.swift in Sources */,
+				834DF9301F4CE2F00075A5B9 /* PhoneSettings.swift in Sources */,
 				834B6F041F40D35400FDF852 /* Food.swift in Sources */,
 				834B6F0F1F40EF7A00FDF852 /* Physical.swift in Sources */,
 				834DF8FA1F4CA94F0075A5B9 /* Score.swift in Sources */,
@@ -809,6 +945,7 @@
 				83B51AF51F484F4E00C91532 /* CollitionDetection.swift in Sources */,
 				83AD00FE1F4101EE00467C82 /* Nameable.swift in Sources */,
 				834B6F111F40F24100FDF852 /* Movable.swift in Sources */,
+				834DF92C1F4CE2000075A5B9 /* WorldSettings.swift in Sources */,
 				834DF8F21F4C93250075A5B9 /* Border.swift in Sources */,
 				83B6AD061F4A2D36007F457B /* Snake.swift in Sources */,
 				83B51AF31F484E0600C91532 /* Collider.swift in Sources */,
@@ -851,6 +988,43 @@
 				834B6EEE1F40CC5100FDF852 /* GameScene.swift in Sources */,
 				834B6EEA1F40CC5000FDF852 /* InterfaceController.swift in Sources */,
 				834B6EF01F40CC5100FDF852 /* ExtensionDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		834DF8FD1F4CBBA60075A5B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834DF9381F4CE9E40075A5B9 /* SettingsFactory.swift in Sources */,
+				834DF9371F4CE9320075A5B9 /* PhoneSettings.swift in Sources */,
+				834DF9311F4CE39B0075A5B9 /* WorldSettings.swift in Sources */,
+				834DF9321F4CE39B0075A5B9 /* WatchSettings.swift in Sources */,
+				834DF90F1F4CBBD90075A5B9 /* Collider.swift in Sources */,
+				834DF9101F4CBBD90075A5B9 /* CollitionCategory.swift in Sources */,
+				834DF9111F4CBBD90075A5B9 /* CollitionDetection.swift in Sources */,
+				834DF9121F4CBBD90075A5B9 /* CollitionHandler.swift in Sources */,
+				834DF9131F4CBBD90075A5B9 /* SnakeFoodCollition.swift in Sources */,
+				834DF9141F4CBBD90075A5B9 /* SnakeTailCollition.swift in Sources */,
+				834DF9151F4CBBD90075A5B9 /* SnakeBorderCollition.swift in Sources */,
+				834DF9161F4CBBD90075A5B9 /* Head.swift in Sources */,
+				834DF9171F4CBBD90075A5B9 /* Snake.swift in Sources */,
+				834DF9181F4CBBD90075A5B9 /* SnakeImplementation.swift in Sources */,
+				834DF9191F4CBBD90075A5B9 /* SnakePart.swift in Sources */,
+				834DF91A1F4CBBD90075A5B9 /* Tail.swift in Sources */,
+				834DF91B1F4CBBD90075A5B9 /* SnakeWorld.swift in Sources */,
+				834DF91C1F4CBBD90075A5B9 /* World.swift in Sources */,
+				834DF91D1F4CBBD90075A5B9 /* Food.swift in Sources */,
+				834DF91E1F4CBBD90075A5B9 /* WorldElement.swift in Sources */,
+				834DF91F1F4CBBD90075A5B9 /* Border.swift in Sources */,
+				834DF9201F4CBBD90075A5B9 /* Score.swift in Sources */,
+				834DF9211F4CBBD90075A5B9 /* CGPointExtensions.swift in Sources */,
+				834DF9221F4CBBD90075A5B9 /* CGRectExtensions.swift in Sources */,
+				834DF9231F4CBBD90075A5B9 /* Controllable.swift in Sources */,
+				834DF9241F4CBBD90075A5B9 /* Direction.swift in Sources */,
+				834DF9251F4CBBD90075A5B9 /* Drawable.swift in Sources */,
+				834DF9261F4CBBD90075A5B9 /* Movable.swift in Sources */,
+				834DF9271F4CBBD90075A5B9 /* Nameable.swift in Sources */,
+				834DF9281F4CBBD90075A5B9 /* Physical.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,6 +1081,11 @@
 			target = 834B6ED71F40CC5000FDF852 /* SnakeWatch */;
 			targetProxy = 834B6EF41F40CC5100FDF852 /* PBXContainerItemProxy */;
 		};
+		834DF9081F4CBBA60075A5B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 834DF9011F4CBBA60075A5B9 /* SnakeEngineWatch */;
+			targetProxy = 834DF9071F4CBBA60075A5B9 /* PBXContainerItemProxy */;
+		};
 		83767C011F40BA3B00122DB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 83767BE41F40BA3B00122DB6 /* Snake */;
@@ -955,8 +1134,10 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7JMURSKQQ8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -980,6 +1161,7 @@
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7JMURSKQQ8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -1025,6 +1207,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 7JMURSKQQ8;
 				INFOPLIST_FILE = "SnakeWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake.watchkitapp.watchkitextension;
@@ -1041,6 +1224,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 7JMURSKQQ8;
 				INFOPLIST_FILE = "SnakeWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake.watchkitapp.watchkitextension;
@@ -1058,6 +1242,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7JMURSKQQ8;
 				IBSC_MODULE = SnakeWatch_Extension;
 				INFOPLIST_FILE = SnakeWatch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake.watchkitapp;
@@ -1075,6 +1260,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7JMURSKQQ8;
 				IBSC_MODULE = SnakeWatch_Extension;
 				INFOPLIST_FILE = SnakeWatch/Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake.watchkitapp;
@@ -1083,6 +1269,56 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		834DF90C1F4CBBA60075A5B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SnakeEngineWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.SnakeEngineWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		834DF90D1F4CBBA60075A5B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SnakeEngineWatch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.SnakeEngineWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
 			name = Release;
@@ -1187,6 +1423,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7JMURSKQQ8;
 				INFOPLIST_FILE = Snake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake;
@@ -1200,6 +1437,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7JMURSKQQ8;
 				INFOPLIST_FILE = Snake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake;
@@ -1300,6 +1538,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		834DF90B1F4CBBA60075A5B9 /* Build configuration list for PBXNativeTarget "SnakeEngineWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				834DF90C1F4CBBA60075A5B9 /* Debug */,
+				834DF90D1F4CBBA60075A5B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		83767BE01F40BA3B00122DB6 /* Build configuration list for PBXProject "Snake" */ = {
 			isa = XCConfigurationList;

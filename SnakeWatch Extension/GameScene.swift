@@ -7,40 +7,84 @@
 //
 
 import SpriteKit
+import SnakeEngineWatch
+import WatchKit
 
 class GameScene: SKScene {
     
-    private var spinnyNode : SKShapeNode?
+    var world: SnakeWorld!
+    var direction: Direction = .None
     
     override func sceneDidLoad() {
         
-        if let label = self.childNode(withName: "//helloLabel") as? SKLabelNode {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
-        
-        let w = (self.size.width + self.size.height) * 0.05
-        let spinnyNode = SKShapeNode(rectOf: CGSize(width: w, height: w), cornerRadius: w * 0.3)
-        
-        spinnyNode.position = CGPoint(x: 0.0, y: 0.0)
-        spinnyNode.strokeColor = UIColor.red
-        spinnyNode.lineWidth = 8.0
-            
-        spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                          SKAction.fadeOut(withDuration: 0.5),
-                                          SKAction.removeFromParent()]))
-        
-        spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: 6.28, duration: 1)))
-        
-        self.run(SKAction.repeatForever(SKAction.sequence([SKAction.wait(forDuration: 2.0),
-                                                           SKAction.run({
-                                                            let n = spinnyNode.copy() as! SKShapeNode
-                                                            self.addChild(n)
-                                                           })])))
+        self.world = SnakeWorld(scene: self)
     }
     
-    
     override func update(_ currentTime: TimeInterval) {
-        // Called before each frame is rendered
+        
+        self.world.update(currentTime: currentTime)
+    }
+}
+
+
+extension GameScene: Controllable {
+    
+    func right() {
+        self.direction = .Right
+        self.world.right()
+    }
+    
+    func left() {
+        self.direction = .Left
+        self.world.left()
+    }
+    
+    func up() {
+        self.direction = .Up
+        self.world.up()
+    }
+    
+    func down() {
+        self.direction = .Down
+        self.world.down()
+    }
+    
+}
+
+
+extension GameScene {
+    
+    func turnRight() {
+        
+        switch direction {
+        case .Right:
+            down()
+        case .Down:
+            left()
+        case .Left:
+            up()
+        case .Up:
+            right()
+        case .None:
+            up()
+        }
+        
+    }
+    
+    func turnLeft() {
+        
+        switch direction {
+        case .Right:
+            down()
+        case .Down:
+            right()
+        case .Left:
+            up()
+        case .Up:
+            left()
+        case .None:
+            up()
+        }
+        
     }
 }

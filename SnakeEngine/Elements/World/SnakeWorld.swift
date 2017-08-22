@@ -8,7 +8,6 @@
 
 import Foundation
 import SpriteKit
-import GameplayKit
 
 public class SnakeWorld: NSObject, World {
     
@@ -19,6 +18,8 @@ public class SnakeWorld: NSObject, World {
     internal var score: Score!
     internal var collitionDetection: Collider!
     internal var timeOfLastMove = 0.0
+    
+    let settings = SettingsFactory.buildSettings()
     
     public var frame: CGRect {
         
@@ -47,17 +48,15 @@ public class SnakeWorld: NSObject, World {
     
     public func update(currentTime: TimeInterval) {
         
-        if (currentTime - self.timeOfLastMove < WorldConstants.timeFrameDelayer) {
+        if (currentTime - self.timeOfLastMove < settings.timeFrameDelayer) {
             return
         }
 
-        
         self.snake.update()
         
         self.timeOfLastMove = currentTime
         
     }
-    
     
     public func restartGame() {
         
@@ -72,7 +71,6 @@ public class SnakeWorld: NSObject, World {
         createFood()
         
     }
-    
     
     internal func createSnake() {
         
@@ -97,7 +95,7 @@ public class SnakeWorld: NSObject, World {
     
     internal func createScore() {
         
-        self.score = Score(position: CGPoint(x: frame.midX, y: frame.maxY - WorldConstants.distance * 2))
+        self.score = Score(position: CGPoint(x: frame.midX, y: frame.maxY - settings.distance * 3))
         self.scene?.addChild(score.node)
     }
     

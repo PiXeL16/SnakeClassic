@@ -118,7 +118,7 @@ class SnakeWorldTests: XCTestCase {
         
         world.restartGame()
         
-        XCTAssertLessThan(world.scene!.children.count, 4)
+        XCTAssertLessThan(world.scene!.children.count, 5)
         XCTAssertEqual(world.snake.body.count, 1)
     }
     

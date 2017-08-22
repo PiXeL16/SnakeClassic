@@ -7,7 +7,6 @@
 //
 
 import SpriteKit
-import GameplayKit
 
 internal class Score: WorldElement {
     
@@ -16,6 +15,8 @@ internal class Score: WorldElement {
     var physicsBody: SKPhysicsBody?
     
     var scoreLabel: SKLabelNode
+    
+    let settings = SettingsFactory.buildSettings()
     
     var score: Int = 0{
         didSet {
@@ -29,7 +30,7 @@ internal class Score: WorldElement {
         self.scoreLabel.position = position
         self.scoreLabel.color = self.color
         self.scoreLabel.fontColor = self.color
-        self.scoreLabel.fontSize = 50
+        self.scoreLabel.fontSize = 30 * settings.margin
         self.clearScore()
     
     }
