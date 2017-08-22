@@ -33,6 +33,7 @@
 		834B6F171F40F90600FDF852 /* CGPointExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F161F40F90600FDF852 /* CGPointExtensionsTests.swift */; };
 		834DF8EA1F4C724F0075A5B9 /* SnakeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8E91F4C724F0075A5B9 /* SnakeMock.swift */; };
 		834DF8EE1F4C77D40075A5B9 /* SnakeTailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8ED1F4C77D40075A5B9 /* SnakeTailTests.swift */; };
+		834DF8F01F4C84610075A5B9 /* DirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8EF1F4C84610075A5B9 /* DirectionTests.swift */; };
 		83767BE91F40BA3B00122DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83767BE81F40BA3B00122DB6 /* AppDelegate.swift */; };
 		83767BEB1F40BA3B00122DB6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83767BEA1F40BA3B00122DB6 /* GameScene.sks */; };
 		83767BED1F40BA3B00122DB6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83767BEC1F40BA3B00122DB6 /* Actions.sks */; };
@@ -182,6 +183,7 @@
 		834B6F161F40F90600FDF852 /* CGPointExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGPointExtensionsTests.swift; sourceTree = "<group>"; };
 		834DF8E91F4C724F0075A5B9 /* SnakeMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeMock.swift; sourceTree = "<group>"; };
 		834DF8ED1F4C77D40075A5B9 /* SnakeTailTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeTailTests.swift; sourceTree = "<group>"; };
+		834DF8EF1F4C84610075A5B9 /* DirectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionTests.swift; sourceTree = "<group>"; };
 		83767BE51F40BA3B00122DB6 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83767BE81F40BA3B00122DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83767BEA1F40BA3B00122DB6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -216,7 +218,7 @@
 		83B6AD051F4A2D36007F457B /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
 		83B6AD071F4A2EE1007F457B /* SnakeImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeImplementation.swift; sourceTree = "<group>"; };
 		83B6AD091F4A31E3007F457B /* SnakeImplementationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeImplementationTests.swift; sourceTree = "<group>"; };
-		83B6FE041F4A1DF6000FD119 /* WorldElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorldElement.swift; path = WorldElement.swift; sourceTree = "<group>"; };
+		83B6FE041F4A1DF6000FD119 /* WorldElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,7 +343,6 @@
 			children = (
 				834DF8E91F4C724F0075A5B9 /* SnakeMock.swift */,
 			);
-			name = Mocks;
 			path = Mocks;
 			sourceTree = "<group>";
 		};
@@ -350,7 +351,6 @@
 			children = (
 				83B51AF91F48526400C91532 /* WorldMock.swift */,
 			);
-			name = Mocks;
 			path = Mocks;
 			sourceTree = "<group>";
 		};
@@ -463,6 +463,7 @@
 				83B51B061F4866E500C91532 /* Snake */,
 				83B51AF81F48524400C91532 /* World */,
 				83AD00FF1F4103DD00467C82 /* FoodTests.swift */,
+				834DF8EF1F4C84610075A5B9 /* DirectionTests.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -815,6 +816,7 @@
 				834B6F0D1F40E24900FDF852 /* SnakeHeadTests.swift in Sources */,
 				83AD01031F4105B400467C82 /* SnakeWorldTests.swift in Sources */,
 				83AD01001F4103DD00467C82 /* FoodTests.swift in Sources */,
+				834DF8F01F4C84610075A5B9 /* DirectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

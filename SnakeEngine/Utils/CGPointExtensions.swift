@@ -32,6 +32,17 @@ extension CGPoint {
         return randomNumber
     }
     
+    
+    func pointFromCurrentWithDistance(distance: CGFloat, angle: CGFloat) -> CGPoint {
+        
+        let radians: CGFloat = angle * CGFloat.pi / 180.0
+        
+        let xFromPoint = self.x + cos(radians) * distance
+        let yFromPoint = self.y + sin(radians) * distance
+        
+        return CGPoint(x: xFromPoint, y: yFromPoint)
+    }
+    
     mutating func updateWithVector(vector: CGVector) {
         
         self.x = self.x + vector.dx

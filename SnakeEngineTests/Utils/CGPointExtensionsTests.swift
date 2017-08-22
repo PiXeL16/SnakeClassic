@@ -54,4 +54,24 @@ class CGPointExtensionsTests: XCTestCase {
         XCTAssertEqual(point.y, 15)
     }
     
+    func testPointFromCurrentWithDistanceAnd90Angle() {
+        
+        let point = CGPoint(x: 0.0, y: 0.0)
+        
+        let newPoint = point.pointFromCurrentWithDistance(distance: 30, angle: 90)
+        
+        XCTAssertEqual(Int(newPoint.x), 0)
+        XCTAssertEqual(Int(newPoint.y), 30)
+    }
+    
+    func testPointFromCurrentWithDistanceAnd180Angle() {
+        
+        let point = CGPoint(x: 0.0, y: 0.0)
+        
+        let newPoint = point.pointFromCurrentWithDistance(distance: 30, angle: 180)
+        
+        XCTAssertEqual(Int(newPoint.x), -30)
+        XCTAssertEqual(Int(newPoint.y), 0)
+    }
+    
 }

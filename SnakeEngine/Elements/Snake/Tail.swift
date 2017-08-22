@@ -14,14 +14,17 @@ internal class Tail: SnakePart {
     var node: SKSpriteNode
     var color = UIColor.white
     var vector: CGVector
+    var direction: Direction
     weak var referenceSnakePart: SnakePart?
     
     public init(referenceSnakePart: SnakePart) {
+        self.referenceSnakePart = referenceSnakePart
         self.node = SKSpriteNode(color: color, size: WorldConstants.objectSize)
+        self.direction = referenceSnakePart.direction
+        self.node.position = referenceSnakePart.node.position.pointFromCurrentWithDistance(distance: 35, angle: CGFloat(self.direction.inverseAngle))
         self.vector = referenceSnakePart.vector
         self.node.name = name
         self.initPhysicsBodyCharacteristics()
-        self.referenceSnakePart = referenceSnakePart
     }
 }
 
@@ -31,7 +34,7 @@ extension Tail: Drawable {
         guard let reference = self.referenceSnakePart else {
             return
         }
-        
+        self.direction = reference.direction
         self.node.position = reference.node.position
     }
 }
