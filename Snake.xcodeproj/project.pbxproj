@@ -216,7 +216,7 @@
 		83B6AD051F4A2D36007F457B /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
 		83B6AD071F4A2EE1007F457B /* SnakeImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeImplementation.swift; sourceTree = "<group>"; };
 		83B6AD091F4A31E3007F457B /* SnakeImplementationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeImplementationTests.swift; sourceTree = "<group>"; };
-		83B6FE041F4A1DF6000FD119 /* WorldElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorldElement.swift; path = Snake/WorldElement.swift; sourceTree = "<group>"; };
+		83B6FE041F4A1DF6000FD119 /* WorldElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WorldElement.swift; path = WorldElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +342,7 @@
 				834DF8E91F4C724F0075A5B9 /* SnakeMock.swift */,
 			);
 			name = Mocks;
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		834DF8EC1F4C75750075A5B9 /* Mocks */ = {
@@ -350,6 +351,7 @@
 				83B51AF91F48526400C91532 /* WorldMock.swift */,
 			);
 			name = Mocks;
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		83767BDC1F40BA3B00122DB6 = {
@@ -416,10 +418,10 @@
 		83AD01011F4103F500467C82 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
-				83B6FE041F4A1DF6000FD119 /* WorldElement.swift */,
 				83B51AFD1F485D2E00C91532 /* Snake */,
 				83B51AEE1F484A5200C91532 /* World */,
 				834B6F031F40D35400FDF852 /* Food.swift */,
+				83B6FE041F4A1DF6000FD119 /* WorldElement.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -478,10 +480,10 @@
 			isa = PBXGroup;
 			children = (
 				834B6EFF1F40CC9400FDF852 /* Head.swift */,
-				83B51B001F485DA100C91532 /* Tail.swift */,
-				83B6AD031F4A2A4B007F457B /* SnakePart.swift */,
 				83B6AD051F4A2D36007F457B /* Snake.swift */,
 				83B6AD071F4A2EE1007F457B /* SnakeImplementation.swift */,
+				83B6AD031F4A2A4B007F457B /* SnakePart.swift */,
+				83B51B001F485DA100C91532 /* Tail.swift */,
 			);
 			path = Snake;
 			sourceTree = "<group>";
