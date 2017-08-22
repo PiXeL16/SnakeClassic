@@ -16,7 +16,8 @@ class InterfaceController: WKInterfaceController {
     
     var gameScene: GameScene!
     
-    var crownValue:Double = 0.0
+    var crownValue: Double = 0.0
+    var crownThreshold: Double  = 0.1
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -73,17 +74,17 @@ extension InterfaceController: WKCrownDelegate {
     //MARK: Delegates
     func crownDidRotate(_ crownSequencer: WKCrownSequencer?, rotationalDelta: Double) {
         self.crownValue += rotationalDelta
+        
+        if crownValue > crownThreshold {
+            self.gameScene.turnRight()
+        } else if crownValue < -crownThreshold {
+           self.gameScene.turnLeft()
+        }
+        
+        crownValue = 0.0
     }
     
     func crownDidBecomeIdle(_ crownSequencer: WKCrownSequencer?) {
-        print(self.crownValue)
-        if self.crownValue <= 0 {
-            self.gameScene.turnLeft()
-        }
-        
-        else if self.crownValue > 0 {
-            self.gameScene.turnRight()
-        }
     }
 }
 
