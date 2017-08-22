@@ -30,6 +30,12 @@ extension CGPoint {
         let randomNumber = lower + Int(arc4random_uniform(UInt32(upper - lower + 1)));
         
         return randomNumber
+    }
+    
+    mutating func updateWithVector(vector: CGVector) {
+        
+        self.x = self.x + vector.dx
+        self.y = self.y + vector.dy
         
     }
 }

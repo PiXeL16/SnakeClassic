@@ -16,7 +16,7 @@ internal class SnakeImplementation: Snake {
     var direction: Direction
     var body: [SnakePart]
     
-    public init() {
+    init() {
         
         self.direction = .None
         self.head = Head()
@@ -25,22 +25,21 @@ internal class SnakeImplementation: Snake {
     }
     
     
-    public func grow() -> SKSpriteNode {
+    func grow() -> SKSpriteNode {
         
-        return SKSpriteNode()
+        let tail = Tail(referenceSnakePart: body.last!)
+        self.body.append(tail)
         
-//        var node: SKSpriteNode
-//        
-//        if tail.sections.isEmpty {
-//            node = tail.addSection(withReference: self).node
-//        } else {
-//            node = tail.addNextSection().node
-//        }
-//        return node
+        return tail.node
+    }
+    
+    func update() {
+        
+        for snakePart in body.reversed() {
+            snakePart.update()
+        }
     }
 }
-
-
 
 extension SnakeImplementation: Controllable {
     

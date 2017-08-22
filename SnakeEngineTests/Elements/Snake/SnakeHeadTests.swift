@@ -37,33 +37,45 @@ class SnakeHeadTests: XCTestCase {
     
     func testSnakeTurnLeft() {
         let vector = self.snakeHead.vector
-        self.snakeHead.left()
+        let position =  self.snakeHead.node.position
         
-        XCTAssertEqual(snakeHead.direction, .Left)
+        self.snakeHead.left()
+        self.snakeHead.update()
+        
         XCTAssertNotEqual(vector, snakeHead.vector)
+        XCTAssertNotEqual(position, snakeHead.node.position)
     }
     
     func testSnakeTurnRight() {
         let vector = self.snakeHead.vector
-        self.snakeHead.right()
+        let position =  self.snakeHead.node.position
         
-        XCTAssertEqual(snakeHead.direction, .Right)
+        self.snakeHead.right()
+        self.snakeHead.update()
+        
         XCTAssertNotEqual(vector, snakeHead.vector)
+        XCTAssertNotEqual(position, snakeHead.node.position)
     }
     
     func testSnakeTurnUp() {
         let vector = self.snakeHead.vector
-        self.snakeHead.up()
+        let position =  self.snakeHead.node.position
         
-        XCTAssertEqual(snakeHead.direction, .Up)
+        self.snakeHead.up()
+        self.snakeHead.update()
+        
         XCTAssertNotEqual(vector, snakeHead.vector)
+        XCTAssertNotEqual(position, snakeHead.node.position)
     }
     
     func testSnakeTurnDown() {
         let vector = self.snakeHead.vector
-        self.snakeHead.down()
+        let position =  self.snakeHead.node.position
         
-        XCTAssertEqual(snakeHead.direction, .Down)
+        self.snakeHead.down()
+        self.snakeHead.update()
+        
         XCTAssertNotEqual(vector, snakeHead.vector)
+        XCTAssertNotEqual(position, snakeHead.node.position)
     }
 }

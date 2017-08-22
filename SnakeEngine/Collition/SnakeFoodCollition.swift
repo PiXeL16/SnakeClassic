@@ -25,8 +25,8 @@ internal class SnakeFoodCollition: Collider {
         
             if(self.didCollidedSnakeAndFood(contactBodyA: orderedBodies.0, contactBodyB: orderedBodies.1)) {
                 
-                self.world?.createFood()
-                self.world?.growSnake()
+                self.world?.snakeEatFood()
+                
             }
         }
     }

@@ -12,6 +12,6 @@ public protocol Movable {
     
     var vector: CGVector { get set }
     
-    func move(vector: CGVector, completion: (() -> Void)?)
+    func move(vector: CGVector)
 
 }

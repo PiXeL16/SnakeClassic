@@ -29,13 +29,14 @@ class GameScene: SKScene {
     }
     
     override func update(_ currentTime: TimeInterval) {
-        self.world.update()
+        
+        self.world.update(currentTime: currentTime)
+        
     }
     
 }
 
 extension GameScene {
-    
     
     internal func setupControls() {
         

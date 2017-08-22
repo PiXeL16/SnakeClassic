@@ -10,44 +10,38 @@ import SpriteKit
 
 internal class Head: SnakePart {
     
-    public var node: SKSpriteNode
-    public var color = UIColor.white
-    public var direction: Direction
-    public var vector: CGVector
+    var node: SKSpriteNode
+    var color = UIColor.white
+    var vector: CGVector
+    weak var referenceSnakePart: SnakePart?
     
-    
-    public init() {
+    init() {
         self.node = SKSpriteNode(color: color, size: WorldConstants.objectSize)
-        self.direction = .None
         self.vector = CGVector(dx: 0, dy: 0)
         self.node.name = name
-        
         self.initPhysicsBodyCharacteristics()
+    }
+}
+
+extension Head: Drawable {
+    
+    func update() {
+        
+        
+        self.node.position.x = self.node.position.x + vector.dx * (WorldConstants.objectSize.width + 5 )
+        self.node.position.y = self.node.position.y + vector.dy * (WorldConstants.objectSize.height + 5)
+
+//        self.node.position.updateWithVector(vector: self.vector)
+        
     }
 }
 
 extension Head: Movable {
     
-    public func move(vector: CGVector, completion: (() -> Void)?) {
+    func move(vector: CGVector) {
         
         self.vector = vector
-        self.node.removeAllActions()
-        
-        let action = SKAction.move(by: self.vector, duration: 1)
-        
-        self.node.run(SKAction.repeatForever(action), completion: {
-            completion?()
-        })
     }
-    
-//    private func moveTail() {
-//        
-//        if !tail.sections.isEmpty {
-//            
-//            for section in tail.sections
-//            
-//        }
-//    }
 }
 
 extension Head: Physical {
@@ -71,28 +65,19 @@ extension Head: Nameable {
 
 extension Head: Controllable {
     
-    public func left() {
-        
-        
-        //self.move(vector: CGVector(dx: -WorldConstants.velocity, dy: 0), completion: nil)
+    func left() {
+        self.move(vector: CGVector(dx: -WorldConstants.velocity, dy: 0))
     }
     
-    public func right() {
-        
-        
-        //self.move(vector: CGVector(dx: WorldConstants.velocity, dy: 0), completion: nil)
+    func right() {
+        self.move(vector: CGVector(dx: WorldConstants.velocity, dy: 0))
     }
     
-    public func up() {
-        
-        
-        
-        //self.move(vector: CGVector(dx: 0, dy: WorldConstants.velocity), completion: nil)
+    func up() {
+        self.move(vector: CGVector(dx: 0, dy: WorldConstants.velocity))
     }
     
-    public func down() {
-        
-        
-        //self.move(vector: CGVector(dx: 0, dy: -WorldConstants.velocity), completion: nil)
+    func down() {
+        self.move(vector: CGVector(dx: 0, dy: -WorldConstants.velocity))
     }
 }

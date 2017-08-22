@@ -15,8 +15,8 @@ public class SnakeWorld: NSObject, World {
     public weak var scene: SKScene?
     internal var snake: Snake!
     internal var food: Food!
-    
     internal var collitionDetection: Collider!
+    internal var timeOfLastMove = 0.0
     
     public var height: CGFloat {
         
@@ -46,13 +46,20 @@ public class SnakeWorld: NSObject, World {
         
         self.collitionDetection = CollitionDetection(world: self)
         
-        createSnake()
-        
-        createFood()
+        restartGame()
     }
     
     
-    public func update() {
+    public func update(currentTime: TimeInterval) {
+        
+        if (currentTime - self.timeOfLastMove < WorldConstants.timeFrameDelayer){
+            return
+        }
+
+        
+        self.snake.update()
+        
+        self.timeOfLastMove = currentTime
         
     }
     
@@ -75,7 +82,11 @@ public class SnakeWorld: NSObject, World {
         
     }
     
-
+    internal func snakeEatFood() {
+        self.createFood()
+        self.growSnake()
+    }
+    
     
     internal func createFood() {
         
@@ -86,7 +97,7 @@ public class SnakeWorld: NSObject, World {
         
          self.scene?.childNode(withName: food.name)?.removeFromParent()
         
-         self.scene?.addChild(food!.node)
+         self.scene?.addChild(food.node)
     }
     
     public func growSnake() {

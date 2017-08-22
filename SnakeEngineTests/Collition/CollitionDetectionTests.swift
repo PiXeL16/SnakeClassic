@@ -25,7 +25,8 @@ class CollitionDetectionTests: XCTestCase {
         
         snakeBody = Head().physicsBody
         foodBody = Food(position: CGPoint(x: 0, y: 0)).physicsBody
-        tailBody = TailSection().physicsBody
+        
+        tailBody = Tail(referenceSnakePart: Head()).physicsBody
         
     }
     
@@ -37,8 +38,7 @@ class CollitionDetectionTests: XCTestCase {
         
         collitionDetection.handleCollition(contactBodyA: snakeBody, contactBodyB: foodBody)
         
-        XCTAssertTrue(world.createdFoodCalled)
-        XCTAssertTrue(world.growSnakeCalled)
+        XCTAssertTrue(world.snakeEatFoodCalled)
         
     }
     

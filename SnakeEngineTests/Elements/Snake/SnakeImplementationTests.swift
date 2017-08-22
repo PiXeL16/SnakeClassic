@@ -100,7 +100,26 @@ class SnakeImplementationTests: XCTestCase {
     
     func testSnakeGrow() {
         
+        let bodySize = snake.body.count
         
+        let _ = snake.grow()
+        
+        XCTAssertGreaterThan(snake.body.count, bodySize)
+        
+    }
+    
+    func testSnakeUpdate() {
+        
+        let _ = snake.grow()
+        let _ = snake.grow()
+        
+        snake.up()
+        snake.update()
+        snake.update()
+        
+        XCTAssertNotEqual(snake.body[0].node.position, snake.body[1].node.position)
+        
+        XCTAssertNotEqual(snake.body[1].node.position, snake.body[2].node.position)
     }
     
 }

@@ -43,4 +43,15 @@ class CGPointExtensionsTests: XCTestCase {
         
     }
     
+    
+    func testUpdatePointWithVector() {
+        
+        var point = CGPoint(x: 10, y: 10)
+        let vector = CGVector(dx: 5, dy: 5)
+        point.updateWithVector(vector: vector)
+        
+        XCTAssertEqual(point.x, 15)
+        XCTAssertEqual(point.y, 15)
+    }
+    
 }

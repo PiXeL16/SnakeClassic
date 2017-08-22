@@ -1,5 +1,5 @@
 //
-//  Tail.swift
+//  File.swift
 //  Snake
 //
 //  Created by Chris Jimenez on 8/19/17.
@@ -8,34 +8,61 @@
 
 import Foundation
 import SpriteKit
-public class Tail {
+
+internal class Tail: SnakePart {
     
-    var sections: [TailSection]
+    var node: SKSpriteNode
+    var color = UIColor.white
+    var vector: CGVector
+    weak var referenceSnakePart: SnakePart?
     
-    var lenght: Int {
-        return sections.count
+    public init(referenceSnakePart: SnakePart) {
+        self.node = SKSpriteNode(color: color, size: WorldConstants.objectSize)
+        self.vector = referenceSnakePart.vector
+        self.node.name = name
+        self.initPhysicsBodyCharacteristics()
+        self.referenceSnakePart = referenceSnakePart
+    }
+}
+
+extension Tail: Drawable {
+    
+    func update() {
+        guard let reference = self.referenceSnakePart else {
+            return
+        }
+        
+        self.node.position = reference.node.position
+    }
+}
+
+extension Tail: Movable {
+    
+    public func move(vector: CGVector) {
+        
+        self.vector = vector
+    }
+}
+
+extension Tail: Physical {
+    
+    public var physicsBody: SKPhysicsBody? {
+        return self.node.physicsBody
     }
     
-    init() {
-        sections = [TailSection]()
+    public var contactCategory: UInt32 {
+        return CollitionCategory.SnakeTail.rawValue
     }
     
-    func addSection(withReference drawable: Drawable) -> TailSection {
-        
-        let section = TailSection()
-        sections.append(section)
-        
-        return section
+    public var collidesWithCategory: UInt32 {
+        return CollitionCategory.SnakeHead.rawValue
     }
+
+}
+
+extension Tail: Nameable {
     
-    func addNextSection() -> TailSection {
-        
-        //TODO: Add error handling
-        let section = self.sections.last!
-     
-        let newTailSection = self.addSection(withReference: section)
-        
-        return newTailSection
+    public var name: String {
+        return "SnakeTail"
     }
-    
 }

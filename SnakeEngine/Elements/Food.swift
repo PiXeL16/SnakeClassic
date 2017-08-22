@@ -23,6 +23,12 @@ internal class Food: WorldElement {
     }
 }
 
+extension Food: Drawable {
+    func update(){}
+}
+
+
+
 extension Food: Physical {
     
     var contactCategory: UInt32 {

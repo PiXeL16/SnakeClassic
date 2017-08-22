@@ -10,22 +10,23 @@ import Foundation
 import SpriteKit
 @testable import SnakeEngine
 
-public class WorldMock: World {
+class WorldMock: World {
    
-    public weak var scene: SKScene? = SKScene()
-    public var snake: Snake! = SnakeImplementation()
-    public var food: Food! = Food(position: CGPoint())
-    public var collitionDetection: Collider!
+    weak var scene: SKScene? = SKScene()
+    var snake: Snake! = SnakeImplementation()
+    var food: Food! = Food(position: CGPoint())
+    var collitionDetection: Collider!
     
-    public var updateCalled = false
-    public var createSnakeCalled = false
-    public var createdFoodCalled = false
-    public var growSnakeCalled = false
-    public var rightCalled = false
-    public var leftCalled = false
-    public var upCalled = false
-    public var downCalled = false
-    public var gameRestartedCalled = false
+    var updateCalled = false
+    var createSnakeCalled = false
+    var createdFoodCalled = false
+    var growSnakeCalled = false
+    var rightCalled = false
+    var leftCalled = false
+    var upCalled = false
+    var downCalled = false
+    var gameRestartedCalled = false
+    var snakeEatFoodCalled = false
     
     
     public var height: CGFloat {
@@ -41,7 +42,7 @@ public class WorldMock: World {
     }
     
     
-    public func update() {
+    public func update(currentTime: TimeInterval) {
         updateCalled = true
     }
     
@@ -60,6 +61,10 @@ public class WorldMock: World {
     
     public func restartGame() {
         gameRestartedCalled = true
+    }
+    
+    public func snakeEatFood() {
+        snakeEatFoodCalled = true
     }
 
 }

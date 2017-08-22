@@ -13,5 +13,7 @@ public protocol Drawable: class {
 
     var node: SKSpriteNode { get set }
     var color: UIColor { get set }
+    
+    func update()
 
 }

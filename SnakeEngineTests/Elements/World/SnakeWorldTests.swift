@@ -85,6 +85,56 @@ class SnakeWorldTests: XCTestCase {
         XCTAssertNotNil(world.scene?.childNode(withName: Food(position: CGPoint.randomPoint(rangeHeight: 5, rangeWidth: 5)).name))
         
     }
+    
+    func testGrowSnake() {
+        
+        let nodesCount = world.scene?.children.count
+        
+        world.growSnake()
+        
+        let nodesAfterGrow = world.scene?.children.count
+        
+        XCTAssertGreaterThan(nodesAfterGrow!, nodesCount!)
+    }
    
+    func testSnakeEatFood() {
+        
+        let nodesCount: Int! = world.scene?.children.count
+        let snakeSize = world.snake.body.count
+        
+        world.snakeEatFood()
+        
+        XCTAssertGreaterThan(world.snake.body.count, snakeSize)
+        XCTAssertGreaterThan(world.scene!.children.count, nodesCount)
+        
+    }
+    
+    func testRestartGame() {
+        
+        world.growSnake()
+        world.growSnake()
+        world.growSnake()
+        world.growSnake()
+        
+        world.restartGame()
+        
+        XCTAssertLessThan(world.scene!.children.count, 3)
+        XCTAssertEqual(world.snake.body.count, 1)
+    }
+    
+    func testUpdateCalledWithInterval() {
+        
+        let snakeMock = SnakeMock()
+        self.world.snake = snakeMock
+        
+        let timeInterval = Date().timeIntervalSinceNow
+        
+        world.update(currentTime: timeInterval)
+        world.update(currentTime: Date(timeIntervalSinceReferenceDate: timeInterval).addingTimeInterval(1000).timeIntervalSinceReferenceDate)
+        
+        XCTAssertEqual(snakeMock.updateCalled, true)
+    }
+    
+    
     
 }

@@ -19,9 +19,11 @@ internal protocol World: class, Controllable {
     var width: CGFloat  { get }
     var collitionDetection: Collider! { get set }
     
-    func update()
+    func update(currentTime: TimeInterval)
     func createSnake()
     func growSnake()
     func createFood()
+    func snakeEatFood()
+    
     func restartGame()
 }
