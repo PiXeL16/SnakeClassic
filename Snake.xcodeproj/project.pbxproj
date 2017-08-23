@@ -76,6 +76,7 @@
 		834DF9361F4CE92B0075A5B9 /* WatchSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF92D1F4CE2E80075A5B9 /* WatchSettings.swift */; };
 		834DF9371F4CE9320075A5B9 /* PhoneSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF92F1F4CE2F00075A5B9 /* PhoneSettings.swift */; };
 		834DF9381F4CE9E40075A5B9 /* SettingsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF9341F4CE83F0075A5B9 /* SettingsFactory.swift */; };
+		83551B621F4E288400957161 /* CGRectExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83551B611F4E288400957161 /* CGRectExtensionTests.swift */; };
 		83767BE91F40BA3B00122DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83767BE81F40BA3B00122DB6 /* AppDelegate.swift */; };
 		83767BEB1F40BA3B00122DB6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83767BEA1F40BA3B00122DB6 /* GameScene.sks */; };
 		83767BED1F40BA3B00122DB6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83767BEC1F40BA3B00122DB6 /* Actions.sks */; };
@@ -256,6 +257,7 @@
 		834DF92D1F4CE2E80075A5B9 /* WatchSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSettings.swift; sourceTree = "<group>"; };
 		834DF92F1F4CE2F00075A5B9 /* PhoneSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneSettings.swift; sourceTree = "<group>"; };
 		834DF9341F4CE83F0075A5B9 /* SettingsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsFactory.swift; sourceTree = "<group>"; };
+		83551B611F4E288400957161 /* CGRectExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensionTests.swift; sourceTree = "<group>"; };
 		83767BE51F40BA3B00122DB6 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83767BE81F40BA3B00122DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83767BEA1F40BA3B00122DB6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -415,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				834B6F161F40F90600FDF852 /* CGPointExtensionsTests.swift */,
+				83551B611F4E288400957161 /* CGRectExtensionTests.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -452,7 +455,6 @@
 				834DF92D1F4CE2E80075A5B9 /* WatchSettings.swift */,
 				834DF92B1F4CE2000075A5B9 /* WorldSettings.swift */,
 			);
-			name = Settings;
 			path = Settings;
 			sourceTree = "<group>";
 		};
@@ -967,6 +969,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				834DF8EA1F4C724F0075A5B9 /* SnakeMock.swift in Sources */,
+				83551B621F4E288400957161 /* CGRectExtensionTests.swift in Sources */,
 				834DF8F81F4CA81E0075A5B9 /* BorderTests.swift in Sources */,
 				83B51AFA1F48526400C91532 /* WorldMock.swift in Sources */,
 				83B51AED1F48407600C91532 /* CollitionHandlerTests.swift in Sources */,
@@ -1547,6 +1550,7 @@
 				834DF90D1F4CBBA60075A5B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		83767BE01F40BA3B00122DB6 /* Build configuration list for PBXProject "Snake" */ = {
 			isa = XCConfigurationList;
