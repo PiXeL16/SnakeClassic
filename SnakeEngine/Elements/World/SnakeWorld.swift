@@ -68,9 +68,7 @@ public class SnakeWorld: NSObject, World {
         
         createSnake()
         
-        for _ in 1...50 {
-            createFood()    
-        }
+        createFood()
         
     }
     
