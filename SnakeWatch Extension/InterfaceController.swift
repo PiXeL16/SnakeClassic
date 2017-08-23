@@ -74,17 +74,17 @@ extension InterfaceController: WKCrownDelegate {
     //MARK: Delegates
     func crownDidRotate(_ crownSequencer: WKCrownSequencer?, rotationalDelta: Double) {
         self.crownValue += rotationalDelta
+    }
+    
+    func crownDidBecomeIdle(_ crownSequencer: WKCrownSequencer?) {
         
         if crownValue > crownThreshold {
             self.gameScene.turnRight()
         } else if crownValue < -crownThreshold {
-           self.gameScene.turnLeft()
+            self.gameScene.turnLeft()
         }
         
-        crownValue = 0.0
-    }
-    
-    func crownDidBecomeIdle(_ crownSequencer: WKCrownSequencer?) {
+        self.crownValue = 0.0
     }
 }
 

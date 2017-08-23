@@ -75,11 +75,11 @@ extension GameScene {
         
         switch direction {
         case .Right:
-            down()
+            up()
         case .Down:
             right()
         case .Left:
-            up()
+            down()
         case .Up:
             left()
         case .None:

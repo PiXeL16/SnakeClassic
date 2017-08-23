@@ -68,7 +68,9 @@ public class SnakeWorld: NSObject, World {
         
         createSnake()
         
-        createFood()
+        for _ in 1...50 {
+            createFood()    
+        }
         
     }
     
@@ -105,7 +107,7 @@ public class SnakeWorld: NSObject, World {
     
     internal func createFood() {
         
-         let randomPoint = frame.randomPointInRectWithMargin(margin: 50)
+         let randomPoint = frame.randomPointInRectWithMargin(margin: settings.distance)
         
          self.food = Food(position: randomPoint)
         
