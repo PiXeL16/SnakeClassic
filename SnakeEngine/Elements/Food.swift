@@ -11,7 +11,7 @@ import SpriteKit
 internal class Food: WorldElement {
     
     var node: SKNode
-    var color = UIColor.red
+    var color = Colors.foodColor
     var size: CGSize
     
     let settings = SettingsFactory.buildSettings()

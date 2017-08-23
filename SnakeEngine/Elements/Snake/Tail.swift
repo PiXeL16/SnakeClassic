@@ -12,7 +12,7 @@ import SpriteKit
 internal class Tail: SnakePart {
     
     var node: SKNode
-    var color = UIColor.black
+    var color = Colors.snakeColor
     var vector: CGVector
     var direction: Direction
     var size: CGSize

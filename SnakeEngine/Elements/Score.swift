@@ -28,8 +28,8 @@ internal class Score: WorldElement {
         
         self.scoreLabel = SKLabelNode(fontNamed: "DINCondensed-Bold")
         self.scoreLabel.position = position
-        self.scoreLabel.color = self.color
-        self.scoreLabel.fontColor = self.color
+        self.scoreLabel.color = Colors.scoreColor
+        self.scoreLabel.fontColor = Colors.scoreColor
         self.scoreLabel.fontSize = 30 * settings.margin
         self.clearScore()
     

@@ -30,7 +30,7 @@ internal class Border: WorldElement {
     }
     
     var color: UIColor {
-        return UIColor.black
+        return Colors.borderColor
     }
     
     var node: SKNode {
