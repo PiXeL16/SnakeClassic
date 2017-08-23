@@ -32,7 +32,7 @@ class InterfaceController: WKInterfaceController {
         if let scene = self.gameScene {
             
             // Set the scale mode to scale to fit the window
-            scene.scaleMode = .aspectFill
+            scene.scaleMode = .aspectFit
             
             // Present the scene
             self.skInterface.presentScene(scene)
