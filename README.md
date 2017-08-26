@@ -22,4 +22,4 @@ You can find most of the code in the `SnakeEngine` scheme and two examples of ho
 Chris Jimenez - http://code.chrisjimenez.net
 
 ## License
-`SnakeClassic` is released under the MIT license. See [LICENSE](https://github.com/pixel16/Snake/blob/master/LICENSE) for details.
+`SnakeClassic` is released under the MIT license. See [LICENSE](https://github.com/pixel16/SnakeClassic/blob/master/LICENSE) for details.
