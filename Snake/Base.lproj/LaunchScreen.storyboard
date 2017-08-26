@@ -34,7 +34,7 @@
                                     <constraint firstAttribute="width" constant="183" id="MPf-OG-PK8"/>
                                     <constraint firstAttribute="height" constant="47" id="cUe-6T-ulZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="28"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="28"/>
                                 <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
