@@ -12,7 +12,6 @@
 		834B6ECD1F40CC0B00FDF852 /* SnakeEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834B6EB81F40CC0B00FDF852 /* SnakeEngine.framework */; };
 		834B6ECE1F40CC0B00FDF852 /* SnakeEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 834B6EB81F40CC0B00FDF852 /* SnakeEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		834B6EDC1F40CC5000FDF852 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834B6EDA1F40CC5000FDF852 /* Interface.storyboard */; };
-		834B6EDE1F40CC5000FDF852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834B6EDD1F40CC5000FDF852 /* Assets.xcassets */; };
 		834B6EE51F40CC5000FDF852 /* SnakeWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 834B6EE41F40CC5000FDF852 /* SnakeWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		834B6EEA1F40CC5000FDF852 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6EE91F40CC5000FDF852 /* InterfaceController.swift */; };
 		834B6EEC1F40CC5000FDF852 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 834B6EEB1F40CC5000FDF852 /* GameScene.sks */; };
@@ -224,7 +223,6 @@
 		834B6EC91F40CC0B00FDF852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		834B6ED81F40CC5000FDF852 /* SnakeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnakeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834B6EDB1F40CC5000FDF852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		834B6EDD1F40CC5000FDF852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		834B6EDF1F40CC5000FDF852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		834B6EE41F40CC5000FDF852 /* SnakeWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SnakeWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		834B6EE91F40CC5000FDF852 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
@@ -387,7 +385,6 @@
 		834B6ED91F40CC5000FDF852 /* SnakeWatch */ = {
 			isa = PBXGroup;
 			children = (
-				834B6EDD1F40CC5000FDF852 /* Assets.xcassets */,
 				834B6EDF1F40CC5000FDF852 /* Info.plist */,
 				834B6EDA1F40CC5000FDF852 /* Interface.storyboard */,
 			);
@@ -881,7 +878,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				834B6EDE1F40CC5000FDF852 /* Assets.xcassets in Resources */,
 				834B6EDC1F40CC5000FDF852 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
