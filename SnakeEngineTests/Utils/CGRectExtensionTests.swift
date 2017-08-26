@@ -26,7 +26,10 @@ class CGRectExtensionTests: XCTestCase {
         
         let point =  rect.randomPointInRectWithMargin(margin: 50)
         
-        XCTAssertTrue(rect.contains(point))
+        XCTAssertLessThan(point.x, rect.width)
+        XCTAssertLessThan(point.y, rect.height)
+        XCTAssertGreaterThan(point.x, rect.minX)
+        XCTAssertGreaterThan(point.y, rect.minY)
     }
     
 }
