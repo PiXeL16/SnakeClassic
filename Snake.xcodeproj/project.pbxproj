@@ -78,6 +78,7 @@
 		83551B621F4E288400957161 /* CGRectExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83551B611F4E288400957161 /* CGRectExtensionTests.swift */; };
 		83551B641F4E2AAC00957161 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83551B631F4E2AAC00957161 /* Colors.swift */; };
 		83551B651F4E2B4500957161 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83551B631F4E2AAC00957161 /* Colors.swift */; };
+		8371A9321F5185D60028523D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8371A9311F5185D60028523D /* Media.xcassets */; };
 		83767BE91F40BA3B00122DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83767BE81F40BA3B00122DB6 /* AppDelegate.swift */; };
 		83767BEB1F40BA3B00122DB6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83767BEA1F40BA3B00122DB6 /* GameScene.sks */; };
 		83767BED1F40BA3B00122DB6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83767BEC1F40BA3B00122DB6 /* Actions.sks */; };
@@ -259,6 +260,7 @@
 		834DF9341F4CE83F0075A5B9 /* SettingsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsFactory.swift; sourceTree = "<group>"; };
 		83551B611F4E288400957161 /* CGRectExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRectExtensionTests.swift; sourceTree = "<group>"; };
 		83551B631F4E2AAC00957161 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		8371A9311F5185D60028523D /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		83767BE51F40BA3B00122DB6 /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83767BE81F40BA3B00122DB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83767BEA1F40BA3B00122DB6 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 			children = (
 				834B6EDF1F40CC5000FDF852 /* Info.plist */,
 				834B6EDA1F40CC5000FDF852 /* Interface.storyboard */,
+				8371A9311F5185D60028523D /* Media.xcassets */,
 			);
 			path = SnakeWatch;
 			sourceTree = "<group>";
@@ -450,11 +453,11 @@
 		834DF92A1F4CE1F50075A5B9 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				83551B631F4E2AAC00957161 /* Colors.swift */,
 				834DF92F1F4CE2F00075A5B9 /* PhoneSettings.swift */,
 				834DF9341F4CE83F0075A5B9 /* SettingsFactory.swift */,
 				834DF92D1F4CE2E80075A5B9 /* WatchSettings.swift */,
 				834DF92B1F4CE2000075A5B9 /* WorldSettings.swift */,
-				83551B631F4E2AAC00957161 /* Colors.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -878,6 +881,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8371A9321F5185D60028523D /* Media.xcassets in Resources */,
 				834B6EDC1F40CC5000FDF852 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
