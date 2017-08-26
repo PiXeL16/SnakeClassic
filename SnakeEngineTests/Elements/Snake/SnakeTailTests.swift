@@ -35,6 +35,7 @@ class SnakeTailTests: XCTestCase {
         XCTAssertNotNil(snakeTail.physicsBody)
         XCTAssertNotNil(snakeTail.referenceSnakePart)
         XCTAssertEqual(snakeTail.direction, snakeHead.direction)
+        XCTAssertNotEqual(snakeTail.node.position, snakeTail.referenceSnakePart?.node.position)
     }
     
     func testTailUpdate() {
