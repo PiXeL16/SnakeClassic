@@ -1,6 +1,6 @@
 ![Banner](/Art/banner.png)
 
-[![Language](https://img.shields.io/badge/language-Swift%203.1-orange.svg)](https://swift.org) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/PiXeL16/SnakeClassic/master/LICENSE) [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=59a13a90553af700016dfb4f&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/59a13a90553af700016dfb4f/build/latest?branch=master)
+[![Language](https://img.shields.io/badge/language-Swift%203.1-orange.svg)](https://swift.org) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/PiXeL16/SnakeClassic/master/LICENSE) [![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=59a13a90553af700016dfb4f&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/59a13a90553af700016dfb4f/build/latest?branch=master) [![codecov](https://codecov.io/gh/PiXeL16/SnakeClassic/branch/master/graph/badge.svg)](https://codecov.io/gh/PiXeL16/SnakeClassic)
 
 A snake engine written in SpriteKit for all Apple devices.
 
