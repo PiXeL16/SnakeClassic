@@ -23,5 +23,15 @@ You can find most of the code in the `SnakeEngine` scheme and two examples of ho
 ------
 Chris Jimenez - http://code.chrisjimenez.net
 
+:beer: Donate
+------
+If you want to buy me a beer, you can donate to my coin addresses below:
+## BTC
+1BeGBew4CBdLgUSmvoyiU1LrM99GpkXgkj
+## ETH
+0xa59a3793E3Cb5f3B1AdE6887783D225EDf67192d
+## LTC
+Ld6FB3Tqjf6B8iz9Gn9sMr7BnowAjSUXaV
+
 ## License
 `SnakeClassic` is released under the MIT license. See [LICENSE](https://github.com/pixel16/SnakeClassic/blob/master/LICENSE) for details.
