@@ -26,11 +26,11 @@ Chris Jimenez - http://code.chrisjimenez.net
 :beer: Donate
 ------
 If you want to buy me a beer, you can donate to my coin addresses below:
-## BTC
+### BTC
 1BeGBew4CBdLgUSmvoyiU1LrM99GpkXgkj
-## ETH
+### ETH
 0xa59a3793E3Cb5f3B1AdE6887783D225EDf67192d
-## LTC
+### LTC
 Ld6FB3Tqjf6B8iz9Gn9sMr7BnowAjSUXaV
 
 ## License
