@@ -3,5 +3,11 @@ osx_image: xcode9.2
 xcode_project: Snake.xcodeproj
 xcode_scheme: SnakeUITests
 xcode_sdk: iphonesimulator8.4
+- env: JOB="XCODE" DEST="OS=10.3.1,name=iPhone 7 Plus" SCHEME="SnakeUITests" SDK="iphonesimulator" ACTION="test"
+
 script:
-    - xcodebuild clean build -sdk iphonesimulator8.4 -project Snake.xcodeproj -scheme SnakeUITests CODE_SIGNING_REQUIRED=NO
+  - set -o pipefail
+  - open -b com.apple.iphonesimulator # Workaround https://github.com/travis-ci/travis-ci/issues/3040
+  - xcodebuild "$ACTION" -project Snake.xcodeproj -scheme "$SCHEME" -sdk "$SDK" -destination "$DEST" CODE_SIGNING_REQUIRED=NO
+#script:
+ #   - xcodebuild clean build -sdk iphonesimulator8.4 -project Snake.xcodeproj -scheme SnakeUITests CODE_SIGNING_REQUIRED=NO
