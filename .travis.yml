@@ -6,6 +6,6 @@ xcode_sdk: iphonesimulator
 script:
   - set -o pipefail
   - open -b com.apple.iphonesimulator # Workaround https://github.com/travis-ci/travis-ci/issues/3040
-  - xcodebuild clean build -sdk iphonesimulator -destination "OS=10.3.1,name=iPhone 7 Plus" -project Snake.xcodeproj -scheme SnakeUITests CODE_SIGNING_REQUIRED=NO
+  - xcodebuild build -sdk iphonesimulator -destination "OS=10.3.1,name=iPhone 7 Plus" -project Snake.xcodeproj -scheme SnakeUITests CODE_SIGNING_REQUIRED=NO
 #script:
  #   - xcodebuild clean build -sdk iphonesimulator8.4 -project Snake.xcodeproj -scheme SnakeUITests CODE_SIGNING_REQUIRED=NO
