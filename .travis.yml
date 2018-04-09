@@ -4,5 +4,4 @@ xcode_project: Snake.xcodeproj
 xcode_scheme: SnakeTests
 xcode_sdk: iphonesimulator8.4
 script:
-    - xcodebuild clean build -sdk iphonesimulator -xcodeproj Snake.xcworkspace -scheme SnakeTests CODE_SIGNING_REQUIRED=NO
-
+    - xcodebuild clean build -sdk iphonesimulator -project Snake.xcodeproj -scheme SnakeTests CODE_SIGNING_REQUIRED=NO
