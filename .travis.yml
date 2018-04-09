@@ -2,5 +2,4 @@ language: swift
 osx_image: xcode9.2	
 xcode_project: Snake.xcodeproj
 xcode_scheme: SnakeUITests
-script:
-    - xcodebuild clean test -project Snake.xcodeproj -scheme SnakeUITests -destination "platform:iOS Simulator, id:85AF1F51-F2EB-4A4D-930B-0E5761511A45, OS:10.3.1, name:iPhone SE" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet
+xcode_sdk: iphonesimulator8.4
