@@ -3,3 +3,6 @@ osx_image: xcode9.2
 xcode_project: Snake.xcodeproj
 xcode_scheme: SnakeUITests
 xcode_sdk: iphonesimulator8.4
+script:
+    - xcodebuild clean build -sdk iphonesimulator -workspace Snake.xcworkspace -scheme SnakeUITests CODE_SIGNING_REQUIRED=NO
+
