@@ -139,13 +139,6 @@
 			remoteGlobalIDString = 834B6EE31F40CC5000FDF852;
 			remoteInfo = "SnakeWatch Extension";
 		};
-		834B6EF41F40CC5100FDF852 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 834B6ED71F40CC5000FDF852;
-			remoteInfo = SnakeWatch;
-		};
 		834DF9071F4CBBA60075A5B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
@@ -742,7 +735,6 @@
 			);
 			dependencies = (
 				834B6ECC1F40CC0B00FDF852 /* PBXTargetDependency */,
-				834B6EF51F40CC5100FDF852 /* PBXTargetDependency */,
 			);
 			name = Snake;
 			productName = Snake;
@@ -1085,11 +1077,6 @@
 			isa = PBXTargetDependency;
 			target = 834B6EE31F40CC5000FDF852 /* SnakeWatch Extension */;
 			targetProxy = 834B6EE61F40CC5000FDF852 /* PBXContainerItemProxy */;
-		};
-		834B6EF51F40CC5100FDF852 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 834B6ED71F40CC5000FDF852 /* SnakeWatch */;
-			targetProxy = 834B6EF41F40CC5100FDF852 /* PBXContainerItemProxy */;
 		};
 		834DF9081F4CBBA60075A5B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
