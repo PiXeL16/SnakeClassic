@@ -1,0 +1,11 @@
+language: objective-c 
+osx_image: xcode9.2	
+xcode_project: Snake.xcodeproj
+xcode_scheme: SnakeUITests
+xcode_sdk: iphonesimulator
+script:
+  - set -o pipefail
+  - open -b com.apple.iphonesimulator # Workaround https://github.com/travis-ci/travis-ci/issues/3040
+  - xcodebuild build -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone SE" -project Snake.xcodeproj -scheme Snake CODE_SIGNING_REQUIRED=NO 
+#script:
+ #   - xcodebuild clean build -sdk iphonesimulator8.4 -project Snake.xcodeproj -scheme SnakeUITests CODE_SIGNING_REQUIRED=NO

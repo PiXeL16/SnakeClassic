@@ -11,14 +11,6 @@
 		834B6ECA1F40CC0B00FDF852 /* SnakeEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 834B6EBA1F40CC0B00FDF852 /* SnakeEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		834B6ECD1F40CC0B00FDF852 /* SnakeEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834B6EB81F40CC0B00FDF852 /* SnakeEngine.framework */; };
 		834B6ECE1F40CC0B00FDF852 /* SnakeEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 834B6EB81F40CC0B00FDF852 /* SnakeEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		834B6EDC1F40CC5000FDF852 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 834B6EDA1F40CC5000FDF852 /* Interface.storyboard */; };
-		834B6EE51F40CC5000FDF852 /* SnakeWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 834B6EE41F40CC5000FDF852 /* SnakeWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		834B6EEA1F40CC5000FDF852 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6EE91F40CC5000FDF852 /* InterfaceController.swift */; };
-		834B6EEC1F40CC5000FDF852 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 834B6EEB1F40CC5000FDF852 /* GameScene.sks */; };
-		834B6EEE1F40CC5100FDF852 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6EED1F40CC5000FDF852 /* GameScene.swift */; };
-		834B6EF01F40CC5100FDF852 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6EEF1F40CC5100FDF852 /* ExtensionDelegate.swift */; };
-		834B6EF21F40CC5100FDF852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 834B6EF11F40CC5100FDF852 /* Assets.xcassets */; };
-		834B6EF61F40CC5100FDF852 /* SnakeWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 834B6ED81F40CC5000FDF852 /* SnakeWatch.app */; };
 		834B6F001F40CC9400FDF852 /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6EFF1F40CC9400FDF852 /* Head.swift */; };
 		834B6F041F40D35400FDF852 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F031F40D35400FDF852 /* Food.swift */; };
 		834B6F061F40D35E00FDF852 /* SnakeWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F051F40D35E00FDF852 /* SnakeWorld.swift */; };
@@ -38,47 +30,12 @@
 		834DF8F81F4CA81E0075A5B9 /* BorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F71F4CA81E0075A5B9 /* BorderTests.swift */; };
 		834DF8FA1F4CA94F0075A5B9 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F91F4CA94F0075A5B9 /* Score.swift */; };
 		834DF8FC1F4CB5830075A5B9 /* ScoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8FB1F4CB5830075A5B9 /* ScoreTests.swift */; };
-		834DF9061F4CBBA60075A5B9 /* SnakeEngineWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 834DF9041F4CBBA60075A5B9 /* SnakeEngineWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		834DF9091F4CBBA60075A5B9 /* SnakeEngineWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 834DF9021F4CBBA60075A5B9 /* SnakeEngineWatch.framework */; };
-		834DF90A1F4CBBA60075A5B9 /* SnakeEngineWatch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 834DF9021F4CBBA60075A5B9 /* SnakeEngineWatch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		834DF90F1F4CBBD90075A5B9 /* Collider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AF21F484E0600C91532 /* Collider.swift */; };
-		834DF9101F4CBBD90075A5B9 /* CollitionCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AE61F48385200C91532 /* CollitionCategory.swift */; };
-		834DF9111F4CBBD90075A5B9 /* CollitionDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AF41F484F4E00C91532 /* CollitionDetection.swift */; };
-		834DF9121F4CBBD90075A5B9 /* CollitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AE81F483CD600C91532 /* CollitionHandler.swift */; };
-		834DF9131F4CBBD90075A5B9 /* SnakeFoodCollition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51B041F4860EA00C91532 /* SnakeFoodCollition.swift */; };
-		834DF9141F4CBBD90075A5B9 /* SnakeTailCollition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51B0B1F48981200C91532 /* SnakeTailCollition.swift */; };
-		834DF9151F4CBBD90075A5B9 /* SnakeBorderCollition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F31F4C9BA10075A5B9 /* SnakeBorderCollition.swift */; };
-		834DF9161F4CBBD90075A5B9 /* Head.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6EFF1F40CC9400FDF852 /* Head.swift */; };
-		834DF9171F4CBBD90075A5B9 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AD051F4A2D36007F457B /* Snake.swift */; };
-		834DF9181F4CBBD90075A5B9 /* SnakeImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AD071F4A2EE1007F457B /* SnakeImplementation.swift */; };
-		834DF9191F4CBBD90075A5B9 /* SnakePart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6AD031F4A2A4B007F457B /* SnakePart.swift */; };
-		834DF91A1F4CBBD90075A5B9 /* Tail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51B001F485DA100C91532 /* Tail.swift */; };
-		834DF91B1F4CBBD90075A5B9 /* SnakeWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F051F40D35E00FDF852 /* SnakeWorld.swift */; };
-		834DF91C1F4CBBD90075A5B9 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51AEF1F484B3500C91532 /* World.swift */; };
-		834DF91D1F4CBBD90075A5B9 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F031F40D35400FDF852 /* Food.swift */; };
-		834DF91E1F4CBBD90075A5B9 /* WorldElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B6FE041F4A1DF6000FD119 /* WorldElement.swift */; };
-		834DF91F1F4CBBD90075A5B9 /* Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F11F4C93250075A5B9 /* Border.swift */; };
-		834DF9201F4CBBD90075A5B9 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F91F4CA94F0075A5B9 /* Score.swift */; };
-		834DF9211F4CBBD90075A5B9 /* CGPointExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F131F40F57E00FDF852 /* CGPointExtensions.swift */; };
-		834DF9221F4CBBD90075A5B9 /* CGRectExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF8F51F4C9EB50075A5B9 /* CGRectExtensions.swift */; };
-		834DF9231F4CBBD90075A5B9 /* Controllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F081F40D62E00FDF852 /* Controllable.swift */; };
-		834DF9241F4CBBD90075A5B9 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F0A1F40E22000FDF852 /* Direction.swift */; };
-		834DF9251F4CBBD90075A5B9 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B51B021F485F5400C91532 /* Drawable.swift */; };
-		834DF9261F4CBBD90075A5B9 /* Movable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F101F40F24100FDF852 /* Movable.swift */; };
-		834DF9271F4CBBD90075A5B9 /* Nameable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AD00FD1F4101EE00467C82 /* Nameable.swift */; };
-		834DF9281F4CBBD90075A5B9 /* Physical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834B6F0E1F40EF7A00FDF852 /* Physical.swift */; };
 		834DF92C1F4CE2000075A5B9 /* WorldSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF92B1F4CE2000075A5B9 /* WorldSettings.swift */; };
 		834DF9301F4CE2F00075A5B9 /* PhoneSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF92F1F4CE2F00075A5B9 /* PhoneSettings.swift */; };
-		834DF9311F4CE39B0075A5B9 /* WorldSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF92B1F4CE2000075A5B9 /* WorldSettings.swift */; };
-		834DF9321F4CE39B0075A5B9 /* WatchSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF92D1F4CE2E80075A5B9 /* WatchSettings.swift */; };
 		834DF9351F4CE83F0075A5B9 /* SettingsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF9341F4CE83F0075A5B9 /* SettingsFactory.swift */; };
 		834DF9361F4CE92B0075A5B9 /* WatchSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF92D1F4CE2E80075A5B9 /* WatchSettings.swift */; };
-		834DF9371F4CE9320075A5B9 /* PhoneSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF92F1F4CE2F00075A5B9 /* PhoneSettings.swift */; };
-		834DF9381F4CE9E40075A5B9 /* SettingsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834DF9341F4CE83F0075A5B9 /* SettingsFactory.swift */; };
 		83551B621F4E288400957161 /* CGRectExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83551B611F4E288400957161 /* CGRectExtensionTests.swift */; };
 		83551B641F4E2AAC00957161 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83551B631F4E2AAC00957161 /* Colors.swift */; };
-		83551B651F4E2B4500957161 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83551B631F4E2AAC00957161 /* Colors.swift */; };
-		8371A9321F5185D60028523D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8371A9311F5185D60028523D /* Media.xcassets */; };
 		83767BE91F40BA3B00122DB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83767BE81F40BA3B00122DB6 /* AppDelegate.swift */; };
 		83767BEB1F40BA3B00122DB6 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83767BEA1F40BA3B00122DB6 /* GameScene.sks */; };
 		83767BED1F40BA3B00122DB6 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 83767BEC1F40BA3B00122DB6 /* Actions.sks */; };
@@ -132,27 +89,6 @@
 			remoteGlobalIDString = 834B6EB71F40CC0B00FDF852;
 			remoteInfo = SnakeEngine;
 		};
-		834B6EE61F40CC5000FDF852 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 834B6EE31F40CC5000FDF852;
-			remoteInfo = "SnakeWatch Extension";
-		};
-		834B6EF41F40CC5100FDF852 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 834B6ED71F40CC5000FDF852;
-			remoteInfo = SnakeWatch;
-		};
-		834DF9071F4CBBA60075A5B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 834DF9011F4CBBA60075A5B9;
-			remoteInfo = SnakeEngineWatch;
-		};
 		83767C001F40BA3B00122DB6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83767BDD1F40BA3B00122DB6 /* Project object */;
@@ -181,37 +117,14 @@
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		834B6EFA1F40CC5100FDF852 /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				834B6EE51F40CC5000FDF852 /* SnakeWatch Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		834B6EFE1F40CC5100FDF852 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				834B6EF61F40CC5100FDF852 /* SnakeWatch.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		834DF90E1F4CBBA60075A5B9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				834DF90A1F4CBBA60075A5B9 /* SnakeEngineWatch.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -222,10 +135,8 @@
 		834B6EBB1F40CC0B00FDF852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		834B6EC01F40CC0B00FDF852 /* SnakeEngineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnakeEngineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		834B6EC91F40CC0B00FDF852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		834B6ED81F40CC5000FDF852 /* SnakeWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnakeWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		834B6EDB1F40CC5000FDF852 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		834B6EDF1F40CC5000FDF852 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		834B6EE41F40CC5000FDF852 /* SnakeWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SnakeWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		834B6EE91F40CC5000FDF852 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		834B6EEB1F40CC5000FDF852 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		834B6EED1F40CC5000FDF852 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -251,7 +162,6 @@
 		834DF8F71F4CA81E0075A5B9 /* BorderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderTests.swift; sourceTree = "<group>"; };
 		834DF8F91F4CA94F0075A5B9 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		834DF8FB1F4CB5830075A5B9 /* ScoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTests.swift; sourceTree = "<group>"; };
-		834DF9021F4CBBA60075A5B9 /* SnakeEngineWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnakeEngineWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		834DF9041F4CBBA60075A5B9 /* SnakeEngineWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SnakeEngineWatch.h; sourceTree = "<group>"; };
 		834DF9051F4CBBA60075A5B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		834DF92B1F4CE2000075A5B9 /* WorldSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldSettings.swift; sourceTree = "<group>"; };
@@ -311,21 +221,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				834B6EC11F40CC0B00FDF852 /* SnakeEngine.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		834B6EE11F40CC5000FDF852 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				834DF9091F4CBBA60075A5B9 /* SnakeEngineWatch.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		834DF8FE1F4CBBA60075A5B9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,9 +380,6 @@
 				83767C0A1F40BA3B00122DB6 /* SnakeUITests.xctest */,
 				834B6EB81F40CC0B00FDF852 /* SnakeEngine.framework */,
 				834B6EC01F40CC0B00FDF852 /* SnakeEngineTests.xctest */,
-				834B6ED81F40CC5000FDF852 /* SnakeWatch.app */,
-				834B6EE41F40CC5000FDF852 /* SnakeWatch Extension.appex */,
-				834DF9021F4CBBA60075A5B9 /* SnakeEngineWatch.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -626,14 +518,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		834DF8FF1F4CBBA60075A5B9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				834DF9061F4CBBA60075A5B9 /* SnakeEngineWatch.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -674,60 +558,6 @@
 			productReference = 834B6EC01F40CC0B00FDF852 /* SnakeEngineTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		834B6ED71F40CC5000FDF852 /* SnakeWatch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 834B6EFB1F40CC5100FDF852 /* Build configuration list for PBXNativeTarget "SnakeWatch" */;
-			buildPhases = (
-				834B6ED61F40CC5000FDF852 /* Resources */,
-				834B6EFA1F40CC5100FDF852 /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				834B6EE71F40CC5000FDF852 /* PBXTargetDependency */,
-			);
-			name = SnakeWatch;
-			productName = SnakeWatch;
-			productReference = 834B6ED81F40CC5000FDF852 /* SnakeWatch.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		834B6EE31F40CC5000FDF852 /* SnakeWatch Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 834B6EF71F40CC5100FDF852 /* Build configuration list for PBXNativeTarget "SnakeWatch Extension" */;
-			buildPhases = (
-				834B6EE01F40CC5000FDF852 /* Sources */,
-				834B6EE11F40CC5000FDF852 /* Frameworks */,
-				834B6EE21F40CC5000FDF852 /* Resources */,
-				834DF90E1F4CBBA60075A5B9 /* Embed Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				834DF9081F4CBBA60075A5B9 /* PBXTargetDependency */,
-			);
-			name = "SnakeWatch Extension";
-			productName = "SnakeWatch Extension";
-			productReference = 834B6EE41F40CC5000FDF852 /* SnakeWatch Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
-		};
-		834DF9011F4CBBA60075A5B9 /* SnakeEngineWatch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 834DF90B1F4CBBA60075A5B9 /* Build configuration list for PBXNativeTarget "SnakeEngineWatch" */;
-			buildPhases = (
-				834DF8FD1F4CBBA60075A5B9 /* Sources */,
-				834DF8FE1F4CBBA60075A5B9 /* Frameworks */,
-				834DF8FF1F4CBBA60075A5B9 /* Headers */,
-				834DF9001F4CBBA60075A5B9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SnakeEngineWatch;
-			productName = SnakeEngineWatch;
-			productReference = 834DF9021F4CBBA60075A5B9 /* SnakeEngineWatch.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		83767BE41F40BA3B00122DB6 /* Snake */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83767C131F40BA3B00122DB6 /* Build configuration list for PBXNativeTarget "Snake" */;
@@ -742,7 +572,6 @@
 			);
 			dependencies = (
 				834B6ECC1F40CC0B00FDF852 /* PBXTargetDependency */,
-				834B6EF51F40CC5100FDF852 /* PBXTargetDependency */,
 			);
 			name = Snake;
 			productName = Snake;
@@ -806,23 +635,9 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 83767BE41F40BA3B00122DB6;
 					};
-					834B6ED71F40CC5000FDF852 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 7JMURSKQQ8;
-						ProvisioningStyle = Automatic;
-					};
-					834B6EE31F40CC5000FDF852 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 7JMURSKQQ8;
-						ProvisioningStyle = Automatic;
-					};
-					834DF9011F4CBBA60075A5B9 = {
-						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
-					};
 					83767BE41F40BA3B00122DB6 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 7JMURSKQQ8;
+						DevelopmentTeam = PSKQG74426;
 						ProvisioningStyle = Automatic;
 					};
 					83767BFE1F40BA3B00122DB6 = {
@@ -855,9 +670,6 @@
 				83767C091F40BA3B00122DB6 /* SnakeUITests */,
 				834B6EB71F40CC0B00FDF852 /* SnakeEngine */,
 				834B6EBF1F40CC0B00FDF852 /* SnakeEngineTests */,
-				834B6ED71F40CC5000FDF852 /* SnakeWatch */,
-				834B6EE31F40CC5000FDF852 /* SnakeWatch Extension */,
-				834DF9011F4CBBA60075A5B9 /* SnakeEngineWatch */,
 			);
 		};
 /* End PBXProject section */
@@ -871,31 +683,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		834B6EBE1F40CC0B00FDF852 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		834B6ED61F40CC5000FDF852 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8371A9321F5185D60028523D /* Media.xcassets in Resources */,
-				834B6EDC1F40CC5000FDF852 /* Interface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		834B6EE21F40CC5000FDF852 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				834B6EF21F40CC5100FDF852 /* Assets.xcassets in Resources */,
-				834B6EEC1F40CC5000FDF852 /* GameScene.sks in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		834DF9001F4CBBA60075A5B9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -990,54 +777,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		834B6EE01F40CC5000FDF852 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				834B6EEE1F40CC5100FDF852 /* GameScene.swift in Sources */,
-				834B6EEA1F40CC5000FDF852 /* InterfaceController.swift in Sources */,
-				834B6EF01F40CC5100FDF852 /* ExtensionDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		834DF8FD1F4CBBA60075A5B9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				83551B651F4E2B4500957161 /* Colors.swift in Sources */,
-				834DF9381F4CE9E40075A5B9 /* SettingsFactory.swift in Sources */,
-				834DF9371F4CE9320075A5B9 /* PhoneSettings.swift in Sources */,
-				834DF9311F4CE39B0075A5B9 /* WorldSettings.swift in Sources */,
-				834DF9321F4CE39B0075A5B9 /* WatchSettings.swift in Sources */,
-				834DF90F1F4CBBD90075A5B9 /* Collider.swift in Sources */,
-				834DF9101F4CBBD90075A5B9 /* CollitionCategory.swift in Sources */,
-				834DF9111F4CBBD90075A5B9 /* CollitionDetection.swift in Sources */,
-				834DF9121F4CBBD90075A5B9 /* CollitionHandler.swift in Sources */,
-				834DF9131F4CBBD90075A5B9 /* SnakeFoodCollition.swift in Sources */,
-				834DF9141F4CBBD90075A5B9 /* SnakeTailCollition.swift in Sources */,
-				834DF9151F4CBBD90075A5B9 /* SnakeBorderCollition.swift in Sources */,
-				834DF9161F4CBBD90075A5B9 /* Head.swift in Sources */,
-				834DF9171F4CBBD90075A5B9 /* Snake.swift in Sources */,
-				834DF9181F4CBBD90075A5B9 /* SnakeImplementation.swift in Sources */,
-				834DF9191F4CBBD90075A5B9 /* SnakePart.swift in Sources */,
-				834DF91A1F4CBBD90075A5B9 /* Tail.swift in Sources */,
-				834DF91B1F4CBBD90075A5B9 /* SnakeWorld.swift in Sources */,
-				834DF91C1F4CBBD90075A5B9 /* World.swift in Sources */,
-				834DF91D1F4CBBD90075A5B9 /* Food.swift in Sources */,
-				834DF91E1F4CBBD90075A5B9 /* WorldElement.swift in Sources */,
-				834DF91F1F4CBBD90075A5B9 /* Border.swift in Sources */,
-				834DF9201F4CBBD90075A5B9 /* Score.swift in Sources */,
-				834DF9211F4CBBD90075A5B9 /* CGPointExtensions.swift in Sources */,
-				834DF9221F4CBBD90075A5B9 /* CGRectExtensions.swift in Sources */,
-				834DF9231F4CBBD90075A5B9 /* Controllable.swift in Sources */,
-				834DF9241F4CBBD90075A5B9 /* Direction.swift in Sources */,
-				834DF9251F4CBBD90075A5B9 /* Drawable.swift in Sources */,
-				834DF9261F4CBBD90075A5B9 /* Movable.swift in Sources */,
-				834DF9271F4CBBD90075A5B9 /* Nameable.swift in Sources */,
-				834DF9281F4CBBD90075A5B9 /* Physical.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		83767BE11F40BA3B00122DB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1080,21 +819,6 @@
 			isa = PBXTargetDependency;
 			target = 834B6EB71F40CC0B00FDF852 /* SnakeEngine */;
 			targetProxy = 834B6ECB1F40CC0B00FDF852 /* PBXContainerItemProxy */;
-		};
-		834B6EE71F40CC5000FDF852 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 834B6EE31F40CC5000FDF852 /* SnakeWatch Extension */;
-			targetProxy = 834B6EE61F40CC5000FDF852 /* PBXContainerItemProxy */;
-		};
-		834B6EF51F40CC5100FDF852 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 834B6ED71F40CC5000FDF852 /* SnakeWatch */;
-			targetProxy = 834B6EF41F40CC5100FDF852 /* PBXContainerItemProxy */;
-		};
-		834DF9081F4CBBA60075A5B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 834DF9011F4CBBA60075A5B9 /* SnakeEngineWatch */;
-			targetProxy = 834DF9071F4CBBA60075A5B9 /* PBXContainerItemProxy */;
 		};
 		83767C011F40BA3B00122DB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1213,126 +937,6 @@
 			};
 			name = Release;
 		};
-		834B6EF81F40CC5100FDF852 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 7JMURSKQQ8;
-				INFOPLIST_FILE = "SnakeWatch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Debug;
-		};
-		834B6EF91F40CC5100FDF852 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = 7JMURSKQQ8;
-				INFOPLIST_FILE = "SnakeWatch Extension/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake.watchkitapp.watchkitextension;
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Release;
-		};
-		834B6EFC1F40CC5100FDF852 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7JMURSKQQ8;
-				IBSC_MODULE = SnakeWatch_Extension;
-				INFOPLIST_FILE = SnakeWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Debug;
-		};
-		834B6EFD1F40CC5100FDF852 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7JMURSKQQ8;
-				IBSC_MODULE = SnakeWatch_Extension;
-				INFOPLIST_FILE = SnakeWatch/Info.plist;
-				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake.watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Release;
-		};
-		834DF90C1F4CBBA60075A5B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SnakeEngineWatch/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.SnakeEngineWatch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Debug;
-		};
-		834DF90D1F4CBBA60075A5B9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SnakeEngineWatch/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.SnakeEngineWatch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 3.2;
-			};
-			name = Release;
-		};
 		83767C111F40BA3B00122DB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1433,7 +1037,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7JMURSKQQ8;
+				DEVELOPMENT_TEAM = PSKQG74426;
 				INFOPLIST_FILE = Snake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake;
@@ -1447,7 +1051,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7JMURSKQQ8;
+				DEVELOPMENT_TEAM = PSKQG74426;
 				INFOPLIST_FILE = Snake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = greenpixels.net.Snake;
@@ -1527,33 +1131,6 @@
 			buildConfigurations = (
 				834B6ED11F40CC0B00FDF852 /* Debug */,
 				834B6ED21F40CC0B00FDF852 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		834B6EF71F40CC5100FDF852 /* Build configuration list for PBXNativeTarget "SnakeWatch Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				834B6EF81F40CC5100FDF852 /* Debug */,
-				834B6EF91F40CC5100FDF852 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		834B6EFB1F40CC5100FDF852 /* Build configuration list for PBXNativeTarget "SnakeWatch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				834B6EFC1F40CC5100FDF852 /* Debug */,
-				834B6EFD1F40CC5100FDF852 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		834DF90B1F4CBBA60075A5B9 /* Build configuration list for PBXNativeTarget "SnakeEngineWatch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				834DF90C1F4CBBA60075A5B9 /* Debug */,
-				834DF90D1F4CBBA60075A5B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
